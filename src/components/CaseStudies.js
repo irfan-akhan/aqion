@@ -14,7 +14,7 @@ export default function CaseStudies() {
 			data-aos="fade-up"
 		>
 			{data.map((item, idx) => (
-				<Case bg={bg[idx]} />
+				<Case key={idx} bg={bg[idx]} />
 			))}
 			<Box my="16">
 				<CustomButton
