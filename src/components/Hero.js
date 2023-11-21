@@ -14,13 +14,12 @@ const Hero = () => {
 			<Flex
 				pl={{ base: 0, md: "7rem" }}
 				mt={{ base: "1rem", md: "4rem" }}
-				// height="100%"
 				direction="column"
 				align={{ base: "center", md: "flex-start" }}
 				gap={{ base: "6", md: "8" }}
 				pr="3"
 				maxW={{ base: "100%", md: "60%" }}
-				boxShadow="20px 18px 2px 7px  #f3f3f3"
+				boxShadow="20px 18px 2px 7px #d3d3d3"
 				pos="relative"
 			>
 				<Stack>
@@ -55,7 +54,15 @@ const Hero = () => {
 			</Flex>
 
 			<Box width="50%" display={{ base: "none", md: "initial" }}>
-				<Image src="/herobg1.jpg" h="120%" width="100%" />
+				<Image
+					src="/herobg1.jpg"
+					h="120%"
+					width="100%"
+					transition="all 1s ease-in"
+					_hover={{
+						transform: "scale(.9)",
+					}}
+				/>
 			</Box>
 		</Flex>
 	);
