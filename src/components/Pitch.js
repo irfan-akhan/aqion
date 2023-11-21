@@ -85,9 +85,9 @@ export default function Pitch() {
 						fontWeight="300"
 						fontSize={{ base: "large", md: "large" }}
 					>
-						Team of experts dedicated to your needs that we manage
+						{`Team of experts dedicated to your needs that we manage
 						for you, or you take the lead with your in-house
-						processes.
+						processes.`}
 					</Text>
 				</Flex>
 			</Flex>
