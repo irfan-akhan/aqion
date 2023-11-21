@@ -62,9 +62,9 @@ export default function Pitch() {
 						fontWeight="300"
 						fontSize={{ base: "large", md: "large" }}
 					>
-						Create a digital product based on your industry
+						{`Create a digital product based on your industry
 						knowledge with a high market adoption tailored to your
-						audience's needs.
+						audience's needs.`}
 					</Text>
 				</Flex>
 				<Flex
