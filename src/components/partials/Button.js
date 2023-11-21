@@ -26,7 +26,7 @@ const CustomButton = ({
 				boxShadow: "0px 0px 0px 0px  #4169E2",
 			}}
 			data-aos="fade-up"
-			data-aos-delay="30"
+			data-aos-delay="10"
 		>
 			{link ? <Link href={linkProps.path}>{linkProps.name}</Link> : text}
 		</Button>
