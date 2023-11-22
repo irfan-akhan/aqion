@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -7,6 +7,7 @@ import Pitch from "@/components/Pitch";
 import CTC from "@/components/CTC";
 import CaseStudies from "@/components/CaseStudies";
 import Partner from "@/components/Partner";
+import Layout from "@/components/Layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,15 +26,15 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Navbar />
-			<main>
-				<Hero />
-				<Pitch />
-				<CaseStudies />
-				<Partner />
-				<CTC />
-			</main>
-			<Footer />
+			<Layout>
+				<main>
+					<Hero />
+					<Pitch />
+					<CaseStudies />
+					<Partner />
+					<CTC />
+				</main>
+			</Layout>
 		</>
 	);
 }

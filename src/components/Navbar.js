@@ -46,7 +46,7 @@ const NavLink = (props) => {
 	);
 };
 
-export default function Simple() {
+export default function Navbar() {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 
 	return (
@@ -76,7 +76,7 @@ export default function Simple() {
 				<Flex alignItems={"center"}>
 					<CustomButton
 						link={true}
-						linkProps={{ name: "Contact Us", path: "/contact" }}
+						linkProps={{ name: "Contact Us", path: "/contact-us" }}
 					/>
 				</Flex>
 			</Flex>

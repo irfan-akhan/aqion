@@ -23,7 +23,7 @@ export default function CTC() {
 			</Heading>
 			<CustomButton
 				link={true}
-				linkProps={{ name: "Let's collaborate", path: "/contact" }}
+				linkProps={{ name: "Let's collaborate", path: "/contact-us" }}
 			/>
 		</Flex>
 	);

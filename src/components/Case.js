@@ -64,7 +64,7 @@ export default function Case({ bg }) {
 				</Text>
 				<Button
 					as="a"
-					href="/contact"
+					href="/contact-us"
 					borderRadius="0"
 					variant="outline"
 					borderColor="#fff"

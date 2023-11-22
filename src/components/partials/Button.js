@@ -8,14 +8,20 @@ const CustomButton = ({
 	weight = 500,
 	fontSize = "medium",
 	linkProps = {},
+	size = "md",
+	p = "5",
+	px = "5",
 }) => {
 	return (
 		<Button
+			p={p}
+			px={px}
 			borderRadius="0"
 			variant="outline"
 			borderColor="black"
 			fontWeight={weight}
 			fontSize={fontSize}
+			size={size}
 			transform="all 1s ease-in"
 			boxShadow="5px 5px 0px 0px  #4169E2"
 			_hover={{
