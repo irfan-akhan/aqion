@@ -27,6 +27,7 @@ export default function ContactUs() {
 		<Layout>
 			<Flex
 				p={{ base: 4, md: "16" }}
+				mb={{ base: 12 }}
 				align="flex-start"
 				justify="space-between"
 				height={{ base: "fit-content", md: "90vh" }}
@@ -257,14 +258,15 @@ export default function ContactUs() {
 				</Box>
 			</Flex>
 			<Flex
+				my={{ base: 12, md: "initial" }}
 				data-aos="fade-up"
 				p={{ base: 4, md: "16" }}
 				align="center"
 				direction={{ base: "column", md: "row" }}
 			>
 				<Box
-					mwidth={{ base: "100%", md: "60%" }}
-					p={{ base: 4, md: "16" }}
+					mWidth={{ base: "100%", md: "60%" }}
+					p={{ base: 0, md: "16" }}
 				>
 					<Text
 						mb="8"
@@ -283,11 +285,11 @@ export default function ContactUs() {
 						Our <br /> Headquarters
 					</Heading>
 					<Flex
-						gap={{ base: 2, md: "5" }}
+						gap={{ base: 2, md: 5 }}
 						my={{ base: 5, md: 12 }}
 						data-aos="fade-up"
 					>
-						<Box>
+						<Box maxWidth="50%">
 							<Heading
 								data-aos="fade-up"
 								as="h2"
@@ -301,8 +303,7 @@ export default function ContactUs() {
 								9813602, Miyagi ken kurokawa district, Ohira
 							</Text>
 						</Box>
-						<Divider orientation="vertical" color="#000" />
-						<Box>
+						<Box maxWidth="50%">
 							<Heading
 								as="h2"
 								mb="4"
