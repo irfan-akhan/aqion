@@ -6,9 +6,7 @@ export default function Layout({ children }) {
 	return (
 		<>
 			<Navbar />
-			<Container maxW="container.xl" placeContent="center">
-				{children}
-			</Container>
+			{children}
 			<Footer />
 		</>
 	);
