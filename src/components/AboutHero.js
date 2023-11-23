@@ -1,21 +1,21 @@
-import { Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 
 export default function AboutHero({ text, heading, bgImage }) {
 	return (
 		<Flex
-			bgImage={bgImage}
-			bgPosition="top"
-			minH="90vh"
-			align="flex-end"
-			color="#fff"
+			minH="95vh"
+			align="center"
+			direction="column"
+			color="#000"
 			justify="center"
+			p="36"
 		>
-			<Stack>
+			<Stack mb="36">
 				<Heading
+					textAlign={"center"}
 					as="h1"
 					width="fit-content"
-					mt="-30%"
 					fontSize={{ base: "xx-large", md: "4rem" }}
 				>
 					{heading}
@@ -30,6 +30,46 @@ export default function AboutHero({ text, heading, bgImage }) {
 					</Text>
 				)}
 			</Stack>
+			<Flex
+				my="5"
+				gap="10"
+				justify="center"
+				align="center"
+				// maxH="50vh"
+				// overflow="hidden"
+			>
+				<Stack width="55%">
+					<Heading
+						data-aos="fade-up"
+						as="h1"
+						width="fit-content"
+						mb="5"
+						fontSize={{ base: "xx-large", md: "xx-large" }}
+					>
+						Our Company
+					</Heading>
+
+					<Text
+						data-aos="fade-up"
+						data-aos-delay="20"
+						fontWeight="300"
+						fontSize={{ base: "medium", md: "x-large" }}
+					>
+						We build products for the next generation firms to
+						operate with higher efficiency and impact.
+					</Text>
+				</Stack>
+				<Box data-aos="fade-up">
+					<Image
+						boxShadow="10px 10px 0px 2px #4169E2"
+						border="2px solid #fff"
+						borderRadius="10"
+						src="/company.jpg"
+						width="450px"
+						objectFit="cover"
+					/>
+				</Box>
+			</Flex>
 		</Flex>
 	);
 }

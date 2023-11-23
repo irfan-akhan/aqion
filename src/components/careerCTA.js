@@ -1,0 +1,31 @@
+import { Flex, Heading, Box, Text } from "@chakra-ui/react";
+import React from "react";
+import CustomButton from "./partials/Button";
+
+export default function CareerCTA() {
+	return (
+		<Flex justify="space-between" p={{ base: 4, md: "24" }} gap="10">
+			<Box p="10" width="50%">
+				<Heading
+					data-aos="fade-up"
+					as="h1"
+					fontSize={{ base: "x-large", md: "xx-large" }}
+				>
+					We are looking for great people
+				</Heading>
+				<Text
+					my="5"
+					data-aos="fade-up"
+					fontWeight="300"
+					fontSize={{ base: "large", md: "1.4rem" }}
+				>
+					{`Interested in working with world-class team on problems that
+					really matter ? We are growing fast and hiring arcoss all
+					departments. Join us now.`}
+				</Text>
+				<CustomButton text="Explore Open positions" />
+			</Box>
+			<Box p="10"></Box>
+		</Flex>
+	);
+}

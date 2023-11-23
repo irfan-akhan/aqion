@@ -1,8 +1,7 @@
 import Layout from "@/components/Layout";
+import SalesContactCard from "@/components/SalesContactCard";
 import {
 	Box,
-	Container,
-	Divider,
 	Flex,
 	Image,
 	Heading,
@@ -345,7 +344,7 @@ export default function ContactUs() {
 					/>
 				</Flex>
 			</Flex>
-			<Flex
+			{/* <Flex
 				align="center"
 				justify="space-around"
 				p={{ base: 4, md: "16" }}
@@ -356,13 +355,12 @@ export default function ContactUs() {
 			>
 				<Flex
 					placeContent="center"
-					width={{ base: "50%" }}
 					p="4"
 					border="2px solid #4169e166"
 					boxShadow="10px 10px 0px 2px #4169E2"
 					textAlign="center"
 				>
-					<Image src="/contact.jpg" width="80%" />
+					<Image objectFit="fill" width="60%" src="/contact.jpg" />
 				</Flex>
 				<Box width={{ base: "50%" }} p="14">
 					<Text
@@ -391,7 +389,14 @@ export default function ContactUs() {
 						contact@aqion.jp
 					</Box>
 				</Box>
-			</Flex>
+			</Flex> */}
+			<SalesContactCard />
+			<SalesContactCard
+				heading={"Hakim Rakib"}
+				subText="Head of sales"
+				email="hrakib@aqion.jp"
+				imageUrl="/rakib.jpg"
+			/>
 		</Layout>
 	);
 }

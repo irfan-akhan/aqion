@@ -64,7 +64,7 @@ export default function Case({ bg }) {
 				</Text>
 				<Button
 					as="a"
-					href="/contact-us"
+					href="/contact-aqion-tech"
 					borderRadius="0"
 					variant="outline"
 					borderColor="#fff"

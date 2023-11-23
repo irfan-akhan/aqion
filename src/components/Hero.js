@@ -51,7 +51,7 @@ const Hero = () => {
 					link={true}
 					linkProps={{
 						name: "Let's collaborate",
-						path: "/contact-us",
+						path: "/contact-aqion-tech",
 					}}
 				/>
 			</Flex>

@@ -29,7 +29,7 @@ const NavLink = (props) => {
 				}}
 				fontWeight="300"
 				fontSize="large"
-				href={`/${children?.toLowerCase()}`}
+				href={`/${children?.toLowerCase()}-aqion-tech`}
 			>
 				{children}
 			</Box>
@@ -76,7 +76,10 @@ export default function Navbar() {
 				<Flex alignItems={"center"}>
 					<CustomButton
 						link={true}
-						linkProps={{ name: "Contact Us", path: "/contact-us" }}
+						linkProps={{
+							name: "Contact Us",
+							path: "/contact-aqion-tech",
+						}}
 					/>
 				</Flex>
 			</Flex>
