@@ -2,7 +2,7 @@ import { Box, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import CustomButton from "./partials/Button";
 
-const Hero = () => {
+const Hero = ({ heading, subHeading, text, imgUrl, linkProps }) => {
 	return (
 		<Flex
 			width="100wv"
@@ -28,8 +28,10 @@ const Hero = () => {
 						width="fit-content"
 						fontSize={{ base: "xx-large", md: "4rem" }}
 					>
-						We design, <br /> build and launch <br /> digital
-						products
+						{heading
+							? heading
+							: `We design,  build and launch  digital
+						products`}
 					</Heading>
 					<Text
 						fontWeight="300"
@@ -39,26 +41,34 @@ const Hero = () => {
 					</Text>
 				</Stack>
 
-				<Text
-					fontWeight="300"
-					px={{ base: "5", md: "0" }}
-					fontSize={{ base: "large", md: "x-large" }}
-				>
-					From idea discovery to product growth – we can help you at
-					every stage of the product development lifecycle.
-				</Text>
+				{
+					<Text
+						fontWeight="300"
+						px={{ base: "5", md: "0" }}
+						fontSize={{ base: "large", md: "x-large" }}
+					>
+						{text
+							? text
+							: `From idea discovery to product growth – we can help you at
+					every stage of the product development lifecycle.`}
+					</Text>
+				}
 				<CustomButton
 					link={true}
-					linkProps={{
-						name: "Let's collaborate",
-						path: "/contact-aqion-tech",
-					}}
+					linkProps={
+						linkProps
+							? linkProps
+							: {
+									name: "Let's collaborate",
+									path: "/contact-aqion-tech",
+							  }
+					}
 				/>
 			</Flex>
 
 			<Box width="50%" display={{ base: "none", md: "initial" }}>
 				<Image
-					src="/herobg1.jpg"
+					src={imgUrl ? imgUrl : "/herobg1.jpg"}
 					h="120%"
 					width="100%"
 					transition="all 1s ease-in"
