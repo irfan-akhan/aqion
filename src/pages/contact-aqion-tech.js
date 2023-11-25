@@ -70,6 +70,7 @@ export default function ContactUs() {
 					<Image
 						clipPath="polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)"
 						src="/srinagar.jpg"
+						alt="srinagar office"
 					/>
 				</Box>
 			</Flex>
@@ -330,6 +331,7 @@ export default function ContactUs() {
 						width="45%"
 						border="1px solid #000"
 						p="1"
+						alt="aqion"
 						transform="all 1s ease-in"
 						boxShadow="5px 5px 0px 0px  #030303"
 					/>
@@ -340,6 +342,7 @@ export default function ContactUs() {
 						marginTop={{ base: 0, md: "-24" }}
 						border="1px solid #000"
 						p="1"
+						alt="aqion"
 						boxShadow="5px 5px 0px 0px  #030303"
 					/>
 				</Flex>

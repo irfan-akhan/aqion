@@ -76,8 +76,9 @@ export default function StackCards() {
 				minW="80vw"
 			>
 				{roles && activeRole
-					? roles[activeRole].map((roleDetails) => (
+					? roles[activeRole].map((roleDetails, idx) => (
 							<Flex
+								key={idx}
 								align="center"
 								direction="column"
 								textAlign="center"
@@ -86,7 +87,7 @@ export default function StackCards() {
 									boxSize="70px"
 									objectFit="contain"
 									src={`/stack/${roleDetails}`}
-									alt="Dan Abramov"
+									alt={`${roleDetails}`}
 								/>
 								<Text
 									fontSize="small"

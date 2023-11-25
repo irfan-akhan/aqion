@@ -68,6 +68,7 @@ const Hero = ({ heading, subHeading, text, imgUrl, linkProps }) => {
 
 			<Box width="50%" display={{ base: "none", md: "initial" }}>
 				<Image
+					alt="aqion"
 					src={imgUrl ? imgUrl : "/herobg1.jpg"}
 					h="120%"
 					width="100%"

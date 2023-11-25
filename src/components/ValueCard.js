@@ -28,6 +28,7 @@ export default function ValueCard({ heading, text, subText, step }) {
 					width="500px"
 					height="350px"
 					objectFit="cover"
+					alt="team"
 				/>
 			</Box>
 		</Flex>

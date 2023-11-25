@@ -67,6 +67,7 @@ export default function AboutHero({ text, heading, bgImage }) {
 						src="/company.jpg"
 						width="450px"
 						objectFit="cover"
+						alt="aqion company"
 					/>
 				</Box>
 			</Flex>

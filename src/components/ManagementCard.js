@@ -13,7 +13,7 @@ export default function ManagementCard() {
 				boxShadow="10px 10px 0px 2px #4169E2"
 				textAlign="center"
 			>
-				<Image src="/contact.jpg" width="80%" />
+				<Image src="/contact.jpg" alt="aqion" width="80%" />
 			</Flex>
 			<Box width={{ base: "100%", md: "40%" }}>
 				<Flex gap="20">

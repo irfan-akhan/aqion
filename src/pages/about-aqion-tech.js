@@ -154,6 +154,7 @@ export default function About() {
 						clipPath="polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%)"
 						src="/people.jpg"
 						width="100%"
+						alt="people"
 					/>
 				</Box>
 			</Flex>

@@ -43,7 +43,7 @@ export default function Careers() {
 			/>
 
 			<Flex width="80%" p="12" m="auto" gap="15">
-				<Image src="teams.jpg" width="450px" />
+				<Image src="teams.jpg" width="450px" alt="team" />
 				<Box p="10">
 					<Heading mb="5">Be a Part of Something Big!</Heading>
 					<Text>

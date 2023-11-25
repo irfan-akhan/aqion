@@ -96,6 +96,7 @@ export default function Case({ bg }) {
 				<Image
 					src="/herobg1.jpg"
 					h="120%"
+					alt="aqion"
 					width="100%"
 					transition="all 1s ease-in"
 					_hover={{

@@ -24,7 +24,12 @@ export default function SalesContactCard({
 				boxShadow="10px 10px 0px 2px #4169E2"
 				textAlign="center"
 			>
-				<Image objectFit="fill" width="300px" src={imageUrl} />
+				<Image
+					alt="sales rep"
+					objectFit="fill"
+					width="300px"
+					src={imageUrl}
+				/>
 			</Flex>
 			<Box width={{ base: "50%" }} p="14">
 				{heading && (

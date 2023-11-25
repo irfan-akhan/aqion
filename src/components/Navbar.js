@@ -61,7 +61,7 @@ export default function Navbar() {
 				/>
 				<HStack spacing={8} alignItems={"center"}>
 					<Box as="a" href="/">
-						<Image src="/logo.png" width="100px" />
+						<Image src="/logo.png" alt="aqion" width="100px" />
 					</Box>
 					<HStack
 						as={"nav"}
