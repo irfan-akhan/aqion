@@ -42,8 +42,15 @@ export default function Careers() {
 				imgUrl="/teams.jpg"
 			/>
 
-			<Flex width="80%" p="12" m="auto" gap="15">
-				<Image src="teams.jpg" width="450px" alt="team" />
+			<Flex
+				width="80%"
+				p="12"
+				m="auto"
+				gap="15"
+				height="90vh"
+				overflow="hidden"
+			>
+				<Image src="/teams.jpg" width="950px" alt="team" />
 				<Box p="10">
 					<Heading mb="5">Be a Part of Something Big!</Heading>
 					<Text>
@@ -233,7 +240,7 @@ export default function Careers() {
 												fontSize="large"
 											>
 												Will I be recruited for a
-												specific role
+												specific role ?
 											</Box>
 											{isExpanded ? (
 												<MinusIcon fontSize="18px" />
@@ -267,7 +274,7 @@ export default function Careers() {
 												fontSize="large"
 											>
 												What does the onboarding process
-												look like
+												look like ?
 											</Box>
 											{isExpanded ? (
 												<MinusIcon fontSize="18px" />
@@ -278,17 +285,172 @@ export default function Careers() {
 									</h2>
 									<AccordionPanel pb={4}>
 										{`We want you to start working at
-										Apptension equipped with the broadest
+										Aqion equipped with the broadest
 										possible knowledge and tools that will
 										enable you to smoothly join the team.
 										For the first three days, we will invite
 										you to the office in Poznan, so that you
 										can meet the team face-to-face, get to
 										know our office and feel the vibe of
-										Apptension a little better. Then, with
+										Aqion a little better. Then, with
 										the support of the team and Team Leader
 										/ Manager, you will gradually learn your
 										responsibilities and tasks for the role.`}
+									</AccordionPanel>
+								</>
+							)}
+						</AccordionItem>
+						<AccordionItem>
+							{({ isExpanded }) => (
+								<>
+									<h2>
+										<AccordionButton>
+											<Box
+												as="span"
+												flex="1"
+												textAlign="left"
+												fontWeight="500"
+												fontSize="large"
+											>
+												How can I develop my skills
+												working at Aqion ?
+											</Box>
+											{isExpanded ? (
+												<MinusIcon fontSize="18px" />
+											) : (
+												<AddIcon fontSize="18px" />
+											)}
+										</AccordionButton>
+									</h2>
+									<AccordionPanel pb={4}>
+										{`At Aqion, we strive to ensure that
+										you can constantly develop your
+										competencies, we place great emphasis on
+										continuous learning and improvement of
+										hard and soft skills.Career paths will
+										be the first signposts for your
+										development, according to which,
+										together with your Team Leader or
+										Manager, you will plan the next steps
+										and goals of your professional
+										development. Our regular internal events
+										such as DevTalk, QAtalk, Product Talk,
+										Knowledge Shot, and Coffee break will
+										help you acquire useful technical
+										knowledge and develop your soft skills.`}
+									</AccordionPanel>
+								</>
+							)}
+						</AccordionItem>
+						<AccordionItem>
+							{({ isExpanded }) => (
+								<>
+									<h2>
+										<AccordionButton>
+											<Box
+												as="span"
+												flex="1"
+												textAlign="left"
+												fontWeight="500"
+												fontSize="large"
+											>
+												How can I develop my skills
+												working at Aqion ?
+											</Box>
+											{isExpanded ? (
+												<MinusIcon fontSize="18px" />
+											) : (
+												<AddIcon fontSize="18px" />
+											)}
+										</AccordionButton>
+									</h2>
+									<AccordionPanel pb={4}>
+										{`At Aqion, we strive to ensure that
+										you can constantly develop your
+										competencies, we place great emphasis on
+										continuous learning and improvement of
+										hard and soft skills.Career paths will
+										be the first signposts for your
+										development, according to which,
+										together with your Team Leader or
+										Manager, you will plan the next steps
+										and goals of your professional
+										development. Our regular internal events
+										such as DevTalk, QAtalk, Product Talk,
+										Knowledge Shot, and Coffee break will
+										help you acquire useful technical
+										knowledge and develop your soft skills.`}
+									</AccordionPanel>
+								</>
+							)}
+						</AccordionItem>
+						<AccordionItem>
+							{({ isExpanded }) => (
+								<>
+									<h2>
+										<AccordionButton>
+											<Box
+												as="span"
+												flex="1"
+												textAlign="left"
+												fontWeight="500"
+												fontSize="large"
+											>
+												Can I work part-time ?
+											</Box>
+											{isExpanded ? (
+												<MinusIcon fontSize="18px" />
+											) : (
+												<AddIcon fontSize="18px" />
+											)}
+										</AccordionButton>
+									</h2>
+									<AccordionPanel pb={4}>
+										{`Ultimately, we are looking for people to
+										join us full-time, which is related to
+										the business needs and those of our
+										clients. However, there are exceptions -
+										if you know that the situation is
+										temporary, because, for example, you
+										finish your studies and will become
+										available full-time for a few / several
+										weeks, it is worth trying. There is a
+										chance that we will find an optimal
+										solution for both parties.`}
+									</AccordionPanel>
+								</>
+							)}
+						</AccordionItem>
+						<AccordionItem>
+							{({ isExpanded }) => (
+								<>
+									<h2>
+										<AccordionButton>
+											<Box
+												as="span"
+												flex="1"
+												textAlign="left"
+												fontWeight="500"
+												fontSize="large"
+											>
+												Are there any internships at
+												Aqion ?
+											</Box>
+											{isExpanded ? (
+												<MinusIcon fontSize="18px" />
+											) : (
+												<AddIcon fontSize="18px" />
+											)}
+										</AccordionButton>
+									</h2>
+									<AccordionPanel pb={4}>
+										{`Due to the degree of difficulty and
+										advancement of the projects implemented
+										at Apptension, internships are organized
+										very rarely. In most cases, we are
+										looking for candidates who have already
+										gained at least several months of
+										commercial experience.`}
 									</AccordionPanel>
 								</>
 							)}

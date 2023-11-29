@@ -37,7 +37,9 @@ const Hero = ({ heading, subHeading, text, imgUrl, linkProps }) => {
 						fontWeight="300"
 						fontSize={{ base: "medium", md: "large" }}
 					>
-						Together we build inspiring digital products
+						{subHeading
+							? subHeading
+							: "Together we build inspiring digital products"}
 					</Text>
 				</Stack>
 
