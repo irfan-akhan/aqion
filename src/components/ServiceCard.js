@@ -37,7 +37,9 @@ export default function ServiceCard({ icon, heading, bg, color, text, items }) {
 			{items?.length ? (
 				<UnorderedList spacing="5">
 					{items.map((item) => (
-						<ListItem opacity={0.9}>{item}</ListItem>
+						<ListItem key={item} opacity={0.9}>
+							{item}
+						</ListItem>
 					))}
 				</UnorderedList>
 			) : (
