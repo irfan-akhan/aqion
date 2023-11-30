@@ -188,7 +188,7 @@ export default function Partner() {
 
 			<Button
 				as="a"
-				href="/contact-aqion-tech"
+				href="/services-aqion-tech"
 				borderRadius="0"
 				variant="outline"
 				borderColor="#000"

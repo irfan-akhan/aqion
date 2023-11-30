@@ -15,6 +15,7 @@ import { LiaProjectDiagramSolid } from "react-icons/lia";
 import { FaSpellCheck } from "react-icons/fa6";
 import {
 	FaAppStoreIos,
+	FaAws,
 	FaHeadSideVirus,
 	FaLaptopCode,
 	FaNodeJs,
@@ -273,8 +274,8 @@ export default function Services() {
 							border="1px solid blue"
 							p="3"
 						>
-							<TbBrandTypescript fontSize="50px" color="blue" />
-							<Text>Typescript</Text>
+							<FaAws fontSize="50px" color="blue" />
+							<Text>AWS</Text>
 						</Flex>
 					</Flex>
 					<Flex direction="column" width="50%" gap="5">
@@ -541,48 +542,6 @@ export default function Services() {
 					</Text>
 				</Box>
 			</Flex>
-			<Flex wrap="wrap" p="12" my="10" align="center" justify="center">
-				<ServiceCard
-					icon={<MdOutlineEngineering fontSize="6rem" />}
-					items={[
-						"MVP Development",
-						" Product Development",
-						"Cloud & DevOps",
-					]}
-					heading="Product Engineering"
-					text="We deliver powerful products using the right mix of front and back-end technologies."
-				/>
-				<ServiceCard
-					icon={<GrCloudSoftware fontSize="6rem" />}
-					items={[
-						"Digital Transformation",
-						"Content Management Solutions",
-						"Digital Commerce",
-					]}
-					heading="Digital Experience"
-					text="We help you delight your customers at each touchpoint with a uniform digital experience."
-				/>
-				<ServiceCard
-					icon={<RiStackFill fontSize="6rem" />}
-					items={[
-						"BI and Analytics",
-						"SaaS Application Development",
-						"Application Modernization",
-					]}
-					heading="Enterprise Solutions"
-					text="We help enterprises build, modernize, migrate & maintain new-age digital solutions."
-				/>
-				<ServiceCard
-					icon={<BsMegaphoneFill fontSize="6rem" />}
-					items={[
-						"Inbound Marketing",
-						"Content Marketing",
-						"Performance Marketing",
-					]}
-					heading="Growth Hacking"
-					text="We plan, execute, and optimize your marketing strategy to growth hack into success."
-				/>
-			</Flex>
 			<Flex
 				wrap="wrap"
 				p="12"
@@ -620,117 +579,7 @@ export default function Services() {
 					text="Our managed projects model allows you to get your projects fully handled by our team selected by you. Share your requirements & get started now!"
 				/>
 			</Flex>
-			{/* <Flex
-				justifyContent="space-between"
-				align="flex-start"
-				minH="50vh"
-				my="3"
-				textAlign="start"
-				p={{ base: 6, md: "24" }}
-				direction={{ base: "column", md: "row" }}
-				gap={{ base: 5, md: 0 }}
-			>
-				<Box>
-					<Text>01</Text>
-				</Box>
-				<Box>
-					<Text fontWeight="500" fontSize="x-large" textAlign="start">
-						Design
-					</Text>
-				</Box>
-				<UnorderedList spacing={4} fontSize="large" fontWeight="300">
-					<ListItem>UX/UI design</ListItem>
-					<ListItem>User flow</ListItem>
-					<ListItem>Wireframes</ListItem>
-				</UnorderedList>
-				<UnorderedList spacing={4} fontSize="large" fontWeight="300">
-					<ListItem>Prototyping</ListItem>
-					<ListItem>Brand identity</ListItem>
-					<ListItem>Usability testing</ListItem>
-				</UnorderedList>
-			</Flex>
-			<Flex
-				justifyContent="space-between"
-				align="flex-start"
-				minH="50vh"
-				my="3"
-				p={{ base: 6, md: "24" }}
-				direction={{ base: "column", md: "row" }}
-				gap={{ base: 5, md: 0 }}
-			>
-				<Box>
-					<Text>02</Text>
-				</Box>
-				<Box>
-					<Text fontWeight="500" fontSize="x-large">
-						Development
-					</Text>
-				</Box>
-				<UnorderedList spacing={4} fontSize="large" fontWeight="300">
-					<ListItem>Technical product discovery</ListItem>
-					<ListItem>Mobile apps</ListItem>
-					<ListItem>Web apps</ListItem>
-					<ListItem>Web platforms</ListItem>
-					<ListItem>eCommerce</ListItem>
-				</UnorderedList>
-				<UnorderedList spacing={4} fontSize="large" fontWeight="300">
-					<ListItem>Infrastructure</ListItem>
-					<ListItem>Data science</ListItem>
-					<ListItem>QA Automation</ListItem>
-				</UnorderedList>
-			</Flex>
-			<Flex
-				justifyContent="space-between"
-				align="flex-start"
-				minH="50vh"
-				my="3"
-				p={{ base: 6, md: "24" }}
-				direction={{ base: "column", md: "row" }}
-				gap={{ base: 5, md: 0 }}
-			>
-				<Box>
-					<Text>03</Text>
-				</Box>
-				<Box>
-					<Text fontWeight="500" fontSize="x-large">
-						Product/Team Scaling
-					</Text>
-				</Box>
-				<UnorderedList spacing={4} fontSize="large" fontWeight="300">
-					<ListItem>Team augmentation/ dedicated team</ListItem>
-					<ListItem>Agile product teams</ListItem>
-					<ListItem>Product ownership</ListItem>
-					<ListItem>DevOps</ListItem>
-				</UnorderedList>
-				<UnorderedList spacing={4} fontSize="large" fontWeight="300">
-					<ListItem>Cloud migration</ListItem>
-					<ListItem>Systems integration</ListItem>
-				</UnorderedList>
-			</Flex>
-			<Flex
-				justifyContent="space-between"
-				align="flex-start"
-				minH="50vh"
-				my="3"
-				p={{ base: 6, md: "24" }}
-				direction={{ base: "column", md: "row" }}
-				gap={{ base: 5, md: 0 }}
-			>
-				<Box>
-					<Text>04</Text>
-				</Box>
-				<Box>
-					<Text fontWeight="500" fontSize="x-large">
-						Strategic Support
-					</Text>
-				</Box>
-				<UnorderedList spacing={4} fontSize="large" fontWeight="300">
-					<ListItem>Business & product analysis</ListItem>
-				</UnorderedList>
-				<UnorderedList spacing={4} fontSize="large" fontWeight="300">
-					<ListItem>User Conversion</ListItem>
-				</UnorderedList>
-			</Flex> */}
+
 			{/* Approach */}
 			<Box p={{ base: 2, md: "12" }}>
 				<Heading
