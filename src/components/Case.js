@@ -8,9 +8,8 @@ import {
 	Text,
 } from "@chakra-ui/react";
 import React from "react";
-import CustomButton from "./partials/Button";
 
-export default function Case({ bg }) {
+export default function Case({ bg, build, title, text, banner }) {
 	return (
 		<Flex
 			data-aos="fade-up"
@@ -23,22 +22,24 @@ export default function Case({ bg }) {
 			direction={{ base: "column", md: "row" }}
 		>
 			<Flex
-				p={{ base: "4", md: "7rem" }}
+				p={{ base: "4", md: "5rem" }}
 				direction="column"
 				align={{ base: "center", md: "flex-start" }}
-				gap={{ base: "6", md: "8" }}
+				gap={{ base: "6" }}
 				maxW={{ base: "100%", md: "60%" }}
 			>
 				<Stack>
 					<Heading
 						as="h1"
 						width="fit-content"
-						mb="5"
+						mb="2"
 						fontSize={{ base: "large", md: "xx-large" }}
 						data-aos="fade-up"
 						data-aos-delay="20"
+						fontWeight="400"
+						// fontStyle="italic"
 					>
-						Title is here
+						{title}
 					</Heading>
 					<Heading
 						as="h1"
@@ -47,20 +48,19 @@ export default function Case({ bg }) {
 						data-aos="fade-up"
 						data-aos-delay="25"
 					>
-						We design, build and launch digital products
+						{build}
 					</Heading>
 				</Stack>
 
 				<Text
 					fontWeight={{ base: 300, md: "400" }}
-					px={{ base: "0", md: "0" }}
+					p={{ base: "0", md: "0" }}
 					width={{ base: "100%", md: "80%" }}
 					fontSize={{ base: "medium", md: "large" }}
 					data-aos="fade-up"
 					data-aos-delay="30"
 				>
-					From idea discovery to product growth – we can help you at
-					every stage of the product development lifecycle.
+					{text}
 				</Text>
 				<Button
 					as="a"
@@ -81,7 +81,6 @@ export default function Case({ bg }) {
 					padding="5"
 					color="#fff"
 					data-aos="fade-up"
-					data-aos-delay="30"
 				>
 					{`View case study ->`}
 				</Button>
@@ -94,7 +93,7 @@ export default function Case({ bg }) {
 				data-aos-delay="30"
 			>
 				<Image
-					src="/herobg1.jpg"
+					src={banner}
 					h="120%"
 					alt="aqion"
 					width="100%"

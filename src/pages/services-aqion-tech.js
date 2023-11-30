@@ -28,17 +28,12 @@ import Layout from "@/components/Layout";
 import ServiceCard from "@/components/ServiceCard";
 import { Box, Divider, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
-import { BsMegaphoneFill } from "react-icons/bs";
 import { MdOutlineEngineering } from "react-icons/md";
-import { RiStackFill } from "react-icons/ri";
-import { TfiAgenda } from "react-icons/tfi";
-import { GrCloudSoftware, GrMysql } from "react-icons/gr";
 import {
 	TbBrandFirebase,
 	TbBrandFlutter,
 	TbBrandReactNative,
 	TbBrandTeams,
-	TbBrandTypescript,
 } from "react-icons/tb";
 import { FaConnectdevelop } from "react-icons/fa";
 import { SiNginxproxymanager } from "react-icons/si";
