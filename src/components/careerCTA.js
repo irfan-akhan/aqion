@@ -23,7 +23,14 @@ export default function CareerCTA() {
 					really matter ? We are growing fast and hiring arcoss all
 					departments. Join us now.`}
 				</Text>
-				<CustomButton text="Explore Open positions" />
+				<CustomButton
+					text="Explore Open positions"
+					link={true}
+					linkProps={{
+						path: "/careers-aqion-tech",
+						name: "Explore Open positions",
+					}}
+				/>
 			</Box>
 			<Box p="10"></Box>
 		</Flex>

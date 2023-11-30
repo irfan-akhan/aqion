@@ -1,39 +1,515 @@
 import CTC from "@/components/CTC";
 import CoreValueCard from "@/components/CoreValueCard";
-import Hero from "@/components/Hero";
+import { FaNode, FaReact, FaReacteurope } from "react-icons/fa6";
+import {
+	SiMysql,
+	SiMongodb,
+	SiJavascript,
+	SiNextdotjs,
+	SiPython,
+} from "react-icons/si";
+import { MdJavascript, MdSupportAgent } from "react-icons/md";
+import { PiTargetLight } from "react-icons/pi";
+import { HiLightBulb } from "react-icons/hi";
+import { LiaProjectDiagramSolid } from "react-icons/lia";
+import { FaSpellCheck } from "react-icons/fa6";
+import {
+	FaAppStoreIos,
+	FaHeadSideVirus,
+	FaLaptopCode,
+	FaNodeJs,
+	FaPython,
+	FaWordpress,
+} from "react-icons/fa";
+import { GiBrainstorm } from "react-icons/gi";
+
 import Layout from "@/components/Layout";
 import ServiceCard from "@/components/ServiceCard";
-import {
-	Box,
-	Divider,
-	Flex,
-	Heading,
-	Image,
-	ListItem,
-	Text,
-	UnorderedList,
-} from "@chakra-ui/react";
+import { Box, Divider, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { BsMegaphoneFill } from "react-icons/bs";
 import { MdOutlineEngineering } from "react-icons/md";
 import { RiStackFill } from "react-icons/ri";
 import { TfiAgenda } from "react-icons/tfi";
-import { GrCloudSoftware } from "react-icons/gr";
-import { TbBrandTeams } from "react-icons/tb";
+import { GrCloudSoftware, GrMysql } from "react-icons/gr";
+import {
+	TbBrandFirebase,
+	TbBrandFlutter,
+	TbBrandReactNative,
+	TbBrandTeams,
+	TbBrandTypescript,
+} from "react-icons/tb";
 import { FaConnectdevelop } from "react-icons/fa";
 import { SiNginxproxymanager } from "react-icons/si";
+import AboutHero from "@/components/AboutHero";
+import Link from "next/link";
+import CustomButton from "@/components/partials/Button";
 
 export default function Services() {
 	return (
 		<Layout>
-			<Hero
-				linkProps={{
-					name: "View our work",
-					path: "/portfolio-aqion-tech",
-				}}
-				text="From idea to product launch and beyond."
-				heading="Closing the Gap Between Your Idea and Product"
-			/>
+			<Flex
+				direction="column"
+				justify="center"
+				align="center"
+				minH="90vh"
+				margin="auto"
+				width="70%"
+				textAlign="center"
+				gap="5"
+				mt="26"
+			>
+				<Heading color="blue" as="h2" fontSize="x-large">
+					A ONE-STOP-SHOP DEVELOPMENT PARTNER
+				</Heading>
+				<Heading as="h1" fontSize="xxx-large">
+					{`Custom software development services from professionals
+					you’ll enjoy working with`}
+				</Heading>
+				<Text fontSize="large" fontWeight="300">
+					{`Team up with superstar product designers, frontend/backend
+					developers and DevOps.Diverse
+					professionals. Numerous delivered projects. Full-cycle custom
+					software development services powered by years of best
+					practices.`}
+				</Text>
+			</Flex>
+			<Flex
+				direction="column"
+				justify="center"
+				align="center"
+				minH="90vh"
+				margin="auto"
+				width="80%"
+				textAlign="center"
+				gap="5"
+			>
+				<Heading as="h2" fontSize="xxx-large">
+					Our Software Application Development Services
+				</Heading>
+				<Flex
+					justify="space-between"
+					align="center"
+					textAlign="start"
+					p="6"
+					my="10"
+				>
+					<Flex direction="column" width="50%" gap="5">
+						<Image src="/product-design.svg" boxSize={"50px"} />
+						<Heading
+							as="h2"
+							_hover={{ color: "blue" }}
+							cursor="pointer"
+						>
+							Digital Product Design
+						</Heading>
+						<Text fontWeight="500" fontSize="large">
+							{`Turn a raw idea into a product millions can’t live without`}
+						</Text>
+						<Text fontSize="large" fontWeight="300">
+							{`The Software House designed branding and UX/UI that
+							impacted growth of financing platforms, educational
+							services, and even a neo-bank. Practicality,
+							repeated use, and A-grade speed are just a couple of
+							Design Thinking rules our custom software
+							development company lives by.`}
+						</Text>
+						<Link href="#" colorScheme="blue">
+							{`Learn more ->`}
+						</Link>
+					</Flex>
+					<Flex wrap="wrap" gap="3" justify="center" width="50%">
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							border="1px solid blue"
+							p="3"
+							rounded="5"
+						>
+							<FaHeadSideVirus fontSize="30px" color="blue" />
+							<Text my="3">Empathize</Text>
+						</Flex>
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							rounded="5"
+							border="1px solid blue"
+							p="3"
+						>
+							<PiTargetLight fontSize="40px" color="blue" />
+							<Text>Define</Text>
+						</Flex>
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							rounded="5"
+							border="1px solid blue"
+							p="3"
+						>
+							<HiLightBulb fontSize="40px" color="blue" />
+							<Text>Ideate</Text>
+						</Flex>
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							rounded="5"
+							border="1px solid blue"
+							p="3"
+						>
+							<LiaProjectDiagramSolid
+								fontSize="40px"
+								color="blue"
+							/>
+							<Text>Prototype</Text>
+						</Flex>
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							rounded="5"
+							border="1px solid blue"
+							p="3"
+						>
+							<FaSpellCheck fontSize="40px" color="blue" />
+							<Text>Test</Text>
+						</Flex>
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							rounded="5"
+							border="1px solid blue"
+							p="3"
+						>
+							<MdSupportAgent fontSize="40px" color="blue" />
+							<Text>Maintain</Text>
+						</Flex>
+					</Flex>
+				</Flex>
+				<Flex
+					justify="space-between"
+					align="center"
+					textAlign="start"
+					p="6"
+					my="10"
+				>
+					<Flex wrap="wrap" gap="3" justify="flex-start" width="50%">
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							border="1px solid blue"
+							p="3"
+							rounded="5"
+						>
+							<FaNode fontSize="50px" color="blue" />
+							<Text my="3">NodeJS</Text>
+						</Flex>
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							rounded="5"
+							border="1px solid blue"
+							p="3"
+						>
+							<FaReact fontSize="50px" color="blue" />
+							<Text>ReactJS</Text>
+						</Flex>
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							rounded="5"
+							border="1px solid blue"
+							p="3"
+						>
+							<SiNextdotjs fontSize="50px" color="blue" />
+							<Text>NextJS</Text>
+						</Flex>
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							rounded="5"
+							border="1px solid blue"
+							p="3"
+						>
+							<SiJavascript fontSize="50px" color="blue" />
+							<Text>Javascript</Text>
+						</Flex>
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							rounded="5"
+							border="1px solid blue"
+							p="3"
+						>
+							<SiPython fontSize="50px" color="blue" />
+							<Text>Python</Text>
+						</Flex>
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							rounded="5"
+							border="1px solid blue"
+							p="3"
+						>
+							<TbBrandTypescript fontSize="50px" color="blue" />
+							<Text>Typescript</Text>
+						</Flex>
+					</Flex>
+					<Flex direction="column" width="50%" gap="5">
+						<Image src="/web-development.svg" boxSize={"50px"} />
+						<Heading
+							as="h2"
+							_hover={{ color: "blue" }}
+							cursor="pointer"
+						>
+							Web Development
+						</Heading>
+						<Text fontWeight="500" fontSize="large">
+							{`Be certain the project is on track by choosing from
+							numberous professionals available for every stage of the
+							development process.`}
+						</Text>
+						<Text fontSize="large" fontWeight="300">
+							{`We design, build, refactor, migrate, architect, and
+							provide ongoing maintenance as part of custom
+							software development services. No hot fixes — only
+							scalable builds with technologies that stand the
+							test of time.`}
+						</Text>
+
+						<Text fontSize="large" fontWeight="300">
+							{`How much does performance matter to you? We aim for
+							grade A and a maximum 1s loading time for each custom
+							software solution.`}
+						</Text>
+						<Link href="#" colorScheme="blue">
+							{`Learn more ->`}
+						</Link>
+					</Flex>
+				</Flex>
+				<Flex
+					justify="space-between"
+					align="center"
+					textAlign="start"
+					p="6"
+					my="10"
+				>
+					<Flex direction="column" width="50%" gap="5">
+						<Image src="/product-design.svg" boxSize={"50px"} />
+						<Heading
+							as="h2"
+							_hover={{ color: "blue" }}
+							cursor="pointer"
+						>
+							Mobile Application Development
+						</Heading>
+						<Text fontWeight="500" fontSize="large">
+							{`Turn a raw idea into a product millions can’t live without`}
+						</Text>
+						<Text fontSize="large" fontWeight="300">
+							{`Leave your mobile app development tasks to us because we’ve been 
+							   in the business long enough to create immersive UIs for iOS and
+							 Android devices.`}
+						</Text>
+						<Link href="#" colorScheme="blue">
+							{`Learn more ->`}
+						</Link>
+					</Flex>
+					<Flex wrap="wrap" gap="3" justify="center" width="50%">
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							border="1px solid blue"
+							p="3"
+							rounded="5"
+						>
+							<TbBrandFirebase fontSize="60px" color="blue" />
+							<Text my="3">Firebase</Text>
+						</Flex>
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							rounded="5"
+							border="1px solid blue"
+							p="3"
+						>
+							<TbBrandReactNative fontSize="60px" color="blue" />
+							<Text>React Native</Text>
+						</Flex>
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							rounded="5"
+							border="1px solid blue"
+							p="3"
+						>
+							<TbBrandFlutter fontSize="40px" color="blue" />
+							<Text>Flutter</Text>
+						</Flex>
+					</Flex>
+				</Flex>
+
+				<Flex
+					justify="space-between"
+					align="center"
+					textAlign="start"
+					p="6"
+					my="10"
+				>
+					<Flex wrap="wrap" gap="3" justify="flex-start" width="50%">
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							border="1px solid blue"
+							p="3"
+							rounded="5"
+						>
+							<FaNode fontSize="60px" color="blue" />
+						</Flex>
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							rounded="5"
+							border="1px solid blue"
+							p="3"
+						>
+							<FaReact fontSize="60px" color="blue" />
+						</Flex>
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							rounded="5"
+							border="1px solid blue"
+							p="3"
+						>
+							<FaPython fontSize="60px" color="blue" />
+						</Flex>
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							rounded="5"
+							border="1px solid blue"
+							p="3"
+						>
+							<SiJavascript fontSize="60px" color="blue" />
+						</Flex>
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							rounded="5"
+							border="1px solid blue"
+							p="3"
+						>
+							<SiMysql fontSize="60px" color="blue" />
+						</Flex>
+						<Flex
+							direction="column "
+							justify="space-evenly"
+							align="center"
+							width="25%"
+							rounded="5"
+							border="1px solid blue"
+							p="3"
+						>
+							<FaWordpress fontSize="40px" color="blue" />
+						</Flex>
+					</Flex>
+					<Flex direction="column" width="50%" gap="5">
+						<Image src="/agile-development.svg" boxSize={"50px"} />
+						<Heading
+							as="h2"
+							_hover={{ color: "blue" }}
+							cursor="pointer"
+						>
+							Agile Development Teams on Demand
+						</Heading>
+						<Text fontWeight="500" fontSize="large">
+							{`Fill the talent gap for your custom software projects 
+							    in a few weeks.`}
+						</Text>
+						<Text fontSize="large" fontWeight="300">
+							{`With access to over 20+ proactive and social
+							professionals, you can form a durable development
+							team with frontend, backend, mobile or cloud services that
+							can assist you for years.`}
+						</Text>
+
+						<Text fontSize="large" fontWeight="300">
+							{`In their work, they follow multiple years of best custom
+							software development practices we documented. You’ll
+							be positively surprised with the very first sprint.`}
+						</Text>
+						<Link href="#" colorScheme="blue">
+							{`Learn more ->`}
+						</Link>
+					</Flex>
+				</Flex>
+			</Flex>
+			<Flex
+				gap="5"
+				bg="#f5f5f5"
+				p="12"
+				width="80%"
+				margin="auto"
+				my="10"
+				rounded="14"
+				align="center"
+				justify="center"
+				minH="50vh"
+			>
+				<Flex flexDir="column" gap="5">
+					<Heading>{`“Stakeholders are extremely pleased“`}</Heading>
+					<Text>
+						{`That’s what Percent’s Division head thinks about our 2
+						years of work. Need a development partner? Let’s have a
+						free and confidential chat.`}
+					</Text>
+				</Flex>
+				<Flex gap="5">
+					<CustomButton
+						rounded="20px"
+						text="Book free consultation"
+					/>
+				</Flex>
+			</Flex>
 			<Flex
 				width="100%"
 				p={{ base: 0, md: "20" }}

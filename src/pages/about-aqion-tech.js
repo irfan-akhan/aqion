@@ -11,7 +11,6 @@ export default function About() {
 		<Layout>
 			<AboutHero
 				bgImage="/team.jpg"
-				// heading="People remain our DNA"
 				heading="We empower companies to build great products"
 				text="Working in various businesses across multiple countries worldwide, we exceed industry boundaries each day."
 			/>
