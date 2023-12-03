@@ -136,8 +136,7 @@ export default function Project() {
 						technologies used
 					</Heading>
 					{Object.keys(technologies_used)?.map((area) => (
-						<Flex my="3">
-							key={area}
+						<Flex my="3" key={area}>
 							<Text
 								mr="5"
 								fontWeight={600}
