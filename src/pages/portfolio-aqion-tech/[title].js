@@ -40,7 +40,7 @@ export default function Project() {
 						{name}
 					</Heading>
 					<Text fontSize="large">{client}</Text>
-					<Image src={banner} />
+					<Image src={banner} alt={name} />
 				</Flex>
 				<Flex direction="column" p="12" my="24" gap="20">
 					<Box>

@@ -91,7 +91,11 @@ export default function Services() {
 					my="10"
 				>
 					<Flex direction="column" width="50%" gap="5">
-						<Image src="/product-design.svg" boxSize={"50px"} />
+						<Image
+							src="/product-design.svg"
+							alt="product-design"
+							boxSize={"50px"}
+						/>
 						<Heading
 							as="h2"
 							_hover={{ color: "blue" }}
@@ -274,7 +278,11 @@ export default function Services() {
 						</Flex>
 					</Flex>
 					<Flex direction="column" width="50%" gap="5">
-						<Image src="/web-development.svg" boxSize={"50px"} />
+						<Image
+							src="/web-development.svg"
+							alt="web development"
+							boxSize={"50px"}
+						/>
 						<Heading
 							as="h2"
 							_hover={{ color: "blue" }}
@@ -313,7 +321,11 @@ export default function Services() {
 					my="10"
 				>
 					<Flex direction="column" width="50%" gap="5">
-						<Image src="/product-design.svg" boxSize={"50px"} />
+						<Image
+							src="/product-design.svg"
+							alt="product-design"
+							boxSize={"50px"}
+						/>
 						<Heading
 							as="h2"
 							_hover={{ color: "blue" }}
@@ -449,7 +461,11 @@ export default function Services() {
 						</Flex>
 					</Flex>
 					<Flex direction="column" width="50%" gap="5">
-						<Image src="/agile-development.svg" boxSize={"50px"} />
+						<Image
+							src="/agile-development.svg"
+							alt="agile-development"
+							boxSize={"50px"}
+						/>
 						<Heading
 							as="h2"
 							_hover={{ color: "blue" }}
