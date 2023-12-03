@@ -2,9 +2,9 @@ import Case from "@/components/Case";
 import Layout from "@/components/Layout";
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
-import data from "../../lib/shuttlelane.json";
+import data from "../../../lib/data.json";
+import CaseStudies from "@/components/CaseStudies";
 export default function Portfolio() {
-	console.log("dara", data);
 	return (
 		<Layout>
 			<Flex
@@ -36,13 +36,7 @@ export default function Portfolio() {
 				p={{ base: 4, md: "10" }}
 				data-aos="fade-up"
 			>
-				<Case
-					bg={"red"}
-					title={data.name}
-					build={data.tagline}
-					text={data.client}
-					banner={data.banner}
-				/>
+				<CaseStudies />
 			</Flex>
 		</Layout>
 	);

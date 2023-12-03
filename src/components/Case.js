@@ -8,8 +8,11 @@ import {
 	Text,
 } from "@chakra-ui/react";
 import React from "react";
+import { useRouter } from "next/router";
 
-export default function Case({ bg, build, title, text, banner }) {
+export default function Case({ bg, build, title, text, banner, slug }) {
+	const router = useRouter();
+	console.log("slug is ", slug);
 	return (
 		<Flex
 			data-aos="fade-up"
@@ -37,7 +40,6 @@ export default function Case({ bg, build, title, text, banner }) {
 						data-aos="fade-up"
 						data-aos-delay="20"
 						fontWeight="400"
-						// fontStyle="italic"
 					>
 						{title}
 					</Heading>
@@ -63,8 +65,9 @@ export default function Case({ bg, build, title, text, banner }) {
 					{text}
 				</Text>
 				<Button
-					as="a"
-					href="/contact-aqion-tech"
+					onClick={() => {
+						router.push(`/portfolio-aqion-tech/${slug}`);
+					}}
 					borderRadius="0"
 					variant="outline"
 					borderColor="#fff"

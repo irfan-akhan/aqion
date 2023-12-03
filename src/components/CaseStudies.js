@@ -2,8 +2,7 @@ import React from "react";
 import Case from "./Case";
 import { Box, Flex } from "@chakra-ui/react";
 import CustomButton from "./partials/Button";
-import shuttlelane from "../../lib/shuttlelane.json";
-import kohstudio from "../../lib/kohstudio.json";
+import data from "../../lib/data.json";
 
 const bg = ["#006699", "#000000", "#431547", "#EC1D24", "#e6007e"];
 export default function CaseStudies() {
@@ -15,22 +14,24 @@ export default function CaseStudies() {
 			p={{ base: 4, md: "10" }}
 			data-aos="fade-up"
 		>
-			{[shuttlelane, kohstudio, shuttlelane, shuttlelane, kohstudio].map(
-				(item, idx) => (
-					<Case
-						key={idx}
-						bg={bg[idx]}
-						title={item.name}
-						build={item.tagline}
-						text={item.client}
-						banner={item.banner}
-					/>
-				)
-			)}
+			{Object.keys(data)?.map((item, idx) => (
+				<Case
+					key={idx}
+					bg={bg[idx]}
+					title={data[item].name}
+					build={data[item].tagline}
+					text={data[item].client}
+					banner={data[item].banner}
+					slug={data[item].slug}
+				/>
+			))}
 			<Box my="16">
 				<CustomButton
 					link={true}
-					linkProps={{ name: "View all project", path: "/portfolio" }}
+					linkProps={{
+						name: "View all project",
+						path: "/portfolio-aqion-tech",
+					}}
 				/>
 			</Box>
 		</Flex>
