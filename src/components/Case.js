@@ -65,9 +65,8 @@ export default function Case({ bg, build, title, text, banner, slug }) {
 					{text}
 				</Text>
 				<Button
-					onClick={() => {
-						router.push(`/portfolio-aqion-tech/${slug}`);
-					}}
+					as="a"
+					href={`/portfolio-aqion-tech/${slug}`}
 					borderRadius="0"
 					variant="outline"
 					borderColor="#fff"
