@@ -12,6 +12,7 @@
 				"/shuttlelane/shuttlelane-booking.png"
 			]
 		},
+		"timeline": ["1-2", "2-3", "3-7", "7-8"],
 		"slug": "shuttle-lane",
 		"tagline": "Advanced web platform for cab bookings",
 		"client": "Shuttle Lane, a prominent cab service provider operating in the UK and Africa.",
@@ -51,6 +52,7 @@
 				"/kohstudio/kohstudio-project-details.png"
 			]
 		},
+		"timeline": ["1-2", "2-3", "3-5", "5-6"],
 		"name": "Koh Studio",
 		"team_size": "3",
 		"services": ["UI/UX Design", "Prototype", "Web app", "Wireframes"],
@@ -58,7 +60,7 @@
 		"slug": "koh-studio",
 		"tagline": "Architecture Portfolio Website",
 		"client": "Koh Studio, an innovative architecture firm passionate about creating inspiring spaces.",
-		"banner": "/kohstudio/kohstudio-banner.jpg",
+		"banner": "/kohstudio/kohstudio-banner.png",
 		"objective": "Develop a cutting-edge portfolio website to showcase Koh Studio's architectural prowess, featuring a gallery of drawings, rendered images, and project photos. Additionally, integrate sections highlighting residential, commercial, and international projects, and implement a query form for client inquiries.",
 		"background": "Shuttle Lane aimed to redefine the cab service experience with a dynamic web platform. Our goal was to create a user-friendly interface for real-time bookings, a robust admin dashboard for efficient management, and seamless payment integration. The platform needed to cater to users across the UK and Africa, providing a secure and convenient way to book and pay for cab services.",
 		"technologies_used": {
@@ -90,6 +92,7 @@
 				"/seraab/seraabvalley-homepage.png"
 			]
 		},
+		"timeline": ["1-2", "2-3", "3-4", "4-5"],
 		"services": ["UI/UX Design", "Wireframes", "Web app", "eCommerce"],
 		"slug": "seraab-valley",
 		"industry": "Food/Fruits & retail",
@@ -133,6 +136,7 @@
 			"eCommerce",
 			"Web app"
 		],
+		"timeline": ["1-2", "2-4", "4-8", "8-9"],
 		"imageSet": {
 			"logo": "/hfs/hfs-logo.png",
 			"gallery": [
@@ -216,6 +220,7 @@
 			"Web app",
 			"QA automation"
 		],
+		"timeline": ["1-3", "3-5", "5-20", "20-22"],
 		"imageSet": {
 			"logo": "/kiadah/kiadah-logo.png",
 			"gallery": [
@@ -237,7 +242,7 @@
 		"tagline": "Kiadah online consultation for empowering Health and Your Wellness",
 		"name": "Kiadah Medical Consultation and Booking Application",
 		"client": "Kiadah healthcare organization based in Jammu and kashmir",
-		"overview": "",
+		"background": "Develop a comprehensive medical consultation and booking application with separate interfaces for doctors and patients, accompanied by a web-based admin panel for efficient management.",
 		"objective": "Develop a comprehensive medical consultation and booking application with separate interfaces for doctors and patients, accompanied by a web-based admin panel for efficient management.",
 		"deliverables": [
 			"Patient Application",

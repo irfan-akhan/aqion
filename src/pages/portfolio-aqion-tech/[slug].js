@@ -21,6 +21,7 @@ export default function Project({ caseStudy }) {
 		industry,
 		objective,
 		background,
+		timeline,
 		banner,
 		technologies_used = {},
 		features = {},
@@ -122,7 +123,20 @@ export default function Project({ caseStudy }) {
 						</Text>
 					</Box>
 				</Flex>
-				<Box my="24" bg="tan" height="90vh"></Box>
+				<Box my="24" height="90vh">
+					<Image src="/project-timeline.png" alt="project timeline" />
+					<Flex
+						justify="space-between"
+						px="16"
+						fontWeight="600"
+						color="gray"
+						mt="4"
+					>
+						{timeline.map((time, idx) => (
+							<Text key={idx}>{time} weeks</Text>
+						))}
+					</Flex>
+				</Box>
 				<Box my="24">
 					<Heading
 						fontSize="xxx-large"
