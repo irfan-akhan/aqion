@@ -12,7 +12,6 @@ import { useRouter } from "next/router";
 
 export default function Case({ bg, build, title, text, banner, slug }) {
 	const router = useRouter();
-	console.log("slug is ", slug);
 	return (
 		<Flex
 			data-aos="fade-up"
@@ -66,6 +65,7 @@ export default function Case({ bg, build, title, text, banner, slug }) {
 				</Text>
 				<Button
 					as="a"
+					prefetch
 					href={`/portfolio-aqion-tech/${slug}`}
 					borderRadius="0"
 					variant="outline"
@@ -77,7 +77,6 @@ export default function Case({ bg, build, title, text, banner, slug }) {
 					_hover={{
 						color: "white",
 						transform: "all 1s ease-in",
-						// borderColor: "transparent",
 						boxShadow: "3px 2px 0px 0px  #fff",
 					}}
 					padding="5"

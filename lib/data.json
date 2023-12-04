@@ -1,12 +1,23 @@
 {
 	"shuttle-lane": {
+		"services": ["UI/UX Design", "Prototype", "Web app", "Wireframes"],
+		"industry": "transportation",
 		"name": "Shuttle Lane Cab Servicing Platform",
+		"team_size": "4",
+		"imageSet": {
+			"logo": "/shuttlelane/shuttlelane-logo.png",
+			"gallery": [
+				"/shuttlelane/shuttlelane-banner.png",
+				"/shuttlelane/shuttlelane-homepage.png",
+				"/shuttlelane/shuttlelane-booking.png"
+			]
+		},
 		"slug": "shuttle-lane",
 		"tagline": "Advanced web platform for cab bookings",
 		"client": "Shuttle Lane, a prominent cab service provider operating in the UK and Africa.",
 		"objective": "Develop an advanced web platform enabling real-time cab bookings, efficient management of bookings, and seamless payment processing. The platform targeted both users and administrators, offering a streamlined experience for booking, updating availability, and managing payments.",
 		"background": "Shuttle Lane aimed to redefine the cab service experience with a dynamic web platform. Our goal was to create a user-friendly interface for real-time bookings, a robust admin dashboard for efficient management, and seamless payment integration. The platform needed to cater to users across the UK and Africa, providing a secure and convenient way to book and pay for cab services.",
-		"banner": "/shuttlelanebanner.png",
+		"banner": "/shuttlelane/shuttlelanebanner.png",
 		"technologies_used": {
 			"Backend": "MongoDB database and Node.js, with Mongoose as the ORM (Object-Relational Mapping) for database interactions.",
 			"Frontend": "HTML, CSS, JavaScript, Next.js, and Material UI for a responsive and visually appealing user interface.",
@@ -32,11 +43,22 @@
 		"future_enhancements": "Ongoing collaboration with Shuttle Lane includes plans for continuous improvement and feature enhancements, such as:       Integration of advanced analytics for data-driven decision-making.       Expansion of services to additional regions with tailored offerings."
 	},
 	"koh-studio": {
+		"imageSet": {
+			"gallery": [
+				"/kohstudio/kohstudio-banner.png",
+				"/kohstudio/kohstudio-homepage.png",
+				"/kohstudio/kohstudio-work.png",
+				"/kohstudio/kohstudio-project-details.png"
+			]
+		},
 		"name": "Koh Studio",
+		"team_size": "3",
+		"services": ["UI/UX Design", "Prototype", "Web app", "Wireframes"],
+		"industry": "Architecture & Building",
 		"slug": "koh-studio",
 		"tagline": "Architecture Portfolio Website",
 		"client": "Koh Studio, an innovative architecture firm passionate about creating inspiring spaces.",
-		"banner": "/kohbanner.jpg",
+		"banner": "/kohstudio/kohbanner.jpg",
 		"objective": "Develop a cutting-edge portfolio website to showcase Koh Studio's architectural prowess, featuring a gallery of drawings, rendered images, and project photos. Additionally, integrate sections highlighting residential, commercial, and international projects, and implement a query form for client inquiries.",
 		"background": "Shuttle Lane aimed to redefine the cab service experience with a dynamic web platform. Our goal was to create a user-friendly interface for real-time bookings, a robust admin dashboard for efficient management, and seamless payment integration. The platform needed to cater to users across the UK and Africa, providing a secure and convenient way to book and pay for cab services.",
 		"technologies_used": {
@@ -62,22 +84,24 @@
 		}
 	},
 	"seraab-valley": {
+		"imageSet": {
+			"gallery": [
+				"/seraab/seraabvalley-banner.png",
+				"/seraab/seraabvalley-homepage.png"
+			]
+		},
+		"services": ["UI/UX Design", "Wireframes", "Web app", "eCommerce"],
 		"slug": "seraab-valley",
+		"industry": "Food/Fruits & retail",
+		"team_size": "3",
 		"tagline": "E-commerce store",
-		"banner": "/seraabvalleybanner.png",
+		"banner": "/seraab/seraabvalleybanner.png",
 		"name": "Seerab Valley Dry Fruits E-commerce Platform",
 		"client": "Seerab Valley Dry fuits exporter rooted in the scenic Kashmir Valley",
 		"objective": "Develop a comprehensive web-based e-commerce platform for online presence and secure payment transactions.",
 		"background": "Leverage the growing trend of online shopping for premium dry fruits synonymous with the richness of Kashmir.",
 		"technologies_used": {
-			"Frontend": [
-				"HTML",
-				"CSS",
-				"JavaScript",
-				"Material-UI",
-				"React",
-				"Next.js"
-			],
+			"Frontend": "HTML, CSS, JavaScript, Material-UI, React & Next.js",
 			"Payment Processing": "Integrated Stripe, PayPal, and Flutterwave for diverse and secure payment options.",
 			"Backend": "MongoDB database and Node.js, with Mongoose as the ORM (Object-Relational Mapping) for database interactions."
 		},
@@ -88,10 +112,10 @@
 			"MobileResponsiveness": "Implemented a responsive design and developed a PWA for offline access, enhancing the mobile user experience."
 		},
 		"results": [
-			"IncreasedOnlineSales Seamless integration of a secure payment gateway contributed to a significant increase in online sales.",
-			"PositiveUserFeedback Customers praised the intuitive design, easy navigation, and visually appealing presentation of products.",
-			"ScalabilityPerformance The scalable architecture ensured seamless handling of a growing product catalog and user base, experiencing a surge in traffic without performance issues.",
-			"MobileUserEngagement Responsive design and PWA implementation improved mobile user engagement, leading to increased conversions."
+			"Increased Online Sales Seamless integration of a secure payment gateway contributed to a significant increase in online sales.",
+			"PositiveUser Feedback Customers praised the intuitive design, easy navigation, and visually appealing presentation of products.",
+			"Scalability Performance The scalable architecture ensured seamless handling of a growing product catalog and user base, experiencing a surge in traffic without performance issues.",
+			"Mobile UserEngagement Responsive design and PWA implementation improved mobile user engagement, leading to increased conversions."
 		],
 		"future_enhancements": {
 			"Plans": [
@@ -102,34 +126,46 @@
 		}
 	},
 	"high-fashion-society-kicks": {
+		"services": [
+			"UI/UX Design",
+			"Prototype",
+			"Wireframes",
+			"eCommerce",
+			"Web app"
+		],
+		"imageSet": {
+			"logo": "/hfs/hfs-logo.png",
+			"gallery": [
+				"/hfs/hfs-banner.png",
+				"/hfs/hfs-homepage.png",
+				"/hfs/hfs-product.png",
+				"/hfs/hfs-cart.png",
+				"/hfs/hfs-mobile.png",
+				"/hfs/hfs-product-mobile.png"
+			]
+		},
 		"slug": "high-fashion-society-kicks",
+		"industry": "Fashion & retail",
+		"team_size": "4",
 		"tagline": "Premium Sneaker E-commerce store",
 		"name": "HFS Kicks E-Commerce Platform",
-		"banner": "/hfsbanner.png",
-		"client": "HFS Kicks a fashion store based in uk selling premium quality sneakers",
-		"overview": "",
+		"banner": "/hfs/hfs-banner.png",
+		"client": "HFS Kicks a premium sneaker store based in uk selling premium quality sneakers",
+		"background": "Create an intuitive e-commerce solution for a premium sneaker store, optimizing user experience, inventory control, secure transactions, and social media integration to enhance customer engagement and elevate sales performance",
 		"objective": "Develop a comprehensive e-commerce platform specializing in the sale of shoes with a focus on a user-friendly interface, efficient shopping experience, and streamlined administrative tools.",
 		"technologies_used": {
-			"Frontend": [
-				"HTML",
-				"CSS",
-				"JavaScript",
-				"Bootstrap",
-				"Redux Toolkit",
-				"Next.js",
-				"React.js"
-			],
-			"Backend": ["Node.js", "Express.js", "MongoDB"],
+			"Frontend": "HTML, CSS, JavaScript, Bootstrap, Redux Toolkit, Next.js & React.js",
+			"Backend": "Node.js, Express.js, MongoDB, S3 & aws",
 			"PaymentGateway": "PayPal"
 		},
 		"features": {
-			"ProductCategorization": "Users can browse shoes categorized by brand names and sizes for a well-organized shopping experience.",
-			"ShoppingCart": "Seamless cart management allowing users to add products, review selections, and make individual purchases.",
-			"OrderTracking": "Customers can track the status of their orders, ensuring transparency throughout the delivery process.",
-			"SecurePaymentsWithPayPal": "Integration of PayPal for secure and convenient online transactions.",
-			"OrderManagement": "Comprehensive tools for administrators to efficiently track, process, and manage customer orders.",
-			"PaymentManagement": "Monitoring and management of payment transactions for accurate financial tracking.",
-			"InventoryManagement": "Admins can update and manage the inventory, ensuring accurate product availability."
+			"Product Categorization": "Users can browse shoes categorized by brand names and sizes for a well-organized shopping experience.",
+			"Shopping Cart": "Seamless cart management allowing users to add products, review selections, and make individual purchases.",
+			"Order Tracking": "Customers can track the status of their orders, ensuring transparency throughout the delivery process.",
+			"Secure Payments With PayPal": "Integration of PayPal for secure and convenient online transactions.",
+			"Order Management": "Comprehensive tools for administrators to efficiently track, process, and manage customer orders.",
+			"Payment Management": "Monitoring and management of payment transactions for accurate financial tracking.",
+			"Inventory Management": "Admins can update and manage the inventory, ensuring accurate product availability."
 		},
 		"TechnicalApproach": {
 			"FrontendDevelopment": {
@@ -157,9 +193,9 @@
 			}
 		},
 		"results": [
-			"UserEngagement Positive feedback from users on the user-friendly interface and seamless shopping experience.",
-			"EfficientOperations Admins benefited from efficient order management tools, leading to streamlined processes.",
-			"SecureTransactions The integration of PayPal ensured secure and trustworthy online transactions."
+			"User Engagement Positive feedback from users on the user-friendly interface and seamless shopping experience.",
+			"Efficient Operations Admins benefited from efficient order management tools, leading to streamlined processes.",
+			"Secure Transactions The integration of PayPal ensured secure and trustworthy online transactions."
 		],
 		"future_enhancements": {
 			"EnhancedAnalytics": "Implement advanced analytics for insights into user behavior and product performance.",
@@ -169,8 +205,35 @@
 		"Conclusion": "The HFS Kicks E-Commerce Platform successfully provides a seamless shopping experience for users and efficient tools for administrators. The chosen technologies contribute to the platform's speed, reliability, and security, positioning HFS Kicks as a competitive player in the e-commerce industry."
 	},
 	"kiadah": {
+		"services": [
+			"Product vision",
+			"Brand strategy / Brand identity",
+			"Strategy Product Discovery",
+			"UI/UX Design",
+			"User flow",
+			"Prototype",
+			"Mobile apps",
+			"Web app",
+			"QA automation"
+		],
+		"imageSet": {
+			"logo": "/kiadah/kiadah-logo.png",
+			"gallery": [
+				"/kiadah/kiadah-banner.png",
+				"/kiadah/kiadah-appointment.png",
+				"/kiadah/kiadah-login.png",
+				"/kiadah/kiadah-history.png",
+				"/kiadah/kiadah-homepage.png",
+				"/kiadah/kiadah-mock-1.png",
+				"/kiadah/kiadah-mock-2.png",
+				"/kiadah/kiadah-mock-3.png",
+				"/kiadah/kiadah-mock-4.png"
+			]
+		},
 		"slug": "kiadah",
-		"banner": "/kiadahbanner.png",
+		"industry": "Healthcare & Pharma",
+		"team_size": "7",
+		"banner": "/kiadah/kiadahbanner.png",
 		"tagline": "Kiadah online consultation for empowering Health and Your Wellness",
 		"name": "Kiadah Medical Consultation and Booking Application",
 		"client": "Kiadah healthcare organization based in Jammu and kashmir",
@@ -202,17 +265,14 @@
 			"AnalyticsReporting": "Provides analytical and graphical models of app activity for informed decision-making."
 		},
 		"PortfolioWebsite": "Created a dedicated website showcasing the project and provided download links for the application on App Store and Google Play Store.",
-		"technology_used": {
+		"technologies_used": {
 			"MobileAppDevelopment": "Flutter (Cross-platform framework).",
-			"Frontend": ["JSX", "CSS", "JavaScript", "NextJS", "Bootstrap"],
-			"Backend": ["JavaScript (Node.js assumed)", "MongoDB"],
+			"Frontend": "JSX, CSS, JavaScript, NextJS & Bootstrap",
+			"Backend": "JavaScript (Node.js assumed) & MongoDB",
 			"MessageQueueSystem": "RabbitMQ",
-			"CloudServices": ["AWS (Amazon S3, Nginx)"],
-			"ThirdPartyIntegrations": [
-				"Agora",
-				"Stream (assumed as Streamio)",
-				"Razorpay"
-			]
+			"CloudServices": "AWS, S3 &  Nginx",
+			"ThirdPartyIntegrations": "Agora,  Streamio & Razorpay",
+			"Payment Processing": "Razorpay"
 		},
 		"approach": {
 			"CrossPlatformDevelopment": "Utilized Flutter for cross-platform capabilities, reducing development time and costs.",
@@ -226,10 +286,10 @@
 			"FeedbackAnalytics": "Implemented a comprehensive feedback system for users and an analytics and reporting mechanism for administrators."
 		},
 		"results": [
-			"UserAdoption Positive feedback from both doctors and patients, indicating user satisfaction and adoption.",
-			"EfficientWorkflow Streamlined appointment booking, document management, and payment processes leading to an efficient healthcare workflow.",
-			"SecureCommunication Implementation of secure communication channels ensures the confidentiality of patient-doctor interactions.",
-			"FinancialTransparency Real-time financial tracking and automated deposit processes provide transparency for doctors."
+			"User Adoption Positive feedback from both doctors and patients, indicating user satisfaction and adoption.",
+			"Efficient Workflow Streamlined appointment booking, document management, and payment processes leading to an efficient healthcare workflow.",
+			"Secure Communication Implementation of secure communication channels ensures the confidentiality of patient-doctor interactions.",
+			"Financial Transparency Real-time financial tracking and automated deposit processes provide transparency for doctors."
 		],
 		"FutureEnhancements": {
 			"IntegrationWithHealthRecords": "Explore possibilities for integrating with electronic health record (EHR) systems for enhanced data management.",

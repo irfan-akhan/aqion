@@ -2,7 +2,6 @@ import Case from "@/components/Case";
 import Layout from "@/components/Layout";
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
-import data from "../../../lib/data.json";
 import CaseStudies from "@/components/CaseStudies";
 export default function Portfolio() {
 	return (
