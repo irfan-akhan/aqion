@@ -238,8 +238,8 @@ export default function Project({ caseStudy }) {
 						Visuals and Wireframes
 					</Heading>
 					<Flex wrap="wrap" gap="8">
-						{imageSet?.gallery.map((url) => (
-							<Image src={url} alt={name} />
+						{imageSet?.gallery.map((url, idx) => (
+							<Image src={url} key={idx} alt={name} />
 						))}
 					</Flex>
 				</Flex>
