@@ -11,8 +11,10 @@ export default function Slider({ urlSet }) {
 			showThumbs={true}
 			infiniteLoop
 		>
-			{urlSet.map((url) => {
-				return <Image src={url} height="auto" width="800px" />;
+			{urlSet.map((url, idx) => {
+				return (
+					<Image key={idx} src={url} height="auto" width="800px" />
+				);
 			})}
 		</Carousel>
 	);

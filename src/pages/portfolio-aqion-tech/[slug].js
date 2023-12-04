@@ -240,7 +240,7 @@ export default function Project({ caseStudy }) {
 					</Heading>
 					<Flex wrap="wrap" gap="8">
 						{imageSet?.gallery.map((url) => (
-							<Image src={url} />
+							<Image src={url} alt={name} />
 						))}
 						{/* <Carousel urlSet={imageSet?.gallery || []} /> */}
 					</Flex>
