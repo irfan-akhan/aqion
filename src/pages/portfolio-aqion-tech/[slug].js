@@ -10,7 +10,6 @@ import {
 import data from "../../../lib/data.json";
 import Layout from "@/components/Layout";
 import CoreValueCard from "@/components/CoreValueCard";
-import Carousel from "@/components/Carousel";
 
 export default function Project({ caseStudy }) {
 	const {
@@ -242,7 +241,6 @@ export default function Project({ caseStudy }) {
 						{imageSet?.gallery.map((url) => (
 							<Image src={url} alt={name} />
 						))}
-						{/* <Carousel urlSet={imageSet?.gallery || []} /> */}
 					</Flex>
 				</Flex>
 				<Flex direction="column" my="24">
