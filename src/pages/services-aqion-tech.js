@@ -79,18 +79,32 @@ export default function Services() {
 				width="80%"
 				textAlign="center"
 				gap="5"
+				data-aos="fade-up"
 			>
-				<Heading as="h2" fontSize="xxx-large">
+				<Heading
+					as="h2"
+					fontSize="xxx-large"
+					data-aos="fade-up"
+					data-aos-delay="200"
+				>
 					Our Software Application Development Services
 				</Heading>
 				<Flex
+					data-aos="fade-up"
+					data-aos-delay="200"
 					justify="space-between"
 					align="center"
 					textAlign="start"
 					p="6"
 					my="10"
 				>
-					<Flex direction="column" width="50%" gap="5">
+					<Flex
+						direction="column"
+						width="50%"
+						gap="5"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
 						<Image
 							src="/product-design.svg"
 							alt="product-design"
@@ -118,7 +132,14 @@ export default function Services() {
 							{`Learn more ->`}
 						</Link>
 					</Flex>
-					<Flex wrap="wrap" gap="3" justify="center" width="50%">
+					<Flex
+						wrap="wrap"
+						gap="3"
+						justify="center"
+						width="50%"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
 						<Flex
 							direction="column "
 							justify="space-evenly"
@@ -202,8 +223,17 @@ export default function Services() {
 					textAlign="start"
 					p="6"
 					my="10"
+					data-aos="fade-up"
+					data-aos-delay="200"
 				>
-					<Flex wrap="wrap" gap="3" justify="flex-start" width="50%">
+					<Flex
+						wrap="wrap"
+						gap="3"
+						justify="flex-start"
+						width="50%"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
 						<Flex
 							direction="column "
 							justify="space-evenly"
@@ -277,7 +307,13 @@ export default function Services() {
 							<Text>AWS</Text>
 						</Flex>
 					</Flex>
-					<Flex direction="column" width="50%" gap="5">
+					<Flex
+						direction="column"
+						width="50%"
+						gap="5"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
 						<Image
 							src="/web-development.svg"
 							alt="web development"
@@ -319,8 +355,15 @@ export default function Services() {
 					textAlign="start"
 					p="6"
 					my="10"
+					data-aos="fade-up"
 				>
-					<Flex direction="column" width="50%" gap="5">
+					<Flex
+						direction="column"
+						width="50%"
+						gap="5"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
 						<Image
 							src="/product-design.svg"
 							alt="product-design"
@@ -345,7 +388,14 @@ export default function Services() {
 							{`Learn more ->`}
 						</Link>
 					</Flex>
-					<Flex wrap="wrap" gap="3" justify="center" width="50%">
+					<Flex
+						data-aos="fade-up"
+						data-aos-delay="200"
+						wrap="wrap"
+						gap="3"
+						justify="center"
+						width="50%"
+					>
 						<Flex
 							direction="column "
 							justify="space-evenly"
@@ -391,8 +441,16 @@ export default function Services() {
 					textAlign="start"
 					p="6"
 					my="10"
+					data-aos="fade-up"
 				>
-					<Flex wrap="wrap" gap="3" justify="flex-start" width="50%">
+					<Flex
+						data-aos="fade-up"
+						data-aos-delay="200"
+						wrap="wrap"
+						gap="3"
+						justify="flex-start"
+						width="50%"
+					>
 						<Flex
 							direction="column "
 							justify="space-evenly"
@@ -460,7 +518,13 @@ export default function Services() {
 							<FaWordpress fontSize="40px" color="blue" />
 						</Flex>
 					</Flex>
-					<Flex direction="column" width="50%" gap="5">
+					<Flex
+						data-aos="fade-up"
+						data-aos-delay="200"
+						direction="column"
+						width="50%"
+						gap="5"
+					>
 						<Image
 							src="/agile-development.svg"
 							alt="agile-development"
@@ -506,6 +570,7 @@ export default function Services() {
 				align="center"
 				justify="center"
 				minH="50vh"
+				data-aos="fade-up"
 			>
 				<Flex flexDir="column" gap="5">
 					<Heading>{`“Stakeholders are extremely pleased“`}</Heading>
@@ -529,22 +594,27 @@ export default function Services() {
 				gap={{ base: 4, md: "15" }}
 				height={{ base: "fit-content", md: "90vh" }}
 				overflow="hidden"
+				data-aos="fade-up"
 			>
 				<Image
 					src="/people.jpg"
 					width="750px"
 					display={{ base: "none", md: "block" }}
 					alt="teams"
+					data-aos="fade-up"
+					data-aos-delay="200"
 				/>
 				<Box p={{ base: "5", md: "10" }}>
 					<Heading
 						as="h2"
+						data-aos="fade-up"
+						data-aos-delay="20"
 						fontSize={{ base: "x-large", md: "xxx-large" }}
 						mb="5"
 					>
 						What We Do
 					</Heading>
-					<Text>
+					<Text data-aos="fade-up" data-aos-delay="250">
 						Product form and functionality alone are not enough to
 						compete in an extremely competitive market. To stand
 						out, we design smart, simple, and human-centric products
@@ -554,6 +624,7 @@ export default function Services() {
 				</Box>
 			</Flex>
 			<Flex
+				data-aos="fade-up"
 				wrap="wrap"
 				p="12"
 				my="10"
@@ -598,10 +669,13 @@ export default function Services() {
 					as="h2"
 					fontSize={{ base: "x-large", md: "xxx-large" }}
 					pb="0"
+					data-aos="fade-up"
 				>
 					AQION Client approach
 				</Heading>
 				<Flex
+					data-aos="fade-up"
+					data-aos-delay="200"
 					justifyContent="space-between"
 					align="flex-start"
 					p={{ base: 2, md: "12" }}
@@ -631,6 +705,7 @@ export default function Services() {
 				</Flex>
 				<Divider />
 				<Flex
+					data-aos="fade-up"
 					justifyContent="space-between"
 					align="flex-start"
 					p={{ base: 2, md: "12" }}
@@ -661,6 +736,7 @@ export default function Services() {
 				</Flex>
 				<Divider />
 				<Flex
+					data-aos="fade-up"
 					justifyContent="space-between"
 					align="flex-start"
 					p={{ base: 2, md: "12" }}
@@ -697,10 +773,12 @@ export default function Services() {
 				wrap="wrap"
 				mt="5"
 				direction={{ base: "column" }}
+				data-aos="fade-up"
 			>
 				<Heading
 					width="100%"
 					data-aos="fade-up"
+					data-aos-delay="200"
 					as="h2"
 					fontSize={{ base: "x-large", md: "xxx-large" }}
 					alignSelf="flex-start"
@@ -709,7 +787,7 @@ export default function Services() {
 				>
 					Why parter with AQION ?
 				</Heading>
-				<Flex wrap="wrap" gap="10">
+				<Flex wrap="wrap" gap="10" data-aos="fade-up">
 					<CoreValueCard
 						heading="Pixel-perfect designs"
 						text={`We’re quality-oriented with great attention to detail and design accuracy.`}

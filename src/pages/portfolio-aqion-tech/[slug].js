@@ -35,8 +35,14 @@ export default function Project({ caseStudy }) {
 		<Layout>
 			<Box width="80vw" margin="auto">
 				<Flex>
-					<Flex direction="column" my="24" minH="90vh" gap="5">
-						<Flex>
+					<Flex
+						direction="column"
+						my="24"
+						minH="90vh"
+						gap="5"
+						data-aos="fade-up"
+					>
+						<Flex data-aos="fade-up" data-aos-delay="200">
 							{imageSet?.logo && (
 								<Image
 									src={imageSet.logo}
@@ -49,27 +55,51 @@ export default function Project({ caseStudy }) {
 								{name}
 							</Heading>
 						</Flex>
-						<Text fontSize="large">{client}</Text>
-						<Image src={banner} alt={name} />
+						<Text
+							data-aos="fade-up"
+							data-aos-delay="200"
+							fontSize="large"
+						>
+							{client}
+						</Text>
+						<Image
+							data-aos="fade-up"
+							data-aos-delay="200"
+							src={banner}
+							alt={name}
+						/>
 					</Flex>
 				</Flex>
-				<Flex direction="column" my="24" gap="5">
+				<Flex data-aos="fade-up" direction="column" my="24" gap="5">
 					<Heading
+						data-aos="fade-up"
+						data-aos-delay="200"
 						as="h1"
 						fontSize="xxx-large"
 						textTransform="capitalize"
 					>
 						What we did
 					</Heading>
-					<Flex my="5">
+					<Flex my="5" data-aos="fade-up" data-aos-delay="200">
 						<Box>
 							<UnorderedList spacing="5">
 								{services?.map((service) => (
-									<ListItem key={service}>{service}</ListItem>
+									<ListItem
+										data-aos="fade-up"
+										data-aos-delay="200"
+										key={service}
+									>
+										{service}
+									</ListItem>
 								))}
 							</UnorderedList>
 						</Box>
-						<Box ml="auto" px="3">
+						<Box
+							ml="auto"
+							px="3"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
 							<Text
 								fontSize="large"
 								textTransform="uppercase"
@@ -95,17 +125,24 @@ export default function Project({ caseStudy }) {
 						</Box>
 					</Flex>
 				</Flex>
-				<Flex direction="column" my="24" gap="20">
+				<Flex data-aos="fade-up" direction="column" my="24" gap="20">
 					<Box>
 						<Heading
 							my="5"
 							fontSize="xxx-large"
 							as="h2"
 							fontWeight="600"
+							data-aos="fade-up"
+							data-aos-delay="200"
 						>
 							Objective
 						</Heading>
-						<Text fontWeight="300" fontSize="large">
+						<Text
+							fontWeight="300"
+							fontSize="large"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
 							{objective}
 						</Text>
 					</Box>
@@ -115,16 +152,28 @@ export default function Project({ caseStudy }) {
 							fontSize="xxx-large"
 							as="h2"
 							fontWeight="600"
+							data-aos="fade-up"
+							data-aos-delay="200"
 						>
 							background
 						</Heading>
-						<Text fontWeight="300" fontSize="large">
+						<Text
+							fontWeight="300"
+							fontSize="large"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
 							{background}
 						</Text>
 					</Box>
 				</Flex>
-				<Box my="24" height="90vh">
-					<Image src="/project-timeline.png" alt="project timeline" />
+				<Box data-aos="fade-up" my="24" height="90vh">
+					<Image
+						src="/project-timeline.png"
+						alt="project timeline"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					/>
 					<Flex
 						justify="space-between"
 						px="16"
@@ -133,22 +182,36 @@ export default function Project({ caseStudy }) {
 						mt="4"
 					>
 						{timeline.map((time, idx) => (
-							<Text key={idx}>{time} weeks</Text>
+							<Text
+								data-aos="fade-up"
+								data-aos-delay="200"
+								key={idx}
+							>
+								{time} weeks
+							</Text>
 						))}
 					</Flex>
 				</Box>
-				<Box my="24">
+				<Box data-aos="fade-up" my="24">
 					<Heading
 						fontSize="xxx-large"
 						as="h2"
 						fontWeight="600"
 						mb="12"
 						textTransform="capitalize"
+						data-aos="fade-up"
+						data-aos-delay="200"
 					>
 						What we build
 					</Heading>
 					<Flex gap="24">
-						<Text width="70%" fontWeight="300" fontSize="large">
+						<Text
+							width="70%"
+							data-aos="fade-up"
+							data-aos-delay="200"
+							fontWeight="300"
+							fontSize="large"
+						>
 							Through collaboration with Q, The Times Travel was
 							able to implement and create a new web app with a
 							diverse approach to the traveling experience.
@@ -162,6 +225,8 @@ export default function Project({ caseStudy }) {
 								mb="4"
 								fontWeight="400"
 								fontSize="x-large"
+								data-aos="fade-up"
+								data-aos-delay="200"
 							>
 								Deliverables
 							</Heading>
@@ -169,6 +234,8 @@ export default function Project({ caseStudy }) {
 								{deliverables ? (
 									deliverables.map((item) => (
 										<ListItem
+											data-aos="fade-up"
+											data-aos-delay="200"
 											key={item}
 											fontWeight="300"
 											fontSize="large"
@@ -179,12 +246,16 @@ export default function Project({ caseStudy }) {
 								) : (
 									<>
 										<ListItem
+											data-aos="fade-up"
+											data-aos-delay="200"
 											fontWeight="300"
 											fontSize="large"
 										>
 											Web app
 										</ListItem>
 										<ListItem
+											data-aos="fade-up"
+											data-aos-delay="200"
 											fontWeight="300"
 											fontSize="large"
 										>
@@ -196,11 +267,13 @@ export default function Project({ caseStudy }) {
 						</Box>
 					</Flex>
 				</Box>
-				<Box my="24">
+				<Box data-aos="fade-up" my="24">
 					<Heading
 						fontSize="xxx-large"
 						as="h2"
 						fontWeight="600"
+						data-aos="fade-up"
+						data-aos-delay="200"
 						mb="12"
 						textTransform="capitalize"
 					>
@@ -209,20 +282,29 @@ export default function Project({ caseStudy }) {
 					{Object.keys(technologies_used)?.map((area) => (
 						<Flex my="3" key={area}>
 							<Text
+								data-aos="fade-up"
+								data-aos-delay="200"
 								mr="5"
 								fontWeight={600}
 								textTransform="capitalize"
 							>
 								{area}
 							</Text>
-							<Text fontWeight="300" fontSize="large">
+							<Text
+								fontWeight="300"
+								fontSize="large"
+								data-aos="fade-up"
+								data-aos-delay="200"
+							>
 								{technologies_used[area]}
 							</Text>
 						</Flex>
 					))}
 				</Box>
-				<Flex direction="column" my="24">
+				<Flex data-aos="fade-up" direction="column" my="24">
 					<Heading
+						data-aos="fade-up"
+						data-aos-delay="200"
 						fontSize="xxx-large"
 						as="h2"
 						fontWeight="600"
@@ -231,7 +313,12 @@ export default function Project({ caseStudy }) {
 					>
 						Features
 					</Heading>
-					<Flex wrap="wrap" gap="8">
+					<Flex
+						data-aos="fade-up"
+						data-aos-delay="200"
+						wrap="wrap"
+						gap="8"
+					>
 						{Object.keys(features)?.map((feature, idx) => (
 							<CoreValueCard
 								key={idx}
@@ -241,8 +328,10 @@ export default function Project({ caseStudy }) {
 						))}
 					</Flex>
 				</Flex>
-				<Flex direction="column" my="24">
+				<Flex data-aos="fade-up" direction="column" my="24">
 					<Heading
+						data-aos="fade-up"
+						data-aos-delay="200"
 						fontSize="xxx-large"
 						as="h2"
 						fontWeight="600"
@@ -253,12 +342,20 @@ export default function Project({ caseStudy }) {
 					</Heading>
 					<Flex wrap="wrap" gap="8">
 						{imageSet?.gallery.map((url, idx) => (
-							<Image src={url} key={idx} alt={name} />
+							<Image
+								data-aos="fade-up"
+								data-aos-delay="200"
+								src={url}
+								key={idx}
+								alt={name}
+							/>
 						))}
 					</Flex>
 				</Flex>
-				<Flex direction="column" my="24">
+				<Flex data-aos="fade-up" direction="column" my="24">
 					<Heading
+						data-aos="fade-up"
+						data-aos-delay="200"
 						fontSize="xxx-large"
 						as="h2"
 						fontWeight="600"
@@ -269,6 +366,8 @@ export default function Project({ caseStudy }) {
 					</Heading>
 					{results?.map((result, idx) => (
 						<Text
+							data-aos="fade-up"
+							data-aos-delay="200"
 							fontSize="large"
 							key={idx}
 							fontWeight="300"

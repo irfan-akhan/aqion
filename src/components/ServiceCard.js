@@ -19,8 +19,9 @@ export default function ServiceCard({ icon, heading, bg, color, text, items }) {
 			bg={bg ? bg : "#000"}
 			color={color ? color : "#fff"}
 			m="5"
+			data-aos="fade-up"
 		>
-			<Box>
+			<Box data-aos="fade-up" data-aos-delay="200">
 				{icon}
 				<Heading
 					as="h2"
@@ -33,11 +34,18 @@ export default function ServiceCard({ icon, heading, bg, color, text, items }) {
 					{heading}
 				</Heading>
 			</Box>
-			<Text>{text}</Text>
+			<Text data-aos="fade-up" data-aos-delay="200">
+				{text}
+			</Text>
 			{items?.length ? (
 				<UnorderedList spacing="5">
 					{items.map((item) => (
-						<ListItem key={item} opacity={0.9}>
+						<ListItem
+							data-aos="fade-up"
+							data-aos-delay="250"
+							key={item}
+							opacity={0.9}
+						>
 							{item}
 						</ListItem>
 					))}
