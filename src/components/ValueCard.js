@@ -13,7 +13,7 @@ export default function ValueCard({ heading, text, subText, step }) {
 			bg="#000"
 		>
 			<Box>
-				<Text fontSize="4rem" color="blue">
+				<Text fontSize="4rem" color=" #4169E2">
 					{step}
 				</Text>
 				<Text mb="4" fontSize="xxx-large">

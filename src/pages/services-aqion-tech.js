@@ -55,7 +55,7 @@ export default function Services() {
 				gap="5"
 				mt="26"
 			>
-				<Heading color="blue" as="h2" fontSize="x-large">
+				<Heading color=" #4169E2" as="h2" fontSize="x-large">
 					A ONE-STOP-SHOP DEVELOPMENT PARTNER
 				</Heading>
 				<Heading as="h1" fontSize="xxx-large">
@@ -112,7 +112,7 @@ export default function Services() {
 						/>
 						<Heading
 							as="h2"
-							_hover={{ color: "blue" }}
+							_hover={{ color: " #4169E2" }}
 							cursor="pointer"
 						>
 							Digital Product Design
@@ -128,7 +128,7 @@ export default function Services() {
 							Design Thinking rules our custom software
 							development company lives by.`}
 						</Text>
-						<Link href="#" colorScheme="blue">
+						<Link href="#" colorScheme=" #4169E2">
 							{`Learn more ->`}
 						</Link>
 					</Flex>
@@ -145,11 +145,11 @@ export default function Services() {
 							justify="space-evenly"
 							align="center"
 							width="25%"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 							rounded="5"
 						>
-							<FaHeadSideVirus fontSize="30px" color="blue" />
+							<FaHeadSideVirus fontSize="30px" color=" #4169E2" />
 							<Text my="3">Empathize</Text>
 						</Flex>
 						<Flex
@@ -158,10 +158,10 @@ export default function Services() {
 							align="center"
 							width="25%"
 							rounded="5"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 						>
-							<PiTargetLight fontSize="40px" color="blue" />
+							<PiTargetLight fontSize="40px" color=" #4169E2" />
 							<Text>Define</Text>
 						</Flex>
 						<Flex
@@ -170,10 +170,10 @@ export default function Services() {
 							align="center"
 							width="25%"
 							rounded="5"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 						>
-							<HiLightBulb fontSize="40px" color="blue" />
+							<HiLightBulb fontSize="40px" color=" #4169E2" />
 							<Text>Ideate</Text>
 						</Flex>
 						<Flex
@@ -182,12 +182,12 @@ export default function Services() {
 							align="center"
 							width="25%"
 							rounded="5"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 						>
 							<LiaProjectDiagramSolid
 								fontSize="40px"
-								color="blue"
+								color=" #4169E2"
 							/>
 							<Text>Prototype</Text>
 						</Flex>
@@ -197,10 +197,10 @@ export default function Services() {
 							align="center"
 							width="25%"
 							rounded="5"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 						>
-							<FaSpellCheck fontSize="40px" color="blue" />
+							<FaSpellCheck fontSize="40px" color=" #4169E2" />
 							<Text>Test</Text>
 						</Flex>
 						<Flex
@@ -209,10 +209,10 @@ export default function Services() {
 							align="center"
 							width="25%"
 							rounded="5"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 						>
-							<MdSupportAgent fontSize="40px" color="blue" />
+							<MdSupportAgent fontSize="40px" color=" #4169E2" />
 							<Text>Maintain</Text>
 						</Flex>
 					</Flex>
@@ -239,11 +239,11 @@ export default function Services() {
 							justify="space-evenly"
 							align="center"
 							width="25%"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 							rounded="5"
 						>
-							<FaNode fontSize="50px" color="blue" />
+							<FaNode fontSize="50px" color=" #4169E2" />
 							<Text my="3">NodeJS</Text>
 						</Flex>
 						<Flex
@@ -252,10 +252,10 @@ export default function Services() {
 							align="center"
 							width="25%"
 							rounded="5"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 						>
-							<FaReact fontSize="50px" color="blue" />
+							<FaReact fontSize="50px" color=" #4169E2" />
 							<Text>ReactJS</Text>
 						</Flex>
 						<Flex
@@ -264,10 +264,10 @@ export default function Services() {
 							align="center"
 							width="25%"
 							rounded="5"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 						>
-							<SiNextdotjs fontSize="50px" color="blue" />
+							<SiNextdotjs fontSize="50px" color=" #4169E2" />
 							<Text>NextJS</Text>
 						</Flex>
 						<Flex
@@ -276,10 +276,10 @@ export default function Services() {
 							align="center"
 							width="25%"
 							rounded="5"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 						>
-							<SiJavascript fontSize="50px" color="blue" />
+							<SiJavascript fontSize="50px" color=" #4169E2" />
 							<Text>Javascript</Text>
 						</Flex>
 						<Flex
@@ -288,10 +288,10 @@ export default function Services() {
 							align="center"
 							width="25%"
 							rounded="5"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 						>
-							<SiPython fontSize="50px" color="blue" />
+							<SiPython fontSize="50px" color=" #4169E2" />
 							<Text>Python</Text>
 						</Flex>
 						<Flex
@@ -300,10 +300,10 @@ export default function Services() {
 							align="center"
 							width="25%"
 							rounded="5"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 						>
-							<FaAws fontSize="50px" color="blue" />
+							<FaAws fontSize="50px" color=" #4169E2" />
 							<Text>AWS</Text>
 						</Flex>
 					</Flex>
@@ -321,7 +321,7 @@ export default function Services() {
 						/>
 						<Heading
 							as="h2"
-							_hover={{ color: "blue" }}
+							_hover={{ color: " #4169E2" }}
 							cursor="pointer"
 						>
 							Web Development
@@ -344,7 +344,7 @@ export default function Services() {
 							grade A and a maximum 1s loading time for each custom
 							software solution.`}
 						</Text>
-						<Link href="#" colorScheme="blue">
+						<Link href="#" colorScheme=" #4169E2">
 							{`Learn more ->`}
 						</Link>
 					</Flex>
@@ -371,7 +371,7 @@ export default function Services() {
 						/>
 						<Heading
 							as="h2"
-							_hover={{ color: "blue" }}
+							_hover={{ color: " #4169E2" }}
 							cursor="pointer"
 						>
 							Mobile Application Development
@@ -384,7 +384,7 @@ export default function Services() {
 							   in the business long enough to create immersive UIs for iOS and
 							 Android devices.`}
 						</Text>
-						<Link href="#" colorScheme="blue">
+						<Link href="#" colorScheme=" #4169E2">
 							{`Learn more ->`}
 						</Link>
 					</Flex>
@@ -401,11 +401,11 @@ export default function Services() {
 							justify="space-evenly"
 							align="center"
 							width="25%"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 							rounded="5"
 						>
-							<TbBrandFirebase fontSize="60px" color="blue" />
+							<TbBrandFirebase fontSize="60px" color=" #4169E2" />
 							<Text my="3">Firebase</Text>
 						</Flex>
 						<Flex
@@ -414,10 +414,13 @@ export default function Services() {
 							align="center"
 							width="25%"
 							rounded="5"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 						>
-							<TbBrandReactNative fontSize="60px" color="blue" />
+							<TbBrandReactNative
+								fontSize="60px"
+								color=" #4169E2"
+							/>
 							<Text>React Native</Text>
 						</Flex>
 						<Flex
@@ -426,10 +429,10 @@ export default function Services() {
 							align="center"
 							width="25%"
 							rounded="5"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 						>
-							<TbBrandFlutter fontSize="40px" color="blue" />
+							<TbBrandFlutter fontSize="40px" color=" #4169E2" />
 							<Text>Flutter</Text>
 						</Flex>
 					</Flex>
@@ -456,11 +459,11 @@ export default function Services() {
 							justify="space-evenly"
 							align="center"
 							width="25%"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 							rounded="5"
 						>
-							<FaNode fontSize="60px" color="blue" />
+							<FaNode fontSize="60px" color=" #4169E2" />
 						</Flex>
 						<Flex
 							direction="column "
@@ -468,10 +471,10 @@ export default function Services() {
 							align="center"
 							width="25%"
 							rounded="5"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 						>
-							<FaReact fontSize="60px" color="blue" />
+							<FaReact fontSize="60px" color=" #4169E2" />
 						</Flex>
 						<Flex
 							direction="column "
@@ -479,10 +482,10 @@ export default function Services() {
 							align="center"
 							width="25%"
 							rounded="5"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 						>
-							<FaPython fontSize="60px" color="blue" />
+							<FaPython fontSize="60px" color=" #4169E2" />
 						</Flex>
 						<Flex
 							direction="column "
@@ -490,10 +493,10 @@ export default function Services() {
 							align="center"
 							width="25%"
 							rounded="5"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 						>
-							<SiJavascript fontSize="60px" color="blue" />
+							<SiJavascript fontSize="60px" color=" #4169E2" />
 						</Flex>
 						<Flex
 							direction="column "
@@ -501,10 +504,10 @@ export default function Services() {
 							align="center"
 							width="25%"
 							rounded="5"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 						>
-							<SiMysql fontSize="60px" color="blue" />
+							<SiMysql fontSize="60px" color=" #4169E2" />
 						</Flex>
 						<Flex
 							direction="column "
@@ -512,10 +515,10 @@ export default function Services() {
 							align="center"
 							width="25%"
 							rounded="5"
-							border="1px solid blue"
+							border="1px solid  #4169E2"
 							p="3"
 						>
-							<FaWordpress fontSize="40px" color="blue" />
+							<FaWordpress fontSize="40px" color=" #4169E2" />
 						</Flex>
 					</Flex>
 					<Flex
@@ -532,7 +535,7 @@ export default function Services() {
 						/>
 						<Heading
 							as="h2"
-							_hover={{ color: "blue" }}
+							_hover={{ color: " #4169E2" }}
 							cursor="pointer"
 						>
 							Agile Development Teams on Demand
@@ -553,7 +556,7 @@ export default function Services() {
 							software development practices we documented. You’ll
 							be positively surprised with the very first sprint.`}
 						</Text>
-						<Link href="#" colorScheme="blue">
+						<Link href="#" colorScheme=" #4169E2">
 							{`Learn more ->`}
 						</Link>
 					</Flex>

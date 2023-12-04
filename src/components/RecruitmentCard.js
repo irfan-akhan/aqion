@@ -4,7 +4,7 @@ import React from "react";
 export default function RecruitmentCard({ heading, text, step }) {
 	return (
 		<Flex p="12" align="center" gap="5" justify="start">
-			<Text fontSize="4rem" color="blue">
+			<Text fontSize="4rem" color="#4169E2">
 				{step}
 			</Text>
 			<Box textAlign="start">

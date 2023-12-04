@@ -17,7 +17,7 @@ export default function Portfolio() {
 				gap="5"
 				mt="26"
 			>
-				<Heading color="blue" as="h2" fontSize="x-large">
+				<Heading color=" #4169E2" as="h2" fontSize="x-large">
 					AN AGILE PARTNER FOR YOUR CUSTOM REQUIREMENTS
 				</Heading>
 				<Heading as="h1" fontSize="xxx-large">

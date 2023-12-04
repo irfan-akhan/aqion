@@ -238,12 +238,12 @@ export default function ContactUs() {
 							fontWeight="500"
 							fontSize="medium"
 							transform="all 1s ease-in"
-							boxShadow="5px 5px 0px 0px  blue"
+							boxShadow="5px 5px 0px 0px #4169E2"
 							_hover={{
 								bg: "#fff",
 								color: "#000",
 								transform: "all 1s ease-in",
-								boxShadow: "3px 2px 0px 0px  blue",
+								boxShadow: "3px 2px 0px 0px   #4169E2",
 							}}
 							padding="5"
 							px="10"
