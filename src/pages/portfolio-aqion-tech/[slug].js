@@ -41,7 +41,7 @@ export default function Project({ caseStudy }) {
 								<Image
 									src={imageSet.logo}
 									alt={name}
-									boxSize="50"
+									width="150px"
 									mr="5"
 								/>
 							)}
@@ -95,7 +95,7 @@ export default function Project({ caseStudy }) {
 						</Box>
 					</Flex>
 				</Flex>
-				<Flex direction="column" p="12" my="24" gap="20">
+				<Flex direction="column" my="24" gap="20">
 					<Box>
 						<Heading
 							my="5"
