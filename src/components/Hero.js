@@ -5,10 +5,11 @@ import CustomButton from "./partials/Button";
 const Hero = ({ heading, subHeading, text, imgUrl, linkProps }) => {
 	return (
 		<Flex
-			width="100wv"
+			width="96vw"
 			height={{ base: "fit-content", md: "90vh" }}
 			justify="center"
 			mb="10rem"
+			overflow="hidden"
 			direction={{ base: "column", md: "row" }}
 		>
 			<Flex
@@ -18,11 +19,11 @@ const Hero = ({ heading, subHeading, text, imgUrl, linkProps }) => {
 				align={{ base: "center", md: "flex-start" }}
 				gap={{ base: "6", md: "8" }}
 				pr="3"
-				maxW={{ base: "100%", md: "60%" }}
+				maxW={{ base: "100vw", md: "60%" }}
 				boxShadow="20px 18px 2px 7px #d3d3d3"
 				pos="relative"
 			>
-				<Stack>
+				<Stack textAlign={{ base: "center", md: "initial" }}>
 					<Heading
 						as="h1"
 						width="fit-content"
@@ -46,6 +47,7 @@ const Hero = ({ heading, subHeading, text, imgUrl, linkProps }) => {
 				{
 					<Text
 						fontWeight="300"
+						textAlign={{ base: "center", md: "initial" }}
 						px={{ base: "5", md: "0" }}
 						fontSize={{ base: "large", md: "x-large" }}
 					>
@@ -68,7 +70,10 @@ const Hero = ({ heading, subHeading, text, imgUrl, linkProps }) => {
 				/>
 			</Flex>
 
-			<Box width="50%" display={{ base: "none", md: "initial" }}>
+			<Box
+				width={{ base: 0, md: "50%" }}
+				display={{ base: "none", md: "initial" }}
+			>
 				<Image
 					alt="aqion"
 					src={imgUrl ? imgUrl : "/herobg1.jpg"}

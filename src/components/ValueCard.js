@@ -4,28 +4,57 @@ import React from "react";
 export default function ValueCard({ heading, text, subText, step }) {
 	return (
 		<Flex
-			p="12"
-			my="10"
+			p={{ base: 4, md: "12" }}
+			my={{ base: 4, md: "10" }}
 			align="flex-start"
-			gap="20"
+			gap={{ base: 2, md: "20" }}
 			justify="space-between"
 			color="#fff"
 			bg="#000"
+			data-aos="fade-up"
+			data-aos-delay="40"
+			direction={{ base: "column", md: " row" }}
 		>
 			<Box>
-				<Text fontSize="4rem" color=" #4169E2">
+				<Text
+					data-aos="fade-up"
+					data-aos-delay="20"
+					fontSize={{ base: "2rem", md: "4rem" }}
+					color=" #4169E2"
+				>
 					{step}
 				</Text>
-				<Text mb="4" fontSize="xxx-large">
+				<Text
+					data-aos="fade-up"
+					data-aos-delay="20"
+					mb="4"
+					fontSize={{ base: "x-large", md: "xxx-large" }}
+				>
 					{heading}
 				</Text>
-				<Text fontSize="large">{text}</Text>
-				<Text fontSize="large">{subText}</Text>
+				<Text
+					data-aos="fade-up"
+					data-aos-delay="20"
+					fontSize={{ base: "small", md: "large" }}
+				>
+					{text}
+				</Text>
+				<Text
+					data-aos="fade-up"
+					data-aos-delay="20"
+					fontSize={{ base: "small", md: "large" }}
+				>
+					{subText}
+				</Text>
 			</Box>
-			<Box>
+			<Box
+				data-aos="fade-up"
+				data-aos-delay="40"
+				display={{ base: "none", md: "block" }}
+			>
 				<Image
 					src="/teams.jpg"
-					width="500px"
+					width={"500px"}
 					height="350px"
 					objectFit="cover"
 					alt="team"

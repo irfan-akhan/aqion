@@ -37,12 +37,16 @@ export default function Project({ caseStudy }) {
 				<Flex>
 					<Flex
 						direction="column"
-						my="24"
+						my={{ base: 5, md: "24" }}
 						minH="90vh"
 						gap="5"
 						data-aos="fade-up"
 					>
-						<Flex data-aos="fade-up" data-aos-delay="200">
+						<Flex
+							direction={{ base: "column", md: "row" }}
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
 							{imageSet?.logo && (
 								<Image
 									src={imageSet.logo}
@@ -51,7 +55,11 @@ export default function Project({ caseStudy }) {
 									mr="5"
 								/>
 							)}
-							<Heading as="h1" fontSize="xxx-large">
+							<Heading
+								as="h1"
+								my={{ base: "4", md: 0 }}
+								fontSize={{ base: "x-large", md: "xxx-large" }}
+							>
 								{name}
 							</Heading>
 						</Flex>
@@ -70,12 +78,17 @@ export default function Project({ caseStudy }) {
 						/>
 					</Flex>
 				</Flex>
-				<Flex data-aos="fade-up" direction="column" my="24" gap="5">
+				<Flex
+					data-aos="fade-up"
+					direction="column"
+					my={{ base: 6, md: "24" }}
+					gap="5"
+				>
 					<Heading
 						data-aos="fade-up"
 						data-aos-delay="200"
 						as="h1"
-						fontSize="xxx-large"
+						fontSize={{ base: "x-large", md: "xxx-large" }}
 						textTransform="capitalize"
 					>
 						What we did
@@ -101,7 +114,7 @@ export default function Project({ caseStudy }) {
 							data-aos-delay="200"
 						>
 							<Text
-								fontSize="large"
+								fontSize={{ base: "small", md: "large" }}
 								textTransform="uppercase"
 								fontWeight="600"
 							>
@@ -113,7 +126,7 @@ export default function Project({ caseStudy }) {
 						</Box>
 						<Box mx="8">
 							<Text
-								fontSize="large"
+								fontSize={{ base: "small", md: "large" }}
 								textTransform="uppercase"
 								fontWeight="600"
 							>
@@ -125,11 +138,16 @@ export default function Project({ caseStudy }) {
 						</Box>
 					</Flex>
 				</Flex>
-				<Flex data-aos="fade-up" direction="column" my="24" gap="20">
+				<Flex
+					data-aos="fade-up"
+					direction="column"
+					my={{ base: 6, md: "24" }}
+					gap="20"
+				>
 					<Box>
 						<Heading
 							my="5"
-							fontSize="xxx-large"
+							fontSize={{ base: "x-large", md: "xxx-large" }}
 							as="h2"
 							fontWeight="600"
 							data-aos="fade-up"
@@ -149,13 +167,13 @@ export default function Project({ caseStudy }) {
 					<Box>
 						<Heading
 							my="5"
-							fontSize="xxx-large"
+							fontSize={{ base: "x-large", md: "xxx-large" }}
 							as="h2"
 							fontWeight="600"
 							data-aos="fade-up"
 							data-aos-delay="200"
 						>
-							background
+							Background
 						</Heading>
 						<Text
 							fontWeight="300"
@@ -167,7 +185,11 @@ export default function Project({ caseStudy }) {
 						</Text>
 					</Box>
 				</Flex>
-				<Box data-aos="fade-up" my="24" height="90vh">
+				<Box
+					data-aos="fade-up"
+					my={{ base: 6, md: "24" }}
+					height="90vh"
+				>
 					<Image
 						src="/project-timeline.png"
 						alt="project timeline"
@@ -176,7 +198,7 @@ export default function Project({ caseStudy }) {
 					/>
 					<Flex
 						justify="space-between"
-						px="16"
+						px={{ base: 2, md: "16" }}
 						fontWeight="600"
 						color="gray"
 						mt="4"
@@ -192,9 +214,9 @@ export default function Project({ caseStudy }) {
 						))}
 					</Flex>
 				</Box>
-				<Box data-aos="fade-up" my="24">
+				<Box data-aos="fade-up" my={{ base: 6, md: "24" }}>
 					<Heading
-						fontSize="xxx-large"
+						fontSize={{ base: "x-large", md: "xxx-large" }}
 						as="h2"
 						fontWeight="600"
 						mb="12"
@@ -204,9 +226,12 @@ export default function Project({ caseStudy }) {
 					>
 						What we build
 					</Heading>
-					<Flex gap="24">
+					<Flex
+						gap="24"
+						direction={{ base: "column", md: "initial" }}
+					>
 						<Text
-							width="70%"
+							width={{ base: "100%", md: "70%" }}
 							data-aos="fade-up"
 							data-aos-delay="200"
 							fontWeight="300"
@@ -267,9 +292,9 @@ export default function Project({ caseStudy }) {
 						</Box>
 					</Flex>
 				</Box>
-				<Box data-aos="fade-up" my="24">
+				<Box data-aos="fade-up" my={{ base: 6, md: "24" }}>
 					<Heading
-						fontSize="xxx-large"
+						fontSize={{ base: "x-large", md: "xxx-large" }}
 						as="h2"
 						fontWeight="600"
 						data-aos="fade-up"
@@ -280,7 +305,11 @@ export default function Project({ caseStudy }) {
 						Tech Stack
 					</Heading>
 					{Object.keys(technologies_used)?.map((area) => (
-						<Flex my="3" key={area}>
+						<Flex
+							my="3"
+							direction={{ base: "column", md: "row" }}
+							key={area}
+						>
 							<Text
 								data-aos="fade-up"
 								data-aos-delay="200"
@@ -301,11 +330,15 @@ export default function Project({ caseStudy }) {
 						</Flex>
 					))}
 				</Box>
-				<Flex data-aos="fade-up" direction="column" my="24">
+				<Flex
+					data-aos="fade-up"
+					direction="column"
+					my={{ base: 6, md: "24" }}
+				>
 					<Heading
 						data-aos="fade-up"
 						data-aos-delay="200"
-						fontSize="xxx-large"
+						fontSize={{ base: "x-large", md: "xxx-large" }}
 						as="h2"
 						fontWeight="600"
 						mb="12"
@@ -328,11 +361,15 @@ export default function Project({ caseStudy }) {
 						))}
 					</Flex>
 				</Flex>
-				<Flex data-aos="fade-up" direction="column" my="24">
+				<Flex
+					data-aos="fade-up"
+					direction="column"
+					my={{ base: 6, md: "24" }}
+				>
 					<Heading
 						data-aos="fade-up"
 						data-aos-delay="200"
-						fontSize="xxx-large"
+						fontSize={{ base: "x-large", md: "xxx-large" }}
 						as="h2"
 						fontWeight="600"
 						mb="12"
@@ -343,6 +380,7 @@ export default function Project({ caseStudy }) {
 					<Flex wrap="wrap" gap="8">
 						{imageSet?.gallery.map((url, idx) => (
 							<Image
+								border="1px solid #000"
 								data-aos="fade-up"
 								data-aos-delay="200"
 								src={url}
@@ -352,11 +390,15 @@ export default function Project({ caseStudy }) {
 						))}
 					</Flex>
 				</Flex>
-				<Flex data-aos="fade-up" direction="column" my="24">
+				<Flex
+					data-aos="fade-up"
+					direction="column"
+					my={{ base: 6, md: "24" }}
+				>
 					<Heading
 						data-aos="fade-up"
 						data-aos-delay="200"
-						fontSize="xxx-large"
+						fontSize={{ base: "x-large", md: "xxx-large" }}
 						as="h2"
 						fontWeight="600"
 						mb="12"

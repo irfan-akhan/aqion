@@ -49,13 +49,25 @@ export default function StackCards() {
 			direction="column"
 			align="center"
 			justify="center"
-			p="16"
+			p={{ base: 4, md: "16" }}
 			bg="#000"
-			my="12"
+			width={{ base: "100vw", md: "initial" }}
+			my={{ base: 5, md: "12" }}
+			data-aos="fade-up"
 		>
-			<Flex mx="auto" p="5" gap="10">
+			<Flex
+				justify="center"
+				align="center"
+				wrap="wrap"
+				p={{ base: 2, md: "5" }}
+				gap={{ base: 3, md: "10" }}
+				data-aos="fade-up"
+				data-aos-deley="20"
+			>
 				{Object.keys(roles).map((role) => (
 					<Button
+						data-aos="fade-up"
+						data-aos-deley="20"
 						key={role}
 						colorScheme="blue"
 						variant={activeRole == role ? "solid" : "ghost"}
@@ -68,29 +80,35 @@ export default function StackCards() {
 			</Flex>
 			<Flex
 				my="3"
-				px="24"
-				py="10"
+				px={{ base: 4, md: "24" }}
+				py={{ base: 4, md: "10" }}
 				justify="space-between"
 				align="center"
 				color="#fff"
 				minW="80vw"
+				wrap="wrap"
+				data-aos="fade-up"
+				data-aos-deley="20"
+				// width={{ base: "100vw", md: "initial" }}
 			>
 				{roles && activeRole
 					? roles[activeRole].map((roleDetails, idx) => (
 							<Flex
+								data-aos="fade-up"
+								data-aos-deley="20"
 								key={idx}
 								align="center"
 								direction="column"
 								textAlign="center"
 							>
 								<Image
-									boxSize="70px"
+									boxSize={{ base: "40px", md: "70px" }}
 									objectFit="contain"
 									src={`/stack/${roleDetails}`}
 									alt={`${roleDetails}`}
 								/>
 								<Text
-									fontSize="small"
+									fontSize={{ base: "x-small", md: "small" }}
 									textTransform="uppercase"
 									my="3"
 								>

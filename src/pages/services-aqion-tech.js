@@ -1,4 +1,3 @@
-import CTC from "@/components/CTC";
 import CoreValueCard from "@/components/CoreValueCard";
 import { FaNode, FaReact, FaReacteurope } from "react-icons/fa6";
 import {
@@ -817,7 +816,6 @@ export default function Services() {
 					/>
 				</Flex>
 			</Flex>
-			<CTC />
 		</Layout>
 	);
 }

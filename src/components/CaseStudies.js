@@ -5,7 +5,7 @@ import CustomButton from "./partials/Button";
 import data from "../../lib/data.json";
 
 const bg = ["#006699", "#000000", "#431547", "#EC1D24", "#e6007e"];
-export default function CaseStudies() {
+export default function CaseStudies({ showButton = true }) {
 	return (
 		<Flex
 			direction="column"
@@ -25,15 +25,17 @@ export default function CaseStudies() {
 					slug={data[item].slug}
 				/>
 			))}
-			<Box my="16">
-				<CustomButton
-					link={true}
-					linkProps={{
-						name: "View all project",
-						path: "/portfolio-aqion-tech",
-					}}
-				/>
-			</Box>
+			{showButton && (
+				<Box my="16">
+					<CustomButton
+						link={true}
+						linkProps={{
+							name: "View all project",
+							path: "/portfolio-aqion-tech",
+						}}
+					/>
+				</Box>
+			)}
 		</Flex>
 	);
 }

@@ -12,14 +12,16 @@ export default function CTC() {
 			justify="center"
 			align="center"
 			data-aos="fade-up"
+			data-aos-offset="40"
 		>
 			<Heading
 				as="h3"
 				fontSize={{ base: "large", md: "xx-large" }}
 				fontWeight="400"
 				textAlign="center"
+				textTransform="uppercase"
 			>
-				Have a project, or want to say hello?
+				Have a project in mind, or want to say hello?
 			</Heading>
 			<CustomButton
 				link={true}

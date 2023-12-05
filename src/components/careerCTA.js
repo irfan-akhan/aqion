@@ -1,11 +1,16 @@
-import { Flex, Heading, Box, Text } from "@chakra-ui/react";
+import { Flex, Heading, Box, Text, Image } from "@chakra-ui/react";
 import React from "react";
 import CustomButton from "./partials/Button";
 
 export default function CareerCTA() {
 	return (
-		<Flex justify="space-between" p={{ base: 4, md: "24" }} gap="10">
-			<Box p="10" width="50%">
+		<Flex
+			justify="space-between"
+			p={{ base: 4, md: "24" }}
+			gap={{ base: 4, md: "10" }}
+			direction={{ base: "column", md: "initial" }}
+		>
+			<Box p="10" width={{ base: "100%", md: "50%" }}>
 				<Heading
 					data-aos="fade-up"
 					as="h1"
@@ -32,7 +37,14 @@ export default function CareerCTA() {
 					}}
 				/>
 			</Box>
-			<Box p="10"></Box>
+			<Box p="10">
+				<Image
+					src="/join.jpg"
+					width="350px"
+					rounded="12"
+					objectFit="contain"
+				/>
+			</Box>
 		</Flex>
 	);
 }

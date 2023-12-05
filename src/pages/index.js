@@ -1,10 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Footer from "@/components/Footer";
 import Pitch from "@/components/Pitch";
-import CTC from "@/components/CTC";
 import CaseStudies from "@/components/CaseStudies";
 import Partner from "@/components/Partner";
 import Layout from "@/components/Layout";
@@ -32,7 +29,6 @@ export default function Home() {
 					<Pitch />
 					<CaseStudies />
 					<Partner />
-					<CTC />
 				</main>
 			</Layout>
 		</>

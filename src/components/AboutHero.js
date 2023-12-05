@@ -4,19 +4,19 @@ import React from "react";
 export default function AboutHero({ text, heading, bgImage }) {
 	return (
 		<Flex
-			minH="95vh"
+			minH={{ base: "initial", md: "95vh" }}
 			align="center"
 			direction="column"
 			color="#000"
 			justify="center"
-			p="36"
+			p={{ base: 4, md: "36" }}
 		>
-			<Stack mb="36">
+			<Stack mb={{ base: 4, md: "36" }}>
 				<Heading
 					textAlign={"center"}
 					as="h1"
 					width="fit-content"
-					fontSize={{ base: "xx-large", md: "4rem" }}
+					fontSize={{ base: "x-large", md: "4rem" }}
 				>
 					{heading}
 				</Heading>
@@ -38,13 +38,13 @@ export default function AboutHero({ text, heading, bgImage }) {
 				// maxH="50vh"
 				// overflow="hidden"
 			>
-				<Stack width="55%">
+				<Stack width={{ base: "initial", md: "55%" }}>
 					<Heading
 						data-aos="fade-up"
 						as="h1"
 						width="fit-content"
 						mb="5"
-						fontSize={{ base: "xx-large", md: "xx-large" }}
+						fontSize={{ base: "x-large", md: "xx-large" }}
 					>
 						Our Company
 					</Heading>
@@ -59,7 +59,10 @@ export default function AboutHero({ text, heading, bgImage }) {
 						operate with higher efficiency and impact.
 					</Text>
 				</Stack>
-				<Box data-aos="fade-up">
+				<Box
+					data-aos="fade-up"
+					display={{ base: "none", md: "initial" }}
+				>
 					<Image
 						boxShadow="10px 10px 0px 2px #4169E2"
 						border="2px solid #fff"

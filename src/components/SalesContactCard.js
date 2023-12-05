@@ -16,6 +16,7 @@ export default function SalesContactCard({
 			color="#fff"
 			gap="20"
 			data-aos="fade-up"
+			direction={{ base: "column", md: "initial" }}
 		>
 			<Flex
 				placeContent="center"
@@ -31,7 +32,7 @@ export default function SalesContactCard({
 					src={imageUrl}
 				/>
 			</Flex>
-			<Box width={{ base: "50%" }} p="14">
+			<Box width={{ base: "100%", md: "50%" }} p={{ base: 4, md: "14" }}>
 				{heading && (
 					<Text
 						data-aos="fade-up"

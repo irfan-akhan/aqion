@@ -95,12 +95,14 @@ export default function Case({ bg, build, title, text, banner, slug }) {
 			>
 				<Image
 					src={banner}
-					h="120%"
+					h="100%"
+					objectFit={"contain"}
 					alt="aqion"
 					width="100%"
 					transition="all 1s ease-in"
+					transform="scale(.9)"
 					_hover={{
-						transform: "scale(.9)",
+						transform: "scale(.8)",
 					}}
 				/>
 			</Box>

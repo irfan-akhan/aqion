@@ -1,5 +1,4 @@
 import AboutHero from "@/components/AboutHero";
-import CTC from "@/components/CTC";
 import CoreValueCard from "@/components/CoreValueCard";
 import Layout from "@/components/Layout";
 import ManagementCard from "@/components/ManagementCard";
@@ -20,6 +19,7 @@ export default function About() {
 				justify="center"
 				align="flex-start"
 				overflow="hidden"
+				direction={{ base: "column", md: "initial" }}
 			>
 				<Box
 					minW={{ base: "100%", md: "40%" }}
@@ -93,7 +93,7 @@ export default function About() {
 					</Text>
 				</Box>
 				<Box
-					pt="24"
+					pt={{ base: 4, md: "24" }}
 					// display={{ base: "none", md: "block" }}
 					data-aos="fade-left"
 				>
@@ -222,7 +222,7 @@ export default function About() {
 					width="100%"
 					data-aos="fade-up"
 					as="h1"
-					fontSize={{ base: "x-large", md: "xxx-large" }}
+					fontSize={{ base: "large", md: "xxx-large" }}
 					alignSelf="flex-start"
 					my="10"
 					textAlign="center"
@@ -271,7 +271,6 @@ export default function About() {
 				</Flex>
 			</Flex>
 			<CareerCTA />
-			<CTC />
 		</Layout>
 	);
 }
