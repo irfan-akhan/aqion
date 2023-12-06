@@ -9,6 +9,7 @@ export default function AboutHero({ text, heading, bgImage }) {
 			direction="column"
 			color="#000"
 			justify="center"
+			textTransform="capitalize"
 			p={{ base: 4, md: "36" }}
 		>
 			<Stack mb={{ base: 4, md: "36" }}>
@@ -30,7 +31,7 @@ export default function AboutHero({ text, heading, bgImage }) {
 					</Text>
 				)}
 			</Stack>
-			<Flex
+			{/* <Flex
 				my="5"
 				gap="10"
 				justify="center"
@@ -73,7 +74,7 @@ export default function AboutHero({ text, heading, bgImage }) {
 						alt="aqion company"
 					/>
 				</Box>
-			</Flex>
+			</Flex> */}
 		</Flex>
 	);
 }

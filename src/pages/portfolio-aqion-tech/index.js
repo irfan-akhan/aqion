@@ -15,6 +15,7 @@ export default function Portfolio() {
 				width={{ base: "100%", md: "70%" }}
 				textAlign="center"
 				gap="5"
+				textTransform="capitalize"
 				mt={{ base: "10", md: "26" }}
 			>
 				<Heading color=" #4169E2" as="h2" fontSize="x-large">
@@ -38,6 +39,16 @@ export default function Portfolio() {
 				p={{ base: 4, md: "10" }}
 				data-aos="fade-up"
 			>
+				<Heading
+					width="100%"
+					data-aos="fade-up"
+					as="h2"
+					textTransform="capitalize"
+					textAlign="center"
+					fontSize={{ base: "x-large", md: "xx-large" }}
+				>
+					our recent work
+				</Heading>
 				<CaseStudies showButton={false} />
 			</Flex>
 		</Layout>

@@ -8,23 +8,24 @@ import {
 	Text,
 } from "@chakra-ui/react";
 import React from "react";
-import { useRouter } from "next/router";
 
 export default function Case({ bg, build, title, text, banner, slug }) {
-	const router = useRouter();
 	return (
 		<Flex
 			data-aos="fade-up"
 			height={{ base: "fit-content", md: "95vh" }}
 			justify="center"
-			my="6"
+			align="center"
+			my="3"
 			overflow="hidden"
 			bg={bg ? bg : "initial"}
+			width={{ base: "100%", md: "90%" }}
 			color="#fff"
 			direction={{ base: "column", md: "row" }}
 		>
 			<Flex
-				p={{ base: "4", md: "5rem" }}
+				p={{ base: "4", md: "3rem" }}
+				// px={{ base: "4", md: "3rem" }}
 				direction="column"
 				align={{ base: "center", md: "flex-start" }}
 				gap={{ base: "6" }}
@@ -65,7 +66,7 @@ export default function Case({ bg, build, title, text, banner, slug }) {
 				</Text>
 				<Button
 					as="a"
-					prefetch
+					prefetch="true"
 					href={`/portfolio-aqion-tech/${slug}`}
 					borderRadius="0"
 					variant="outline"

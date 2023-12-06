@@ -6,13 +6,13 @@ export default function RecruitmentCard({ heading, text, step }) {
 		<Flex
 			p={{ base: 4, md: "12" }}
 			align="center"
-			gap={{ base: 0, md: "5" }}
+			gap={{ base: 2, md: "20" }}
 			justify="start"
 			data-aos="fade-up"
 			direction={{ base: "column", md: "row" }}
 		>
 			<Text
-				fontSize="4rem"
+				fontSize="7rem"
 				color="#4169E2"
 				data-aos="fade-up"
 				data-aos-delay="20"

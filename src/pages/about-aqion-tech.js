@@ -1,4 +1,5 @@
 import AboutHero from "@/components/AboutHero";
+import CaseStudies from "@/components/CaseStudies";
 import CoreValueCard from "@/components/CoreValueCard";
 import Layout from "@/components/Layout";
 import ManagementCard from "@/components/ManagementCard";
@@ -22,7 +23,7 @@ export default function About() {
 				direction={{ base: "column", md: "initial" }}
 			>
 				<Box
-					minW={{ base: "100%", md: "40%" }}
+					width={{ base: "100%", md: "40%" }}
 					p={{ base: 4, md: "12" }}
 				>
 					<Heading
@@ -35,7 +36,11 @@ export default function About() {
 						Since 2020
 					</Heading>
 				</Box>
-				<Box data-aos="fade-left" p={{ base: 4, md: "12" }}>
+				<Box
+					data-aos="fade-left"
+					p={{ base: 4, md: "12" }}
+					width={{ base: "100%", md: "60%" }}
+				>
 					<Text fontWeight="500" mb="5">
 						ABOUT US
 					</Text>
@@ -54,19 +59,17 @@ export default function About() {
 				</Box>
 			</Flex>
 			<Flex
-				minH="90vh"
-				p={{ base: 4, md: 16 }}
+				p={{ base: 4, md: 20 }}
 				py={{ base: 4, md: 10 }}
-				mb={{ base: 12 }}
 				justify="center"
 				align="flex-start"
-				height={{ base: "fit-content", md: "90vh" }}
 				overflow="hidden"
-				direction={{ base: "column", md: "row" }}
+				width="100%"
+				direction={{ base: "column", md: "initial" }}
 			>
 				<Box
-					minW={{ base: "100%", md: "40%" }}
-					p={{ base: 4, md: "16" }}
+					width={{ base: "100%", md: "40%" }}
+					p={{ base: 4, md: "12" }}
 				>
 					<Heading
 						data-aos="fade-up"
@@ -76,37 +79,44 @@ export default function About() {
 						Creating Experiences
 					</Heading>
 					<Text
-						my="5"
 						data-aos="fade-up"
 						fontWeight="300"
+						mt="2"
 						fontSize={{ base: "large", md: "1.4rem" }}
 					>
-						{`Since 2013 we have been providing global headquarters with exceptional digital solutions, from mobile apps to complex infrastructure.`}
-					</Text>
-					<Text
-						my="5"
-						data-aos="fade-up"
-						fontWeight="300"
-						fontSize={{ base: "large", md: "1.4rem" }}
-					>
-						{`Nowadays, Q is recognized for creating experiences across countries while challenging boundaries across industries and exceeding users’ expectations.`}
+						{`We bring our services to our client's doorsteps with
+						two global offices in Japan, and Kashmir. This
+						approach led us to long-term relationships resulting in
+						many world class products.`}
 					</Text>
 				</Box>
 				<Box
-					pt={{ base: 4, md: "24" }}
-					// display={{ base: "none", md: "block" }}
 					data-aos="fade-left"
+					p={{ base: 4, md: "12" }}
+					width={{ base: "100%", md: "60%" }}
 				>
 					<Text
 						my="5"
-						data-aos="fade-up"
+						data-aos="fade-left"
 						fontWeight="300"
 						fontSize={{ base: "large", md: "1.4rem" }}
 					>
-						{`We bring our services to our clients’ doorsteps with three global offices in Zagreb, London, and Zürich. This approach led us to long-term relationships resulting in many award-winning products.`}
+						{`Since 2020 we have been providing global headquarters
+						with exceptional digital solutions, from mobile apps to
+						complex infrastructure.`}
+					</Text>
+					<Text
+						data-aos="fade-left"
+						fontWeight="300"
+						fontSize={{ base: "large", md: "1.4rem" }}
+					>
+						{`Nowadays, AQION is recognized for creating experiences
+						across countries while challenging boundaries across
+						industries and exceeding users’ expectations.`}
 					</Text>
 				</Box>
 			</Flex>
+
 			<Flex
 				minH="90vh"
 				p={{ base: 4, md: "16" }}
@@ -157,6 +167,7 @@ export default function About() {
 					/>
 				</Box>
 			</Flex>
+
 			<Flex
 				align="start"
 				justify="space-between"
@@ -269,6 +280,25 @@ export default function About() {
 						text={`Since our inception 15 years back, we’ve encountered many great minds, amazing people who worked with us. They came to us with a story, a vision they want their product to reflect. For us, clients aren’t just people we’re helping, they are Classic Informatics’ critical team members.`}
 					/>
 				</Flex>
+			</Flex>
+			<Flex
+				align="center"
+				justify="center"
+				p={{ base: 4, md: "22" }}
+				py={{ base: 4, md: "12" }}
+				direction={{ base: "column" }}
+			>
+				<Heading
+					width="100%"
+					data-aos="fade-up"
+					as="h1"
+					textTransform="capitalize"
+					textAlign="center"
+					fontSize={{ base: "x-large", md: "xxx-large" }}
+				>
+					Some of our work
+				</Heading>
+				<CaseStudies />
 			</Flex>
 			<CareerCTA />
 		</Layout>

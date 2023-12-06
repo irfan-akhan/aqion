@@ -1,22 +1,17 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
 
-export default function SalesContactCard({
-	email = "contact@aqion.jp",
-	heading,
-	imageUrl = "/contact.jpg",
-	subText = "If you need any further assistance or have additional questions, just send us an email.",
-}) {
+export default function SalesContactCard({ email, heading, imageUrl, subText }) {
 	return (
 		<Flex
-			align="center"
-			justify="space-around"
+			align="start"
+			justify="center"
 			p={{ base: 4, md: "16" }}
 			bg="#090909"
 			color="#fff"
-			gap="20"
+			gap="10"
 			data-aos="fade-up"
-			direction={{ base: "column", md: "initial" }}
+			direction={{ base: "column" }}
 		>
 			<Flex
 				placeContent="center"
@@ -28,16 +23,16 @@ export default function SalesContactCard({
 				<Image
 					alt="sales rep"
 					objectFit="fill"
-					width="300px"
+					width="180px"
 					src={imageUrl}
 				/>
 			</Flex>
-			<Box width={{ base: "100%", md: "50%" }} p={{ base: 4, md: "14" }}>
+			<Box width={{ base: "100%" }}>
 				{heading && (
 					<Text
 						data-aos="fade-up"
 						fontWeight="400"
-						fontSize={{ base: "large", md: "xx-large" }}
+						fontSize={{ base: "large", md: "x-large" }}
 					>
 						{heading}
 					</Text>
@@ -45,25 +40,29 @@ export default function SalesContactCard({
 				{subText && (
 					<Text
 						data-aos="fade-up"
-						fontWeight="300"
+						fontWeight="200"
 						mb="5"
-						fontSize={{ base: "large", md: "x-large" }}
+						fontSize={{ base: "medium", md: "large" }}
 					>
 						{subText}
 					</Text>
 				)}
 				<Box
+					border="1px solid #ffffff43"
+					p="2"
 					as="a"
-					textDecoration="underline"
 					textUnderlineOffset="10px"
 					href={`mailto:${email}`}
 					mb={{ base: 5, md: 12 }}
-					fontWeight="400"
+					fontWeight="300"
 					_hover={{
 						textDecorationColor: "#4169e1",
 						transition: "all 1s ease-in",
+						bg: "#4169e1",
+						borderColor: "#4169e1",
 					}}
-					fontSize={{ base: "x-large" }}
+					data-aos="fade-up"
+					fontSize={{ base: "large" }}
 				>
 					{email}
 				</Box>

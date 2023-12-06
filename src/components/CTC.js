@@ -5,7 +5,6 @@ import CustomButton from "./partials/Button";
 export default function CTC() {
 	return (
 		<Flex
-			mb="10"
 			direction="column"
 			p="10"
 			gap={{ base: 5, md: "10" }}
@@ -13,6 +12,11 @@ export default function CTC() {
 			align="center"
 			data-aos="fade-up"
 			data-aos-offset="40"
+			width="80%"
+			rounded="10"
+			bg="#f5f5f5"
+			margin="auto"
+			mb="10"
 		>
 			<Heading
 				as="h3"

@@ -74,13 +74,28 @@ export default function Careers() {
 				direction="column"
 				p={{ base: 4, md: "24" }}
 				textAlign="center"
-				w={{ base: "100%", md: "70%" }}
+				w={{ base: "100%", md: "90%" }}
 				mx="auto"
 				align="center"
 				justify="center"
 			>
-				<Text fontSize="x-large">Our recruitment process</Text>
+				<Text
+					mb="3"
+					textTransform="capitalize"
+					fontSize={{ base: "large", md: "xxx-large" }}
+				>
+					Become a part of Aqion
+				</Text>
 
+				<Text
+					fontSize={{
+						base: "medium",
+						md: "x-large",
+					}}
+					textTransform="capitalize"
+				>
+					Have you applied ?
+				</Text>
 				<Text
 					fontSize={{
 						base: "medium",

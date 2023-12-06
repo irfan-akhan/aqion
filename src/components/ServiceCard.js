@@ -13,9 +13,9 @@ export default function ServiceCard({ icon, heading, bg, color, text, items }) {
 	return (
 		<Flex
 			direction={{ base: "column" }}
-			p={{ base: 4, md: "16" }}
+			p={{ base: 4, md: "12" }}
 			gap="5"
-			width="46%"
+			width={{ base: "100%", md: "30%" }}
 			bg={bg ? bg : "#000"}
 			color={color ? color : "#fff"}
 			m="5"
@@ -28,7 +28,8 @@ export default function ServiceCard({ icon, heading, bg, color, text, items }) {
 					color="#4169E2"
 					fontWeight="500"
 					width="fit-content"
-					mt="5"
+					mt="3"
+					fontSize={{ base: "large", md: "x-large" }}
 					// boxShadow="-47px 66px 0px -47px #4169E2 "
 				>
 					{heading}

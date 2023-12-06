@@ -322,7 +322,7 @@ export default function ContactUs() {
 				<Flex
 					overflow="hidden"
 					width={{ base: "100%", md: "50%" }}
-					gap={{ base: 5, md: "20" }}
+					gap={{ base: 5, md: "10" }}
 					align="center"
 				>
 					<Image
@@ -331,7 +331,7 @@ export default function ContactUs() {
 						width="45%"
 						border="1px solid #000"
 						p="1"
-						alt="aqion"
+						alt="office"
 						transform="all 1s ease-in"
 						boxShadow="5px 5px 0px 0px  #030303"
 					/>
@@ -339,67 +339,55 @@ export default function ContactUs() {
 						data-aos="fade-up"
 						src="/srinagar.jpg"
 						width="45%"
-						marginTop={{ base: 0, md: "-24" }}
+						// marginTop={{ base: 0, md: "-24" }}
 						border="1px solid #000"
 						p="1"
-						alt="aqion"
+						alt="office"
 						boxShadow="5px 5px 0px 0px  #030303"
 					/>
 				</Flex>
 			</Flex>
-			{/* <Flex
+			<Flex
 				align="center"
 				justify="space-around"
 				p={{ base: 4, md: "16" }}
-				bg="#090909"
-				color="#fff"
-				gap="20"
-				mt="5"
+				bg="#f9f9f9"
+				// color="#fff"
+				gap="5"
+				data-aos="fade-up"
+				direction={{ base: "column" }}
 			>
-				<Flex
-					placeContent="center"
-					p="4"
-					border="2px solid #4169e166"
-					boxShadow="10px 10px 0px 2px #4169E2"
-					textAlign="center"
+				<Text
+					data-aos="fade-up"
+					fontWeight="400"
+					textTransform="capitalize"
+					fontSize={{ base: "large", md: "xx-large" }}
 				>
-					<Image objectFit="fill" width="60%" src="/contact.jpg" />
+					Feel free to contact us.
+				</Text>
+				<Text
+					data-aos="fade-up"
+					fontWeight="300"
+					fontSize={{ base: "large", md: "large" }}
+				>
+					Need further assistance or have additional questions, send
+					us an email.
+				</Text>
+				<Flex gap="30">
+					<SalesContactCard
+						email="contact@aqion.jp"
+						heading="CX/Sales"
+						imageUrl="/contact.jpg"
+						subText="CX team"
+					/>
+					<SalesContactCard
+						heading={"Hakim Rakib"}
+						subText="Head of sales"
+						email="hrakib@aqion.jp"
+						imageUrl="/rakib.jpg"
+					/>
 				</Flex>
-				<Box width={{ base: "50%" }} p="14">
-					<Text
-						data-aos="fade-up"
-						fontWeight="300"
-						mb="5"
-						fontSize={{ base: "large", md: "x-large" }}
-					>
-						If you need any further assistance or have additional
-						questions, just send us an email.
-					</Text>
-					<Box
-						as="a"
-						textDecoration="underline"
-						textUnderlineOffset="10px"
-						href="mailto:contact@aqion.jp"
-						data-aos="fade-up"
-						mb={{ base: 5, md: 12 }}
-						fontWeight="400"
-						_hover={{
-							textDecorationColor: "#4169e1",
-							transition: "all 1s ease-in",
-						}}
-						fontSize={{ base: "x-large" }}
-					>
-						contact@aqion.jp
-					</Box>
-				</Box>
-			</Flex> */}
-			<SalesContactCard />
-			<SalesContactCard
-				heading={"Hakim Rakib"}
-				subText="Head of sales"
-				email="hrakib@aqion.jp"
-				imageUrl="/rakib.jpg"
-			/>
+			</Flex>
 		</Layout>
 	);
 }

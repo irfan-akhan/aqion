@@ -1,32 +1,16 @@
 import CoreValueCard from "@/components/CoreValueCard";
-import { FaNode, FaReact, FaReacteurope } from "react-icons/fa6";
-import {
-	SiMysql,
-	SiMongodb,
-	SiJavascript,
-	SiNextdotjs,
-	SiPython,
-} from "react-icons/si";
-import { MdJavascript, MdSupportAgent } from "react-icons/md";
+import { FaNode, FaReact } from "react-icons/fa6";
+import { SiMysql, SiJavascript, SiNextdotjs, SiPython } from "react-icons/si";
+import { MdSupportAgent } from "react-icons/md";
 import { PiTargetLight } from "react-icons/pi";
 import { HiLightBulb } from "react-icons/hi";
 import { LiaProjectDiagramSolid } from "react-icons/lia";
 import { FaSpellCheck } from "react-icons/fa6";
-import {
-	FaAppStoreIos,
-	FaAws,
-	FaHeadSideVirus,
-	FaLaptopCode,
-	FaNodeJs,
-	FaPython,
-	FaWordpress,
-} from "react-icons/fa";
-import { GiBrainstorm } from "react-icons/gi";
+import { FaAws, FaHeadSideVirus, FaPython, FaWordpress } from "react-icons/fa";
 
 import Layout from "@/components/Layout";
 import ServiceCard from "@/components/ServiceCard";
 import { Box, Divider, Flex, Heading, Image, Text } from "@chakra-ui/react";
-import React from "react";
 import { MdOutlineEngineering } from "react-icons/md";
 import {
 	TbBrandFirebase,
@@ -34,9 +18,7 @@ import {
 	TbBrandReactNative,
 	TbBrandTeams,
 } from "react-icons/tb";
-import { FaConnectdevelop } from "react-icons/fa";
 import { SiNginxproxymanager } from "react-icons/si";
-import AboutHero from "@/components/AboutHero";
 import Link from "next/link";
 import CustomButton from "@/components/partials/Button";
 
@@ -563,12 +545,12 @@ export default function Services() {
 			</Flex>
 			<Flex
 				gap="5"
-				bg="#f5f5f5"
 				p="12"
 				width="80%"
+				rounded="14"
+				bg="#f5f5f5"
 				margin="auto"
 				my="10"
-				rounded="14"
 				align="center"
 				justify="center"
 				minH="50vh"
@@ -628,7 +610,7 @@ export default function Services() {
 			<Flex
 				data-aos="fade-up"
 				wrap="wrap"
-				p="12"
+				p="6"
 				my="10"
 				align="center"
 				justify="center"
@@ -637,43 +619,37 @@ export default function Services() {
 				<ServiceCard
 					bg="#fff"
 					color="#000"
-					icon={<TbBrandTeams fontSize="6rem" />}
+					icon={<TbBrandTeams fontSize="4rem" />}
 					heading="Dedicated Teams"
 					text="We help you set up an agile team of developers, strategists & project manager around expertise you’re looking for. You’ll have full control over the extent of involvement of the team."
 				/>
 				<ServiceCard
 					bg="#fff"
 					color="#000"
-					icon={<MdOutlineEngineering fontSize="6rem" />}
+					icon={<MdOutlineEngineering fontSize="4rem" />}
 					heading="Remote Developers"
 					text="We provide dedicated developers to those who prefer direct engagement without any management layers. They work exclusively for you, in any project you wish them to be in."
 				/>
 				<ServiceCard
 					bg="#fff"
 					color="#000"
-					icon={<SiNginxproxymanager fontSize="6rem" />}
+					icon={<SiNginxproxymanager fontSize="4rem" />}
 					heading="Managed Projects"
-					text="Our managed projects model allows you to get your projects fully handled by our team selected by you. Share your requirements & get started now!"
-				/>
-				<ServiceCard
-					bg="#fff"
-					color="#000"
-					icon={<FaConnectdevelop fontSize="6rem" />}
-					heading="Infrastructure"
 					text="Our managed projects model allows you to get your projects fully handled by our team selected by you. Share your requirements & get started now!"
 				/>
 			</Flex>
 
 			{/* Approach */}
-			<Box p={{ base: 2, md: "12" }}>
+			<Box p={{ base: 2, md: "12" }} py={{ base: 0, md: "4" }}>
 				<Heading
 					p={{ base: 2, md: "12" }}
+					py={{ base: 0, md: "4" }}
 					as="h2"
 					fontSize={{ base: "x-large", md: "xxx-large" }}
 					pb="0"
 					data-aos="fade-up"
 				>
-					AQION Client approach
+					AQION Client Approach
 				</Heading>
 				<Flex
 					data-aos="fade-up"
@@ -773,14 +749,14 @@ export default function Services() {
 				p={{ base: 4, md: "24" }}
 				gap="10"
 				wrap="wrap"
-				mt="5"
+				mt={{ base: 2, md: "5" }}
 				direction={{ base: "column" }}
 				data-aos="fade-up"
 			>
 				<Heading
 					width="100%"
 					data-aos="fade-up"
-					data-aos-delay="200"
+					// data-aos-delay="200"
 					as="h2"
 					fontSize={{ base: "x-large", md: "xxx-large" }}
 					alignSelf="flex-start"
