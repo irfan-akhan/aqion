@@ -46,10 +46,15 @@ export default function ServicePage({ title }) {
 				p={{ base: 4, md: "24" }}
 				w={{ base: "100%", md: "90%" }}
 				mx="auto"
-				// align="center"
+				data-aos="fade-up"
 				justify="center"
 			>
-				<Heading as="h2" fontSize={{ base: "x-large", md: "xx-large" }}>
+				<Heading
+					as="h2"
+					data-aos-deley="20"
+					data-aos="fade-up"
+					fontSize={{ base: "x-large", md: "xx-large" }}
+				>
 					WHAT WE DO
 				</Heading>
 			</Flex>
@@ -58,14 +63,21 @@ export default function ServicePage({ title }) {
 				p={{ base: 4, md: "24" }}
 				w={{ base: "100%", md: "90%" }}
 				mx="auto"
-				// align="center"
 				justify="center"
 				gap="6"
+				data-aos="fade-up"
 			>
-				<Heading as="h2" fontSize={{ base: "x-large", md: "xx-large" }}>
+				<Heading
+					as="h2"
+					fontSize={{ base: "x-large", md: "xx-large" }}
+					data-aos="fade-up"
+					data-aos-deley="20"
+				>
 					HOW WE DO IT
 				</Heading>
 				<Text
+					data-aos="fade-up"
+					data-aos-deley="30"
 					textAlign="start"
 					fontSize={{ base: "small", md: "x-large" }}
 					fontWeight="300"
@@ -107,6 +119,7 @@ export default function ServicePage({ title }) {
 				w={{ base: "100%", md: "90%" }}
 				mx="auto"
 				justify="center"
+				aos-data="fade-up"
 			>
 				<Heading
 					as="h2"
