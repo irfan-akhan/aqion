@@ -2,10 +2,15 @@ import React from "react";
 import Case from "./Case";
 import { Box, Flex } from "@chakra-ui/react";
 import CustomButton from "./partials/Button";
-import data from "../../lib/data.json";
+import projects from "../../lib/data.json";
 
 const bg = ["#006699", "#000000", "#431547", "#EC1D24", "#e6007e"];
-export default function CaseStudies({ showButton = true }) {
+export default function CaseStudies({ showButton = true, limit }) {
+	const data = limit
+		? Object.keys(projects)
+				.slice(0, limit - 1)
+				.map((name) => projects[name])
+		: projects;
 	return (
 		<Flex
 			direction="column"

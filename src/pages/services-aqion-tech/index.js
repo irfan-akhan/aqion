@@ -109,7 +109,10 @@ export default function Services() {
 							Design Thinking rules our custom software
 							development company lives by.`}
 						</Text>
-						<Link href="#" colorScheme=" #4169E2">
+						<Link
+							href="/services-aqion-tech/product"
+							colorScheme=" #4169E2"
+						>
 							{`Learn more ->`}
 						</Link>
 					</Flex>
@@ -325,7 +328,10 @@ export default function Services() {
 							grade A and a maximum 1s loading time for each custom
 							software solution.`}
 						</Text>
-						<Link href="#" colorScheme=" #4169E2">
+						<Link
+							href="/services-aqion-tech/web"
+							colorScheme=" #4169E2"
+						>
 							{`Learn more ->`}
 						</Link>
 					</Flex>
@@ -365,7 +371,10 @@ export default function Services() {
 							   in the business long enough to create immersive UIs for iOS and
 							 Android devices.`}
 						</Text>
-						<Link href="#" colorScheme=" #4169E2">
+						<Link
+							href="/services-aqion-tech/mobile"
+							colorScheme=" #4169E2"
+						>
 							{`Learn more ->`}
 						</Link>
 					</Flex>
