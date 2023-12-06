@@ -46,6 +46,7 @@ export default function ServicePageTechCard({
 			my={{ base: 2, md: "16" }}
 			justify="space-between"
 			align="center"
+			data-aos="fade-up"
 			direction={{ base: "column", md: reverse ? "row-reverse" : "row" }}
 		>
 			<Flex
@@ -53,15 +54,21 @@ export default function ServicePageTechCard({
 				gap="6"
 				direction="column"
 				width={{ base: "100%", md: "50%" }}
+				data-aos="fade-up"
+				data-aos-deley="20"
 			>
 				<Heading
 					as="h2"
+					data-aos="fade-up"
+					data-aos-deley="30"
 					textTransform="capitalize"
 					fontSize={{ base: "medium", md: "x-large" }}
 				>
 					{heading}
 				</Heading>
 				<Text
+					data-aos="fade-up"
+					data-aos-deley="30"
 					textAlign="start"
 					fontSize={{ base: "large", md: "x-large" }}
 					fontWeight="300"
@@ -79,11 +86,13 @@ export default function ServicePageTechCard({
 				bg="#292929"
 				color="#fff"
 				rounded={10}
+				data-aos="fade-up"
+				data-aos-deley="20"
 			>
 				{roles[role]?.map((stack, idx) => (
 					<Flex
 						data-aos="fade-up"
-						data-aos-deley="20"
+						data-aos-deley="30"
 						key={idx}
 						align="center"
 						direction="column"
