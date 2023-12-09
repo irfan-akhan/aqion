@@ -7,19 +7,23 @@ export default function Footer() {
 	return (
 		<Flex
 			minH="70vh"
-			p="28"
+			p={{ base: "16", md: "28" }}
 			bg="#000"
 			gap="10"
 			direction="column"
 			color="#fff"
 		>
-			<Flex justify="space-between">
+			<Flex
+				justify={{ base: "center", md: "space-between" }}
+				direction={{ base: "column", md: "row" }}
+			>
 				<Flex direction="column" gap="3">
 					<Box
 						as="a"
 						href="/"
 						data-aos="fade-up"
 						fontSize={{ base: "large" }}
+						width="fit-content"
 					>
 						<Image src="/logo.png" width="150px" />
 					</Box>
@@ -39,13 +43,19 @@ export default function Footer() {
 						}}
 						data-aos="fade-up"
 						fontSize={{ base: "large" }}
+						width="fit-content"
 					>
 						contact
 						<span style={{ fontSize: "12px" }}>@aqion.com</span>
 					</Box>
 				</Flex>
-				<Flex direction="row" gap="3" opacity=".8">
-					<Box maxWidth="50%">
+				<Flex
+					direction={{ base: "column", md: "row" }}
+					gap="10"
+					my={{ base: 8, md: "initial" }}
+					opacity=".8"
+				>
+					<Box maxWidth={{ base: "100%", md: "50%" }}>
 						<Heading
 							data-aos="fade-up"
 							as="h2"
@@ -59,7 +69,7 @@ export default function Footer() {
 							9813602, Miyagi ken kurokawa district, Ohira
 						</Text>
 					</Box>
-					<Box maxWidth="50%">
+					<Box maxWidth={{ base: "100%", md: "50%" }}>
 						<Heading
 							as="h2"
 							mb="4"
@@ -75,7 +85,11 @@ export default function Footer() {
 					</Box>
 				</Flex>
 			</Flex>
-			<Flex justify="flex-start" gap="5">
+			<Flex
+				justify={{ base: "center", md: "flex-start" }}
+				gap="5"
+				wrap="wrap"
+			>
 				{Links.map((link) => (
 					<Link
 						data-aos="fade-up"
@@ -94,7 +108,12 @@ export default function Footer() {
 					</Link>
 				))}
 			</Flex>
-			<Flex justify="space-between" data-aos="fade-up">
+			<Flex
+				justify="space-between"
+				align="center"
+				direction={{ base: "column", md: "initial" }}
+				data-aos="fade-up"
+			>
 				<Link
 					href="/privacy policy.pdf"
 					target="_blank"
