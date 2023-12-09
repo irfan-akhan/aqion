@@ -59,7 +59,7 @@ export default function Navbar() {
 			width="100vw"
 			zIndex={100}
 		>
-			<Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+			<Flex alignItems={"center"} justifyContent={"space-between"}>
 				<IconButton
 					size={"md"}
 					icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}

@@ -24,6 +24,7 @@ export default function Footer() {
 						<Image src="/logo.png" width="150px" />
 					</Box>
 					<Box
+						opacity=".8"
 						border="1px solid #ffffff43"
 						p="2"
 						as="a"
@@ -43,13 +44,13 @@ export default function Footer() {
 						<span style={{ fontSize: "12px" }}>@aqion.com</span>
 					</Box>
 				</Flex>
-				<Flex direction="row" gap="3">
+				<Flex direction="row" gap="3" opacity=".8">
 					<Box maxWidth="50%">
 						<Heading
 							data-aos="fade-up"
 							as="h2"
 							mb="4"
-							fontWeight="400"
+							fontWeight="300"
 							fontSize={{ base: "large", md: "x-large" }}
 						>
 							Japan HQ
@@ -63,7 +64,7 @@ export default function Footer() {
 							as="h2"
 							mb="4"
 							data-aos="fade-up"
-							fontWeight="400"
+							fontWeight="300"
 							fontSize={{ base: "large", md: "x-large" }}
 						>
 							Srinagar HQ
@@ -77,28 +78,32 @@ export default function Footer() {
 			<Flex justify="flex-start" gap="5">
 				{Links.map((link) => (
 					<Link
+						data-aos="fade-up"
 						textUnderlineOffset="10px"
 						transition="all 1s ease-in"
 						_hover={{
 							textDecoration: "underline",
 							transition: "all 1s ease-in",
 						}}
+						fontWeight="300"
 						key={link}
+						opacity={".8"}
 						href={`/${link?.toLowerCase()}-aqion-tech`}
 					>
 						{link}
 					</Link>
 				))}
 			</Flex>
-			<Flex justify="space-between">
+			<Flex justify="space-between" data-aos="fade-up">
 				<Link
 					href="/privacy policy.pdf"
 					target="_blank"
 					textUnderlineOffset={"10px"}
+					opacity=".8"
 				>
 					Privacy Policy
 				</Link>
-				<Text>©2023 - AQION Agency</Text>
+				<Text opacity=".8">©2023 - AQION Tech</Text>
 			</Flex>
 		</Flex>
 	);

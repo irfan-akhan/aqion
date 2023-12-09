@@ -43,7 +43,7 @@ export default function ServicePageTechCard({
 }) {
 	return (
 		<Flex
-			my={{ base: 2, md: "16" }}
+			my={{ base: 2, md: "12" }}
 			justify="space-between"
 			align="center"
 			data-aos="fade-up"

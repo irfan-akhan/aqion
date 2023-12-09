@@ -41,7 +41,7 @@ export default function ServicePage({ title }) {
 	return (
 		<Layout>
 			<ServicePageHeader heading={heading} text={text} />
-			<Flex
+			{/* <Flex
 				direction="column"
 				p={{ base: 4, md: "24" }}
 				w={{ base: "100%", md: "90%" }}
@@ -57,10 +57,10 @@ export default function ServicePage({ title }) {
 				>
 					WHAT WE DO
 				</Heading>
-			</Flex>
+			</Flex> */}
 			<Flex
 				direction="column"
-				p={{ base: 4, md: "24" }}
+				p={{ base: 4, md: "12" }}
 				w={{ base: "100%", md: "90%" }}
 				mx="auto"
 				justify="center"

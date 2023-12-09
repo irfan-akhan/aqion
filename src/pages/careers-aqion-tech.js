@@ -24,7 +24,7 @@ export default function Careers() {
 		<Layout>
 			<Hero
 				heading="Shape the Future of Digital Products"
-				text="Q is home to more than 300+ fast learners and experts helping brands make the world more digitalized."
+				text="AQION is home to more than 300+ fast learners and experts helping brands make the world more digitalized."
 				linkProps={{ name: "View open positions", path: "#positions" }}
 				imgUrl="/teams.jpg"
 			/>
