@@ -52,6 +52,7 @@ export default function Navbar() {
 	return (
 		<Box
 			p={4}
+			px={12}
 			bg="#fff"
 			position="fixed"
 			top="0"
