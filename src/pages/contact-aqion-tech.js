@@ -20,8 +20,67 @@ import {
 } from "@chakra-ui/react";
 import { BsPerson, BsLink } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
+import { useRef, useState } from "react";
 
 export default function ContactUs() {
+	const fNameRef = useRef(null);
+	const lNameRef = useRef(null);
+	const emailRef = useRef(null);
+	const messageRef = useRef(null);
+	const businessEmailRef = useRef(null);
+	const [emailError, setEmailError] = useState(false);
+	const [alertState, setAlertState] = useState(false);
+
+	function onSubmitHandler(e) {
+		e.preventDefault();
+		const data = {
+			lastName: lNameRef.current.value,
+			firstName: fNameRef.current.value,
+			email: emailRef.current.value,
+			businessEmail: businessEmailRef.current.value,
+			message: messageRef.current.value,
+		};
+		console.log("datra ", data);
+		fetch("/api/contact", {
+			method: "POST",
+			headers: {
+				Accept: "application/json, text/plain, */*",
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(data),
+		})
+			.then((res) => {
+				if (res.status === 200) {
+					console.log("Response succeeded!");
+					setAlertState(true);
+					setInterval(() => {
+						setAlertState(false);
+					}, 5000);
+					emailRef.current.value = "";
+					lNameRef.current.value = "";
+					fNameRef.current.value = "";
+					businessEmailRef.current.value = "";
+					messageRef.current.value = "";
+				} else {
+					setEmailError(true);
+					console.log("err email");
+					setAlertState(true);
+					setInterval(() => {
+						setEmailError(false);
+						setAlertState(false);
+					}, 5000);
+				}
+			})
+			.catch((err) => {
+				setEmailError(true);
+				console.log("err email", err);
+				setAlertState(true);
+				setInterval(() => {
+					setEmailError(false);
+					setAlertState(false);
+				}, 5000);
+			});
+	}
 	return (
 		<Layout>
 			<Flex
@@ -103,6 +162,7 @@ export default function ContactUs() {
 												focusBorderColor="#000"
 												type="text"
 												name="firstName"
+												ref={fNameRef}
 												placeholder="Your First Name"
 											/>
 										</InputGroup>
@@ -120,6 +180,7 @@ export default function ContactUs() {
 												focusBorderColor="#000"
 												type="text"
 												name="lastName"
+												ref={lNameRef}
 												placeholder="Your Last Name"
 											/>
 										</InputGroup>
@@ -136,6 +197,7 @@ export default function ContactUs() {
 												borderRadius={0}
 												focusBorderColor="#000"
 												type="email"
+												ref={emailRef}
 												name="email"
 												placeholder="Your Email address"
 											/>
@@ -153,6 +215,7 @@ export default function ContactUs() {
 												focusBorderColor="#000"
 												type="text"
 												name="website"
+												ref={businessEmailRef}
 												placeholder="Your website/social link"
 											/>
 										</InputGroup>
@@ -223,6 +286,7 @@ export default function ContactUs() {
 									borderRadius={0}
 									placeholder="Project Details/Query"
 									rows={6}
+									ref={messageRef}
 								/>
 							</FormControl>
 						</VStack>
@@ -245,6 +309,7 @@ export default function ContactUs() {
 								transform: "all 1s ease-in",
 								boxShadow: "3px 2px 0px 0px   #4169E2",
 							}}
+							onClick={onSubmitHandler}
 							padding="5"
 							px="10"
 							data-aos="fade-up"
