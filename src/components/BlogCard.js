@@ -42,7 +42,7 @@ export default function BlogCard({
 					data-aos-delay="40"
 					fontWeight={500}
 				>
-					{title}
+					{`${title}`}
 				</Heading>
 				{tags?.map((item) => (
 					<Tag
@@ -54,7 +54,7 @@ export default function BlogCard({
 						bg="#000"
 						fontWeight={400}
 					>
-						{item}
+						{`${item}`}
 					</Tag>
 				))}
 			</HStack>

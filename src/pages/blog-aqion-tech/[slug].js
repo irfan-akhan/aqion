@@ -47,7 +47,7 @@ export default function Project({ blogPost, slug }) {
 						data-aos="fade-up"
 						data-aos-delay="30"
 					>
-						{title}
+						{`${title}`}
 					</Heading>
 					<Flex align="center" gap="2">
 						<Avatar
@@ -88,7 +88,7 @@ export default function Project({ blogPost, slug }) {
 							data-aos-delay="30"
 							rounded="3"
 						>
-							{item}
+							{`${item}`}
 						</Tag>
 					))}
 				</HStack>
@@ -122,7 +122,7 @@ export default function Project({ blogPost, slug }) {
 									textTransform="capitalize"
 									fontSize="xxx-large"
 								>
-									{item.heading}
+									{`${item.heading}`}
 								</Heading>
 								{item.text ? (
 									<Text
@@ -133,7 +133,7 @@ export default function Project({ blogPost, slug }) {
 										lineHeight="40px"
 										fontSize="x-large"
 									>
-										{item.text}
+										{`${item.text}`}
 									</Text>
 								) : item.bullets ? (
 									<UnorderedList>
@@ -147,7 +147,7 @@ export default function Project({ blogPost, slug }) {
 												lineHeight="40px"
 												fontSize="x-large"
 											>
-												{text}
+												{`${text}`}
 											</ListItem>
 										))}
 									</UnorderedList>

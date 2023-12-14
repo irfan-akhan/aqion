@@ -14,7 +14,7 @@ export default function Blog() {
 				width="80vw"
 			>
 				<Box width="50vw">
-					<Heading fontSize="xxx-large">AQION's Journel...</Heading>
+					<Heading fontSize="xxx-large">{`AQION's Journel...`}</Heading>
 					<Text fontWeight="300" fontSize="x-large" mt="10">
 						{`Sharing is caring, so we do our best to keep you updated
 						with relevant topics. Read about Qumans’ experience with
@@ -30,7 +30,6 @@ export default function Blog() {
 				minH="90vh"
 				margin="auto"
 				width="90%"
-				// textAlign="center"
 				gap="5"
 				my="15vh"
 			>
