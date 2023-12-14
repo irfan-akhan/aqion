@@ -25,7 +25,7 @@ export default async function handler(req, res) {
 				to: "info@shahjeefood.com",
 				subject: `Message From ${firstName} ${lastName}`,
 				text: message + " " + businessEmail,
-				html: `<div>${data.message}</div> <table
+				html: `<div>${message}</div> <table
 		id="zs-output-sig"
 		border="0"
 		cellpadding="0"
