@@ -1,11 +1,28 @@
-import { BlogListCard } from "@/components/BlogListCard";
 import Layout from "@/components/Layout";
-import { Flex } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import blogPosts from "../../../lib/blog.json";
+import BlogCard from "@/components/BlogCard";
 export default function Blog() {
 	return (
 		<Layout>
+			<Flex
+				minHeight="70vh"
+				align="center"
+				justify="flex-start"
+				margin="auto"
+				width="80vw"
+			>
+				<Box width="50vw">
+					<Heading fontSize="xxx-large">AQION's Journel...</Heading>
+					<Text fontWeight="300" fontSize="x-large" mt="10">
+						{`Sharing is caring, so we do our best to keep you updated
+						with relevant topics. Read about Qumans’ experience with
+						various technologies and how they face daily challenges.`}
+					</Text>
+				</Box>
+				<Box></Box>
+			</Flex>
 			<Flex
 				direction={{ base: "column", md: "row" }}
 				justify="center"
@@ -18,7 +35,8 @@ export default function Blog() {
 				my="15vh"
 			>
 				{blogPosts?.map((post) => (
-					<BlogListCard
+					<BlogCard
+						width="26%"
 						key={post?.slug}
 						subHeading={post.content[0]}
 						tags={[post.tags[0], post.tags[1], post.tags[2]]}

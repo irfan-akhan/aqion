@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import blogPosts from "../../../lib/blog.json";
 import Layout from "@/components/Layout";
-import { BlogListCard } from "@/components/BlogListCard";
+import BlogCard from "@/components/BlogCard";
 
 export default function Project({ blogPost, slug }) {
 	console.log("props are ", blogPost, slug);
@@ -77,13 +77,16 @@ export default function Project({ blogPost, slug }) {
 				>
 					{tags?.map((item) => (
 						<Tag
-							px="8"
-							py="3"
+							px="3"
+							py="1"
+							fontSize="small"
 							key={item}
 							variant="solid"
-							colorScheme="blue"
+							bg="black"
+							// colorScheme="black"
 							data-aos="fade-up"
 							data-aos-delay="30"
+							rounded="3"
 						>
 							{item}
 						</Tag>
@@ -157,12 +160,10 @@ export default function Project({ blogPost, slug }) {
 			<Flex my="24" p={12} bg="#f5f5f5" justify="space-evenly">
 				<Flex minW="80%" p={8} bg="#fff" justify="space-evenly">
 					{suggestedPosts?.map((post, idx) => (
-						<BlogListCard
+						<BlogCard
 							key={idx}
-							subHeading={post.content[0]}
 							tags={[post.tags[0], post.tags[1], post.tags[2]]}
 							title={post.title}
-							content={post.content}
 							slug={post?.slug}
 						/>
 					))}

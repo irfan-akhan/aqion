@@ -4,7 +4,6 @@ import {
 	Center,
 	Heading,
 	HStack,
-	Image,
 	Tag,
 	Text,
 } from "@chakra-ui/react";
