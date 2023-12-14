@@ -66,8 +66,8 @@ export default function Case({ bg, build, title, text, banner, slug }) {
 				</Text>
 				<Button
 					as="a"
-					prefetch="true"
 					href={`/portfolio-aqion-tech/${slug}`}
+					prefetch="true"
 					borderRadius="0"
 					variant="outline"
 					borderColor="#fff"

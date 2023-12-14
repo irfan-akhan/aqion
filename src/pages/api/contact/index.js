@@ -1,7 +1,4 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 let nodemailer = require("nodemailer");
-import { NextResponse } from "next/server";
-
 export default async function handler(req, res) {
 	console.log("req arrived");
 	try {
