@@ -58,8 +58,9 @@ export default function ManagementCard() {
 				<Image
 					src={activeCard.picture}
 					objectFit={"cover"}
-					alt="aqion"
+					alt={activeCard.name}
 					width="100%"
+					loading="eager"
 				/>
 			</Flex>
 			<Flex
