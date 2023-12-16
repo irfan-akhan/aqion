@@ -7,6 +7,7 @@ import Team from "@/components/Team";
 import Values from "@/components/Values";
 import CareerCTA from "@/components/careerCTA";
 import { Box, Divider, Flex, Heading, Image, Text } from "@chakra-ui/react";
+
 export default function About() {
 	return (
 		<Layout>
