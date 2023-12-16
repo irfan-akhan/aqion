@@ -42,7 +42,7 @@ export default function SalesContactCard({ email, heading, imageUrl, subText }) 
 						data-aos="fade-up"
 						fontWeight="200"
 						mb="5"
-						fontSize={{ base: "medium", md: "large" }}
+						fontSize={{ base: "small", md: "medium" }}
 					>
 						{subText}
 					</Text>
