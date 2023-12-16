@@ -52,11 +52,22 @@ export default function ManagementCard() {
 				border="2px solid #4169e166"
 				boxShadow="10px 10px 0px 2px #4169E2"
 				textAlign="center"
+				height={"80vh"}
+				overflow="hidden"
 			>
-				<Image src={activeCard.picture} alt="aqion" width="80%" />
+				<Image
+					src={activeCard.picture}
+					objectFit={"cover"}
+					alt="aqion"
+					width="80%"
+				/>
 			</Flex>
-			<Box width={{ base: "100%", md: "40%" }}>
-				<Flex gap="20" justify="space-between">
+			<Flex
+				mt={{ base: "2vh", md: "10vh" }}
+				direction={"column"}
+				width={{ base: "100%", md: "40%" }}
+			>
+				<Flex gap={{ base: "5", md: "20" }} justify="space-between">
 					<Box>
 						<Text
 							data-aos="fade-up"
@@ -127,11 +138,12 @@ export default function ManagementCard() {
 					data-aos="fade-up"
 					fontWeight="300"
 					mb="5"
+					p={{ base: "4", md: "0" }}
 					fontSize={{ base: "large", md: "large" }}
 				>
 					{activeCard.desc}
 				</Text>
-			</Box>
+			</Flex>
 		</>
 	);
 }
