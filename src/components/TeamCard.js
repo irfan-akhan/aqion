@@ -5,15 +5,16 @@ export default function TeamCard({ name, title, description, bgImage }) {
 		<Flex
 			direction="column"
 			height="full"
-			minW="30%"
+			minW={{ base: "100%", lg: "30%" }}
 			data-aos="fade-right"
 			data-aos-delay="50"
 			rounded={15}
+			bg="black"
 		>
 			<Image
 				src={bgImage}
 				roundedTop={15}
-				boxSize={400}
+				boxSize={{ base: 300, md: 400 }}
 				objectFit="cover"
 				data-aos="fade-right"
 				data-aos-delay="70"

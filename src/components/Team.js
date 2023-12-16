@@ -45,7 +45,7 @@ export default function Team() {
 				data-aos="fade-up"
 				data-aos-delay="30"
 				fontWeight="300"
-				fontSize="x-large"
+				fontSize={{ base: "large", md: "x-large" }}
 			>
 				You will find our team working across Creative Web Design, Web
 				Development, Branding, and Digital Marketing.
@@ -53,7 +53,7 @@ export default function Team() {
 			<Flex
 				my="12"
 				flexWrap="nowrap"
-				height={{ base: "80vh", md: "90vh" }}
+				height={{ base: "85vh", md: "90vh" }}
 				p={{ base: 3, md: 6 }}
 				overflowX="scroll"
 				overflowY="hidden"

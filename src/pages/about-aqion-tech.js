@@ -3,6 +3,7 @@ import CaseStudies from "@/components/CaseStudies";
 import CoreValueCard from "@/components/CoreValueCard";
 import Layout from "@/components/Layout";
 import ManagementCard from "@/components/ManagementCard";
+import Team from "@/components/Team";
 import Values from "@/components/Values";
 import CareerCTA from "@/components/careerCTA";
 import { Box, Divider, Flex, Heading, Image, Text } from "@chakra-ui/react";
@@ -275,6 +276,15 @@ export default function About() {
 						text={`Since our inception 15 years back, we’ve encountered many great minds, amazing people who worked with us. They came to us with a story, a vision they want their product to reflect. For us, clients aren’t just people we’re helping, they are Classic Informatics’ critical team members.`}
 					/>
 				</Flex>
+			</Flex>
+			<Flex
+				align="center"
+				justify="center"
+				p={{ base: 4, md: "22" }}
+				py={{ base: 4, md: "12" }}
+				direction={{ base: "column" }}
+			>
+				<Team />
 			</Flex>
 			<Flex
 				align="center"

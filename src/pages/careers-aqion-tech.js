@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import OurStack from "@/components/OurStack";
 import PositionCard from "@/components/PositionCard";
 import RecruitmentCard from "@/components/RecruitmentCard";
+import Team from "@/components/Team";
 import ValueCard from "@/components/ValueCard";
 import { AddIcon, MinusIcon } from "@chakra-ui/icons";
 import {
@@ -182,6 +183,16 @@ export default function Careers() {
 						subText={`Be passionate, take the initiative.`}
 					/>
 				</Box>
+			</Flex>
+			<Flex
+				direction="column"
+				w={{ base: "100%", md: "90%" }}
+				p={{ base: 4, md: "16" }}
+				justify="center"
+				m="auto"
+				data-aos="fade-up"
+			>
+				<Team />
 			</Flex>
 			<Heading
 				as="h3"
