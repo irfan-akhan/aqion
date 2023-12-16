@@ -1,5 +1,4 @@
 import { Box, Flex, Text, Link, Heading, Image } from "@chakra-ui/react";
-// import Link from "next/link";
 import React from "react";
 const Links = ["Services", "About", "Portfolio", "Careers", "Blog"];
 

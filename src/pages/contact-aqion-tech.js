@@ -401,7 +401,6 @@ export default function ContactUs() {
 						data-aos="fade-up"
 						src="/srinagar.jpg"
 						width="45%"
-						// marginTop={{ base: 0, md: "-24" }}
 						border="1px solid #000"
 						p="1"
 						alt="office"
@@ -414,7 +413,6 @@ export default function ContactUs() {
 				justify="space-around"
 				p={{ base: 4, md: "16" }}
 				bg="#f9f9f9"
-				// color="#fff"
 				gap="5"
 				data-aos="fade-up"
 				direction={{ base: "column" }}

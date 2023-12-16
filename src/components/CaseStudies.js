@@ -8,7 +8,7 @@ const bg = ["#006699", "#000000", "#431547", "#EC1D24", "#e6007e"];
 export default function CaseStudies({ showButton = true, limit }) {
 	const data = limit
 		? Object.keys(projects)
-				.slice(0, limit - 1)
+				.slice(0, limit)
 				.map((name) => projects[name])
 		: projects;
 	return (

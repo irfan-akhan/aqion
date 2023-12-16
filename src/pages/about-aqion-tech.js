@@ -155,10 +155,7 @@ export default function About() {
 						{`Our solutions cover all phases of the digital product lifecycle, from idea to technical and strategic support.`}
 					</Text>
 				</Box>
-				<Box
-					// display={{ base: "none", md: "block" }}
-					data-aos="fade-left"
-				>
+				<Box data-aos="fade-left">
 					<Image
 						clipPath="polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%)"
 						src="/people.jpg"
@@ -172,8 +169,6 @@ export default function About() {
 				align="start"
 				justify="space-between"
 				p={{ base: 4, md: "32" }}
-				// bg="#090909"
-				// color="#fff"
 				gap="10"
 				wrap="wrap"
 				mt="5"
@@ -298,7 +293,7 @@ export default function About() {
 				>
 					Some of our work
 				</Heading>
-				<CaseStudies />
+				<CaseStudies limit={3} />
 			</Flex>
 			<CareerCTA />
 		</Layout>

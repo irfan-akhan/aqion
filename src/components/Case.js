@@ -25,7 +25,6 @@ export default function Case({ bg, build, title, text, banner, slug }) {
 		>
 			<Flex
 				p={{ base: "4", md: "3rem" }}
-				// px={{ base: "4", md: "3rem" }}
 				direction="column"
 				align={{ base: "center", md: "flex-start" }}
 				gap={{ base: "6" }}

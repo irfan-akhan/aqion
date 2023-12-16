@@ -30,7 +30,6 @@ export default function ServiceCard({ icon, heading, bg, color, text, items }) {
 					width="fit-content"
 					mt="3"
 					fontSize={{ base: "large", md: "x-large" }}
-					// boxShadow="-47px 66px 0px -47px #4169E2 "
 				>
 					{heading}
 				</Heading>

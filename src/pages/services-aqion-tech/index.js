@@ -21,6 +21,7 @@ import {
 import { SiNginxproxymanager } from "react-icons/si";
 import Link from "next/link";
 import CustomButton from "@/components/partials/Button";
+import Team from "@/components/Team";
 
 export default function Services() {
 	return (
@@ -31,15 +32,22 @@ export default function Services() {
 				align="center"
 				minH="90vh"
 				margin="auto"
-				width="70%"
+				width={{ base: "90%", md: "70%" }}
 				textAlign="center"
 				gap="5"
 				mt="26"
 			>
-				<Heading color=" #4169E2" as="h2" fontSize="x-large">
+				<Heading
+					color=" #4169E2"
+					as="h2"
+					fontSize={{ base: "x-large" }}
+				>
 					A ONE-STOP-SHOP DEVELOPMENT PARTNER
 				</Heading>
-				<Heading as="h1" fontSize="xxx-large">
+				<Heading
+					as="h1"
+					fontSize={{ base: "x-large", md: "xxx-large" }}
+				>
 					{`Custom software development services from professionals
 					you’ll enjoy working with`}
 				</Heading>
@@ -57,14 +65,14 @@ export default function Services() {
 				align="center"
 				minH="90vh"
 				margin="auto"
-				width="80%"
+				width={{ base: "90%", md: "80%" }}
 				textAlign="center"
 				gap="5"
 				data-aos="fade-up"
 			>
 				<Heading
 					as="h2"
-					fontSize="xxx-large"
+					fontSize={{ base: "x-large", md: "xxx-large" }}
 					data-aos="fade-up"
 					data-aos-delay="200"
 				>
@@ -76,12 +84,13 @@ export default function Services() {
 					justify="space-between"
 					align="center"
 					textAlign="start"
-					p="6"
-					my="10"
+					p={{ base: 1, md: 6 }}
+					my={{ base: 3, md: "10" }}
+					direction={{ base: "column", md: "row" }}
 				>
 					<Flex
 						direction="column"
-						width="50%"
+						width={{ base: "90%", md: "50%" }}
 						gap="5"
 						data-aos="fade-up"
 						data-aos-delay="200"
@@ -119,16 +128,17 @@ export default function Services() {
 					<Flex
 						wrap="wrap"
 						gap="3"
-						justify="center"
-						width="50%"
+						justify={{ base: "space-between", md: "center" }}
+						width={{ base: "90%", md: "50%" }}
 						data-aos="fade-up"
 						data-aos-delay="200"
+						my={{ base: 5, md: "initial" }}
 					>
 						<Flex
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							border="1px solid  #4169E2"
 							p="3"
 							rounded="5"
@@ -140,7 +150,7 @@ export default function Services() {
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							rounded="5"
 							border="1px solid  #4169E2"
 							p="3"
@@ -152,7 +162,7 @@ export default function Services() {
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							rounded="5"
 							border="1px solid  #4169E2"
 							p="3"
@@ -164,7 +174,7 @@ export default function Services() {
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							rounded="5"
 							border="1px solid  #4169E2"
 							p="3"
@@ -179,7 +189,7 @@ export default function Services() {
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							rounded="5"
 							border="1px solid  #4169E2"
 							p="3"
@@ -191,7 +201,7 @@ export default function Services() {
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							rounded="5"
 							border="1px solid  #4169E2"
 							p="3"
@@ -205,24 +215,26 @@ export default function Services() {
 					justify="space-between"
 					align="center"
 					textAlign="start"
-					p="6"
-					my="10"
+					p={{ base: 1, md: 6 }}
+					my={{ base: 3, md: "10" }}
 					data-aos="fade-up"
 					data-aos-delay="200"
+					direction={{ base: "column", md: "initial" }}
 				>
 					<Flex
 						wrap="wrap"
 						gap="3"
 						justify="flex-start"
-						width="50%"
+						width={{ base: "90%", md: "50%" }}
 						data-aos="fade-up"
 						data-aos-delay="200"
+						my={{ base: 3, md: "initial" }}
 					>
 						<Flex
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							border="1px solid  #4169E2"
 							p="3"
 							rounded="5"
@@ -234,7 +246,7 @@ export default function Services() {
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							rounded="5"
 							border="1px solid  #4169E2"
 							p="3"
@@ -246,7 +258,7 @@ export default function Services() {
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							rounded="5"
 							border="1px solid  #4169E2"
 							p="3"
@@ -258,7 +270,7 @@ export default function Services() {
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							rounded="5"
 							border="1px solid  #4169E2"
 							p="3"
@@ -270,7 +282,7 @@ export default function Services() {
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							rounded="5"
 							border="1px solid  #4169E2"
 							p="3"
@@ -282,7 +294,7 @@ export default function Services() {
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							rounded="5"
 							border="1px solid  #4169E2"
 							p="3"
@@ -293,10 +305,11 @@ export default function Services() {
 					</Flex>
 					<Flex
 						direction="column"
-						width="50%"
+						width={{ base: "90%", md: "50%" }}
 						gap="5"
 						data-aos="fade-up"
 						data-aos-delay="200"
+						mt={{ base: 12, md: "initial" }}
 					>
 						<Image
 							src="/web-development.svg"
@@ -340,13 +353,14 @@ export default function Services() {
 					justify="space-between"
 					align="center"
 					textAlign="start"
-					p="6"
-					my="10"
+					p={{ base: 1, md: 6 }}
+					my={{ base: 3, md: "10" }}
 					data-aos="fade-up"
+					direction={{ base: "column", md: "row" }}
 				>
 					<Flex
 						direction="column"
-						width="50%"
+						width={{ base: "90%", md: "50%" }}
 						gap="5"
 						data-aos="fade-up"
 						data-aos-delay="200"
@@ -379,18 +393,19 @@ export default function Services() {
 						</Link>
 					</Flex>
 					<Flex
+						mt={{ base: 12, md: "initial" }}
 						data-aos="fade-up"
 						data-aos-delay="200"
 						wrap="wrap"
 						gap="3"
 						justify="center"
-						width="50%"
+						width={{ base: "90%", md: "50%" }}
 					>
 						<Flex
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							border="1px solid  #4169E2"
 							p="3"
 							rounded="5"
@@ -402,7 +417,7 @@ export default function Services() {
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							rounded="5"
 							border="1px solid  #4169E2"
 							p="3"
@@ -417,7 +432,7 @@ export default function Services() {
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							rounded="5"
 							border="1px solid  #4169E2"
 							p="3"
@@ -432,9 +447,10 @@ export default function Services() {
 					justify="space-between"
 					align="center"
 					textAlign="start"
-					p="6"
-					my="10"
+					p={{ base: 1, md: 6 }}
+					my={{ base: 3, md: "10" }}
 					data-aos="fade-up"
+					direction={{ base: "column", md: "row" }}
 				>
 					<Flex
 						data-aos="fade-up"
@@ -442,13 +458,13 @@ export default function Services() {
 						wrap="wrap"
 						gap="3"
 						justify="flex-start"
-						width="50%"
+						width={{ base: "90%", md: "50%" }}
 					>
 						<Flex
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							border="1px solid  #4169E2"
 							p="3"
 							rounded="5"
@@ -459,7 +475,7 @@ export default function Services() {
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							rounded="5"
 							border="1px solid  #4169E2"
 							p="3"
@@ -470,7 +486,7 @@ export default function Services() {
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							rounded="5"
 							border="1px solid  #4169E2"
 							p="3"
@@ -481,7 +497,7 @@ export default function Services() {
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							rounded="5"
 							border="1px solid  #4169E2"
 							p="3"
@@ -492,7 +508,7 @@ export default function Services() {
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							rounded="5"
 							border="1px solid  #4169E2"
 							p="3"
@@ -503,7 +519,7 @@ export default function Services() {
 							direction="column "
 							justify="space-evenly"
 							align="center"
-							width="25%"
+							width={{ base: "30%", md: "25%" }}
 							rounded="5"
 							border="1px solid  #4169E2"
 							p="3"
@@ -513,10 +529,11 @@ export default function Services() {
 					</Flex>
 					<Flex
 						data-aos="fade-up"
-						data-aos-delay="200"
+						data-aos-delay="150"
 						direction="column"
-						width="50%"
+						width={{ base: "90%", md: "50%" }}
 						gap="5"
+						mt={{ base: 12, md: "initial" }}
 					>
 						<Image
 							src="/agile-development.svg"
@@ -554,8 +571,8 @@ export default function Services() {
 			</Flex>
 			<Flex
 				gap="5"
-				p="12"
-				width="80%"
+				p={{ base: 6, md: "12" }}
+				width={{ base: "90%", md: "80%" }}
 				rounded="14"
 				bg="#f5f5f5"
 				margin="auto"
@@ -564,6 +581,7 @@ export default function Services() {
 				justify="center"
 				minH="50vh"
 				data-aos="fade-up"
+				direction={{ base: "column", md: "row" }}
 			>
 				<Flex flexDir="column" gap="5">
 					<Heading>{`“Stakeholders are extremely pleased“`}</Heading>
@@ -583,7 +601,6 @@ export default function Services() {
 			<Flex
 				width="100%"
 				p={{ base: 0, md: "20" }}
-				// m={{"auto"}}
 				gap={{ base: 4, md: "15" }}
 				height={{ base: "fit-content", md: "90vh" }}
 				overflow="hidden"
@@ -751,6 +768,17 @@ export default function Services() {
 				</Flex>
 			</Box>
 
+			{/* <Flex
+				align="start"
+				justify="space-between"
+				p={{ base: 4, md: "24" }}
+				gap="10"
+				mt={{ base: 2, md: "5" }}
+				direction={{ base: "column" }}
+				data-aos="fade-up"
+			>
+				<Team />
+			</Flex> */}
 			{/* Why partner with us */}
 			<Flex
 				align="start"
@@ -765,7 +793,6 @@ export default function Services() {
 				<Heading
 					width="100%"
 					data-aos="fade-up"
-					// data-aos-delay="200"
 					as="h2"
 					fontSize={{ base: "x-large", md: "xxx-large" }}
 					alignSelf="flex-start"

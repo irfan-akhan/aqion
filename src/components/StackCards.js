@@ -1,17 +1,6 @@
 import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
-// {
-// 	name: "vue",
-// 	icon: "vue.svg",
-// 	name: "react",
-// 	icon: "react.svg",
-// 	name: "gatsby",
-// 	icon: "gatsby.svg",
-// 	name: "javascript",
-// 	icon: "javascript.svg",
-// 	name: "react native",
-// 	icon: "native.svg",
-// },
+
 export default function StackCards() {
 	const roles = {
 		frontend: [
@@ -89,7 +78,6 @@ export default function StackCards() {
 				wrap="wrap"
 				data-aos="fade-up"
 				data-aos-deley="20"
-				// width={{ base: "100vw", md: "initial" }}
 			>
 				{roles && activeRole
 					? roles[activeRole].map((roleDetails, idx) => (

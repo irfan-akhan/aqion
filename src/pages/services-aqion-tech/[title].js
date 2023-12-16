@@ -142,6 +142,5 @@ export async function getStaticPaths(_ctx) {
 	};
 }
 export async function getStaticProps({ params: { title } }) {
-	// const caseStudy = data[slug];
 	return { props: { title } };
 }

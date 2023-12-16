@@ -34,7 +34,6 @@ const NavLink = (props) => {
 				{children}
 			</Box>
 			<Divider
-				// display="none"
 				transition="all .3s ease-in"
 				_groupHover={{ bg: "#4169E2", padding: "1px" }}
 				bg="transparent"

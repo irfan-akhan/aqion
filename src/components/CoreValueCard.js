@@ -21,7 +21,6 @@ export default function CoreValueCard({ heading, text }) {
 			<Text
 				data-aos="fade-up"
 				data-aos-delay="200"
-				// width="60%"
 				fontWeight="300"
 				fontSize="large"
 			>

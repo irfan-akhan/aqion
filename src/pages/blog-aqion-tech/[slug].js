@@ -44,11 +44,7 @@ export default function Project({ blogPost, slug }) {
 						{`${title}`}
 					</Heading>
 					<Flex align="center" gap="2">
-						<Avatar
-							size="lg"
-							name="Segun Adebayo"
-							src="https://bit.ly/sage-adebayo"
-						/>
+						<Avatar size="lg" name={author || ""} />
 						<Text data-aos="fade-up" data-aos-delay="40">
 							{author}
 						</Text>
