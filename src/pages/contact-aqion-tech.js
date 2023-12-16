@@ -435,15 +435,15 @@ export default function ContactUs() {
 				</Text>
 				<Flex gap="30">
 					<SalesContactCard
-						email="contact@aqion.jp"
+						email="sales@aqionholdings.com"
 						heading="CX/Sales"
 						imageUrl="/contact.jpg"
 						subText="CX team"
 					/>
 					<SalesContactCard
 						heading={"Hakim Rakib"}
-						subText="Head of sales"
-						email="hrakib@aqion.jp"
+						subText="Head of sales & Marketing"
+						email="hrakib@aqionholdings.com"
 						imageUrl="/rakib.jpg"
 					/>
 				</Flex>

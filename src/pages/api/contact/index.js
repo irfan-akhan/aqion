@@ -7,17 +7,17 @@ export default async function handler(req, res) {
 			const { message, email, lastName, firstName, businessEmail } =
 				req.body;
 			let transporter = nodemailer.createTransport({
-				host: "shahjeefood.com",
+				host: "aqionholdings.com",
 				port: "465",
 				secure: true,
 				auth: {
-					user: "info@shahjeefood.com",
-					pass: "Shahjeefood1234",
+					user: "contact@aqionholdings.com",
+					pass: "Contactaq10n",
 				},
 			});
 			const mailData = {
 				from: email,
-				to: "info@shahjeefood.com",
+				to: "contact@aqionholdings.com",
 				subject: `Message From ${firstName} ${lastName}`,
 				text: message + " " + businessEmail,
 				html: `<div>${message}</div> <table
@@ -136,7 +136,7 @@ export default async function handler(req, res) {
 														width="187"
 														alt="image"
 														border="0"
-														src="https://img2.gimm.io/2415c939-2a25-4e00-b54d-396628e0cf4d/img.png"
+														src="https://aqion.in/logo.png"
 													/>
 												</td>
 											</tr>
@@ -146,7 +146,7 @@ export default async function handler(req, res) {
 								<td
 									style="
 										border-collapse: collapse;
-										background-color: #e87021;
+										background-color: #4169E2;
 										width: 2px;
 										vertical-align: super;
 										padding: 0px !important;
@@ -201,7 +201,7 @@ export default async function handler(req, res) {
 															color: #354052;
 															display: inline;
 														"
-														>Kohstudio</span
+														>Aqion </span
 													>
 												</td>
 											</tr>
@@ -280,7 +280,7 @@ export default async function handler(req, res) {
 															color: #354052;
 															display: inline;
 														"
-														>www.kohstudio.io&nbsp;</span
+														>www.aqion.in&nbsp;</span
 													>
 												</td>
 											</tr>
