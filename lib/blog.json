@@ -1,6 +1,6 @@
 [
 	{
-		"slug": "Revolutionizing-UX-The-Art-of-Intuitive-Design",
+		"slug": "revolutionizing-ux-art-of-intuitive-design",
 		"title": "Revolutionizing UX The Art of Intuitive Design",
 		"tags": ["UX", "DESIGN", "CONTENT"],
 		"content": [
@@ -24,10 +24,11 @@
 			}
 		],
 		"author": "khan irfan afzal",
-		"publishDate": "January 23"
+		"publishDate": "December 23",
+		"banner": "/blog/ux.jpg"
 	},
 	{
-		"slug": "Mastering-Agile:-A-Guide-to-Streamlined-Development",
+		"slug": "mastering-agile-guide-to-streamlined-development",
 		"title": "Mastering Agile: A Guide to Streamlined Development",
 		"content": [
 			{
@@ -68,11 +69,11 @@
 			"Iterative Development"
 		],
 		"author": "khan irfan afzal",
-
-		"publishDate": "January 23"
+		"banner": "/blog/agile.jpg",
+		"publishDate": "September 23"
 	},
 	{
-		"slug": "DevOps-Culture:-Fostering-Collaboration-for-Continuous-Delivery",
+		"slug": "devops-culture-fostering-collaboration-continuous-delivery",
 		"title": "DevOps Culture: Fostering Collaboration for Continuous Delivery",
 		"content": [
 			{
@@ -111,11 +112,11 @@
 			"CI/CD"
 		],
 		"author": "khan irfan afzal",
-
-		"publishDate": "January 23"
+		"banner": "/blog/devops.jpg",
+		"publishDate": "August 23"
 	},
 	{
-		"slug": "The-Rise-of-AI:-Transforming-Industries-with-Smart-Software",
+		"slug": "the-rise-of-ai-transforming-industries-smart-software",
 		"title": "The Rise of AI: Transforming Industries with Smart Software",
 		"content": [
 			{
@@ -154,12 +155,12 @@
 			"Machine Learning"
 		],
 		"author": "khan irfan afzal",
-
-		"publishDate": "January 23"
+		"banner": "/blog/ai.jpg",
+		"publishDate": "May 23"
 	},
 	{
-		"title": "Innovative Frontiers: The Future of Mobile App Development",
 		"slug": "innovative-frontiers-future-mobile-app-development",
+		"title": "Innovative Frontiers: The Future of Mobile App Development",
 		"content": [
 			{
 				"heading": "Mobile App Development Landscape",
@@ -197,12 +198,12 @@
 			"AR/VR"
 		],
 		"author": "khan irfan afzal",
-
-		"publishDate": "January 23"
+		"banner": "/blog/mobile.jpg",
+		"publishDate": "March 23"
 	},
 	{
-		"title": "The Power of Data: Harnessing Insights for Business Growth",
 		"slug": "power-data-harnessing-insights-business-growth",
+		"title": "The Power of Data: Harnessing Insights for Business Growth",
 		"content": [
 			{
 				"heading": "Data as a Business Asset",
@@ -240,7 +241,7 @@
 			"Privacy"
 		],
 		"author": "khan irfan afzal",
-
+		"banner": "/blog/data.jpg",
 		"publishDate": "January 23"
 	}
 ]

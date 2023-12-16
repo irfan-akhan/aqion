@@ -1,13 +1,11 @@
 let nodemailer = require("nodemailer");
 export default async function handler(req, res) {
-	console.log("req arrived");
 	try {
 		if (req.method === "POST") {
 			// Process a POST request
 			console.log("req.body", req.body);
 			const { message, email, lastName, firstName, businessEmail } =
 				req.body;
-			console.log("req.query", req.query);
 			let transporter = nodemailer.createTransport({
 				host: "shahjeefood.com",
 				port: "465",
@@ -383,7 +381,7 @@ export default async function handler(req, res) {
 			}
 			return res.status(200).json({ message: "success" });
 		}
-		console.log("sending repsonse back as error");
+		console.log("sending error repsonse");
 		return res.status(500).json({ message: "Request not allowed" });
 	} catch (error) {
 		console.log("Internal server error >>", error);

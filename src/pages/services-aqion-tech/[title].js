@@ -36,7 +36,6 @@ const pageData = {
 };
 
 export default function ServicePage({ title }) {
-	console.log("title is sass ", title);
 	const { heading, text, how } = pageData[title] || {};
 	return (
 		<Layout>

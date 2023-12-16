@@ -1,5 +1,4 @@
 import {
-	Box,
 	Flex,
 	Image,
 	Heading,
@@ -7,11 +6,6 @@ import {
 	UnorderedList,
 	ListItem,
 	Avatar,
-	AvatarBadge,
-	AvatarGroup,
-	Wrap,
-	WrapItem,
-	Center,
 	HStack,
 	Tag,
 } from "@chakra-ui/react";
@@ -20,15 +14,14 @@ import Layout from "@/components/Layout";
 import BlogCard from "@/components/BlogCard";
 
 export default function Project({ blogPost, slug }) {
-	console.log("props are ", blogPost, slug);
 	const suggestedPosts = [blogPosts[0], blogPosts[1]];
 
-	const { title, content, tags, publishDate, author } = blogPost;
+	const { title, content, tags, publishDate, author, banner } = blogPost;
 
 	return (
 		<Layout>
 			<Flex
-				width={{ base: "100%", md: "65vw" }}
+				width={{ base: "80%", md: "65vw" }}
 				margin="auto"
 				gap="8"
 				my="15vh"
@@ -38,7 +31,7 @@ export default function Project({ blogPost, slug }) {
 				<Flex
 					direction="column"
 					gap="5"
-					my="5"
+					my={{ base: 1, md: 5 }}
 					data-aos="fade-up"
 					data-aos-delay="20"
 				>
@@ -46,6 +39,7 @@ export default function Project({ blogPost, slug }) {
 						textTransform="uppercase"
 						data-aos="fade-up"
 						data-aos-delay="30"
+						fontSize={{ base: "large", md: "xx-large" }}
 					>
 						{`${title}`}
 					</Heading>
@@ -71,7 +65,7 @@ export default function Project({ blogPost, slug }) {
 				<HStack
 					data-aos="fade-up"
 					data-aos-delay="20"
-					mt="5"
+					mt={{ base: 0, md: 5 }}
 					spacing="3"
 					wrap="wrap"
 				>
@@ -83,7 +77,6 @@ export default function Project({ blogPost, slug }) {
 							key={item}
 							variant="solid"
 							bg="black"
-							// colorScheme="black"
 							data-aos="fade-up"
 							data-aos-delay="30"
 							rounded="3"
@@ -98,7 +91,7 @@ export default function Project({ blogPost, slug }) {
 					data-aos-delay="20"
 					width={"100%"}
 					alt="Segun Adebayo"
-					src="/people.jpg"
+					src={banner ? banner : "/people.jpg"}
 				/>
 				<Flex
 					direction="column"
@@ -111,7 +104,7 @@ export default function Project({ blogPost, slug }) {
 							<Flex
 								key={idx}
 								direction="column"
-								gap="5"
+								gap={{ base: 0, md: 5 }}
 								data-aos="fade-up"
 								data-aos-delay="20"
 							>
@@ -120,7 +113,10 @@ export default function Project({ blogPost, slug }) {
 									data-aos-delay="30"
 									fontWeight="400"
 									textTransform="capitalize"
-									fontSize="xxx-large"
+									fontSize={{
+										base: "x-large",
+										md: "xx-large",
+									}}
 								>
 									{`${item.heading}`}
 								</Heading>
@@ -128,10 +124,16 @@ export default function Project({ blogPost, slug }) {
 									<Text
 										data-aos="fade-up"
 										data-aos-delay="50"
-										my="3"
+										my={{ base: 0, md: "3" }}
 										fontWeight="300"
-										lineHeight="40px"
-										fontSize="x-large"
+										lineHeight={{
+											base: "30px",
+											md: "40px",
+										}}
+										fontSize={{
+											base: "large",
+											md: "x-large",
+										}}
 									>
 										{`${item.text}`}
 									</Text>
@@ -145,7 +147,10 @@ export default function Project({ blogPost, slug }) {
 												my="3"
 												fontWeight="300"
 												lineHeight="40px"
-												fontSize="x-large"
+												fontSize={{
+													base: "large",
+													md: "x-large",
+												}}
 											>
 												{`${text}`}
 											</ListItem>
@@ -158,12 +163,19 @@ export default function Project({ blogPost, slug }) {
 				</Flex>
 			</Flex>
 			<Flex my="24" p={12} bg="#f5f5f5" justify="space-evenly">
-				<Flex minW="80%" p={8} bg="#fff" justify="space-evenly">
+				<Flex
+					w={{ base: "100%", md: "80%" }}
+					p={{ base: 0, md: 3 }}
+					direction={{ base: "column", md: "initial" }}
+					bg="#fff"
+					justify="space-evenly"
+				>
 					{suggestedPosts?.map((post, idx) => (
 						<BlogCard
 							key={idx}
-							tags={[post.tags[0], post.tags[1], post.tags[2]]}
-							title={post.title}
+							bgImage={post?.banner}
+							tags={[post?.tags[0], post?.tags[1], post?.tags[2]]}
+							title={post?.title}
 							slug={post?.slug}
 						/>
 					))}

@@ -1,5 +1,4 @@
 import { Button, Flex, HStack, Heading, Tag } from "@chakra-ui/react";
-import React from "react";
 
 export default function BlogCard({
 	title,

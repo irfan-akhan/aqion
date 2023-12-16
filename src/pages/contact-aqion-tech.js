@@ -40,7 +40,6 @@ export default function ContactUs() {
 			businessEmail: businessEmailRef.current.value,
 			message: messageRef.current.value,
 		};
-		console.log("datra ", data);
 		fetch("/api/contact", {
 			method: "POST",
 			headers: {
@@ -51,7 +50,6 @@ export default function ContactUs() {
 		})
 			.then((res) => {
 				if (res.status === 200) {
-					console.log("Response succeeded!");
 					setAlertState(true);
 					setInterval(() => {
 						setAlertState(false);
@@ -63,7 +61,6 @@ export default function ContactUs() {
 					messageRef.current.value = "";
 				} else {
 					setEmailError(true);
-					console.log("err email");
 					setAlertState(true);
 					setInterval(() => {
 						setEmailError(false);
