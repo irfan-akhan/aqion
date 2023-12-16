@@ -6,13 +6,13 @@ const teams = [
 		name: "Wajid Kashoo",
 		title: "Software developer",
 		description: "lorem20",
-		bgImage: "/rakib.jpg",
+		bgImage: "/team/wajid.jpg",
 	},
 	{
 		name: "Iqbal Wali",
 		title: "sr frontend engineer",
 		description: "lorem20",
-		bgImage: "/rakib.jpg",
+		bgImage: "/team/iqbal.jpg",
 	},
 	{
 		name: "Rakib Hakim",
@@ -24,7 +24,7 @@ const teams = [
 		name: "Khan Irfan",
 		title: "Software developer",
 		description: "lorem20",
-		bgImage: "/rakib.jpg",
+		bgImage: "/team/irfan.jpg",
 	},
 ];
 export default function Team() {
