@@ -75,8 +75,9 @@ export default function Team() {
 				fontWeight="300"
 				fontSize="large"
 			>
-				{teams.map((team) => (
+				{teams.map((team, idx) => (
 					<TeamCard
+						key={idx}
 						name={team.name}
 						title={team.title}
 						description={team.description}
