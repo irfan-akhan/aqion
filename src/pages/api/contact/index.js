@@ -20,7 +20,11 @@ export default async function handler(req, res) {
 				to: "contact@aqionholdings.com",
 				subject: `Message From ${firstName} ${lastName}`,
 				text: message + " " + businessEmail,
-				html: `<div>${message}</div> <table
+				html: `				
+				<div>
+				<h3>Hello there, You have a message</h3>
+				</div>
+				<div>${message}</div> <table
 		id="zs-output-sig"
 		border="0"
 		cellpadding="0"
@@ -80,6 +84,34 @@ export default async function handler(req, res) {
 											display: inline;
 										"
 										>Kind Regards,</span
+									>
+								</td>
+							</tr>
+							<tr>
+								<td
+									style="
+										border-collapse: collapse;
+										font-family: Arial, Helvetica,
+											sans-serif;
+										font-size: 12px;
+										font-style: normal;
+										line-height: 14px;
+										font-weight: 400;
+										padding-bottom: 14px;
+									"
+								>
+									<span
+										style="
+											font-family: Arial, Helvetica,
+												sans-serif;
+											font-size: 12px;
+											font-style: normal;
+											line-height: 14px;
+											font-weight: 400;
+											color: #354052;
+											display: inline;
+										"
+										>${firstName} ${lastName}</span
 									>
 								</td>
 							</tr>
