@@ -25,7 +25,7 @@ export default function Careers() {
 		<Layout>
 			<Hero
 				heading="Shape the Future of Digital Products"
-				text="AQION is home to more than 300+ fast learners and experts helping brands make the world more digitalized."
+				text="AQION is home to more than 50+ fast learners and experts helping brands make the world more digitalized."
 				linkProps={{ name: "View open positions", path: "#positions" }}
 				imgUrl="/teams.jpg"
 			/>
@@ -204,7 +204,7 @@ export default function Careers() {
 			>
 				Open Positions
 			</Heading>
-			{!openPositions?.length ? (
+			{openPositions?.length ? (
 				<Flex
 					direction="column"
 					w="90%"

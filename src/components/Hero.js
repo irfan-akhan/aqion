@@ -20,7 +20,7 @@ const Hero = ({ heading, subHeading, text, imgUrl, linkProps }) => {
 				gap={{ base: "6", md: "8" }}
 				pr="3"
 				maxW={{ base: "100vw", md: "60%" }}
-				boxShadow="20px 18px 2px 7px #d3d3d3"
+				// boxShadow="20px 18px 2px 7px #d3d3d3"
 				pos="relative"
 			>
 				<Stack textAlign={{ base: "center", md: "initial" }}>

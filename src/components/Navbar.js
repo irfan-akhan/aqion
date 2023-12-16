@@ -12,12 +12,16 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import CustomButton from "./partials/Button";
+import { useRouter } from "next/router";
 
 const Links = ["Services", "About", "Portfolio", "Careers", "Blog"];
 
 const NavLink = (props) => {
+	const router = useRouter();
+	console.log("router >> ", router.route);
 	const { children } = props;
-
+	console.log("children >> ", children);
+	const active = router?.route.includes(children?.toLowerCase());
 	return (
 		<Flex role="group" p="1" direction="column" justify="center">
 			<Box
@@ -27,7 +31,9 @@ const NavLink = (props) => {
 				_hover={{
 					textDecoration: "none",
 				}}
-				fontWeight="300"
+				color={active ? "#4169E2" : ""}
+				fontWeight={active ? "500" : "300"}
+				pointerEvents={active ? "none" : ""}
 				fontSize="large"
 				href={`/${children?.toLowerCase()}-aqion-tech`}
 			>
@@ -58,6 +64,7 @@ export default function Navbar() {
 			left="0"
 			width="100vw"
 			zIndex={100}
+			borderBottom={"1px solid #d9d9d9"}
 		>
 			<Flex alignItems={"center"} justifyContent={"space-between"}>
 				<IconButton

@@ -7,7 +7,7 @@ export default function Layout({ children }) {
 	return (
 		<>
 			<Navbar />
-			<Box mt={{ base: "15vh", md: "10vh" }}>{children}</Box>
+			<Box mt={{ base: "15vh" }}>{children}</Box>
 			<CTC />
 			<Footer />
 		</>
