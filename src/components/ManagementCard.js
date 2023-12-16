@@ -29,7 +29,7 @@ const managementData = [
 	{
 		name: "Rakib Abbas",
 		title: "founder",
-		picture: "/team/nadeem.jpg",
+		picture: "/team/rakib.jpg",
 		desc: `An energetic and passionate leader with a strong
         international background. With 15 years of executive
         experience, Filip can seal any deal. His attention to
@@ -47,7 +47,7 @@ export default function ManagementCard() {
 		<>
 			<Flex
 				placeContent="center"
-				width={{ base: "100%", md: "40%" }}
+				width={{ base: "100%", md: "35%" }}
 				display={{ base: "none", md: "initial" }}
 				border="2px solid #4169e166"
 				boxShadow="10px 10px 0px 2px #4169E2"
@@ -59,7 +59,7 @@ export default function ManagementCard() {
 					src={activeCard.picture}
 					objectFit={"cover"}
 					alt="aqion"
-					width="80%"
+					width="100%"
 				/>
 			</Flex>
 			<Flex
