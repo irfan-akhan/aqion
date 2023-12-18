@@ -3,23 +3,11 @@ import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const managementData = [
 	{
-		name: "Nadeem Hussain",
-		title: "ceo",
-		picture: "/team/nadeem.jpg",
-		desc: `An energetic and passionate leader with a strong
-        international background. With 15 years of executive
-        experience, Filip can seal any deal. His attention to
-        detail is causing many headaches, but that’s only
-        because he’s a perfectionist in everything he does. He
-        knows no limits, and for him, “boundaries” is just
-        another word.`,
-	},
-	{
 		name: "Aqib Abbas",
-		title: "founder",
-		picture: "/team/nadeem.jpg",
+		title: "co-Founder",
+		picture: "/team/aqib.png",
 		desc: `An energetic and passionate leader with a strong
-        international background. With 15 years of executive
+        international background. With 10 years of executive
         experience, Filip can seal any deal. His attention to
         detail is causing many headaches, but that’s only
         because he’s a perfectionist in everything he does. He
@@ -28,15 +16,22 @@ const managementData = [
 	},
 	{
 		name: "Rakib Abbas",
-		title: "founder",
+		title: "co-Founder",
 		picture: "/team/rakib.jpg",
-		desc: `An energetic and passionate leader with a strong
-        international background. With 15 years of executive
-        experience, Filip can seal any deal. His attention to
-        detail is causing many headaches, but that’s only
-        because he’s a perfectionist in everything he does. He
-        knows no limits, and for him, “boundaries” is just
-        another word.`,
+		desc: `Meet the driving force behind Aqion our visionary leader.
+		 A trailblazer in the industry, Rakib Abbas embodies the spirit of leadership, 
+		 innovation, and unwavering dedication that defines our success story.
+		With a keen eye for opportunities and a strategic mind, and charts the 
+		course for our journey into the future.`,
+	},
+	{
+		name: "Nadeem Hussain",
+		title: "CMO",
+		picture: "/team/nadeem.jpg",
+		desc: ` With an unwavering passion for storytelling and a keen eye for market dynamics, 
+		 leads our marketing efforts into uncharted territories of innovation and impact. Their 
+		 visionary approach isn't just about campaigns; it's about crafting compelling narratives 
+		 that resonate with our audience, driving engagement, and shaping our brand's identity. `,
 	},
 ];
 

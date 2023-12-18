@@ -21,7 +21,6 @@ import {
 import { SiNginxproxymanager } from "react-icons/si";
 import Link from "next/link";
 import CustomButton from "@/components/partials/Button";
-import Team from "@/components/Team";
 
 export default function Services() {
 	return (

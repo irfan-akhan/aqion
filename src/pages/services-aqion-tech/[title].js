@@ -127,7 +127,7 @@ export default function ServicePage({ title }) {
 					fontSize={{ base: "x-large", md: "xx-large" }}
 					textTransform={"capitalize"}
 				>
-					Recent web Applications we have build
+					Recent applications we have build
 				</Heading>
 				<CaseStudies limit={4} />
 			</Flex>
