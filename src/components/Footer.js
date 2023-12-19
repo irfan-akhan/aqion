@@ -45,7 +45,9 @@ export default function Footer() {
 						width="fit-content"
 					>
 						contact
-						<span style={{ fontSize: "12px" }}>@aqion.com</span>
+						<span style={{ fontSize: "12px" }}>
+							@aqionholdings.com
+						</span>
 					</Box>
 				</Flex>
 				<Flex

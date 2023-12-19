@@ -18,9 +18,7 @@ const Links = ["Services", "About", "Portfolio", "Careers", "Blog"];
 
 const NavLink = (props) => {
 	const router = useRouter();
-	console.log("router >> ", router.route);
 	const { children } = props;
-	console.log("children >> ", children);
 	const active = router?.route.includes(children?.toLowerCase());
 	return (
 		<Flex role="group" p="1" direction="column" justify="center">
@@ -88,7 +86,10 @@ export default function Navbar() {
 						))}
 					</HStack>
 				</HStack>
-				<Flex alignItems={"center"}>
+				<Flex
+					alignItems={"center"}
+					display={{ base: "none", md: "initial" }}
+				>
 					<CustomButton
 						link={true}
 						linkProps={{
@@ -102,7 +103,7 @@ export default function Navbar() {
 			{isOpen ? (
 				<Box pb={4} display={{ md: "none" }}>
 					<Stack as={"nav"} spacing={4}>
-						{Links.map((link) => (
+						{[...Links, "Contact"].map((link) => (
 							<NavLink key={link}>{link}</NavLink>
 						))}
 					</Stack>

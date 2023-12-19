@@ -16,7 +16,7 @@ const teams = [
 	},
 	{
 		name: "Rakib Hakim",
-		title: "Software engineer",
+		title: "Lead generator",
 		description: "lorem20",
 		bgImage: "/rakib.jpg",
 	},
@@ -25,6 +25,12 @@ const teams = [
 		title: "Software developer",
 		description: "lorem20",
 		bgImage: "/team/irfan.jpg",
+	},
+	{
+		name: "Nazim Hussain",
+		title: "3D Animator & Designer",
+		description: "lorem20",
+		bgImage: "/team/nazim.jpg",
 	},
 ];
 export default function Team() {

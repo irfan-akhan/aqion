@@ -36,6 +36,7 @@ const Hero = ({ heading, subHeading, text, imgUrl, linkProps }) => {
 					</Heading>
 					<Text
 						fontWeight="300"
+						textAlign={{ base: "center", md: "initial" }}
 						fontSize={{ base: "medium", md: "large" }}
 					>
 						{subHeading
