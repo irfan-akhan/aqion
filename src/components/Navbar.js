@@ -13,6 +13,7 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import CustomButton from "./partials/Button";
 import { useRouter } from "next/router";
+import { LanguageSwitcher } from "./lang-switcher";
 
 const Links = ["Services", "About", "Portfolio", "Careers", "Blog"];
 
@@ -87,6 +88,7 @@ export default function Navbar() {
 					</HStack>
 				</HStack>
 				<Flex
+					marginLeft={"auto"}
 					alignItems={"center"}
 					display={{ base: "none", md: "initial" }}
 				>
@@ -98,6 +100,7 @@ export default function Navbar() {
 						}}
 					/>
 				</Flex>
+				<LanguageSwitcher />
 			</Flex>
 
 			{isOpen ? (
