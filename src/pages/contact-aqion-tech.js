@@ -433,16 +433,16 @@ export default function ContactUs() {
 					Need further assistance or have additional questions, send
 					us an email.
 				</Text>
-				<Flex gap="30">
+				<Flex gap="30" direction={{ base: "column", md: "initial" }}>
 					<SalesContactCard
 						email="sales@aqionholdings.com"
 						heading="CX/Sales"
 						imageUrl="/contact.jpg"
-						subText="CX team"
+						subText="Sales Team"
 					/>
 					<SalesContactCard
 						heading={"Hakim Rakib"}
-						subText="Head of sales & Marketing"
+						subText="Co Founder"
 						email="hrakib@aqionholdings.com"
 						imageUrl="/rakib.jpg"
 					/>

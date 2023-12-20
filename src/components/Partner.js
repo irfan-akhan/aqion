@@ -36,7 +36,7 @@ export default function Partner() {
 					minW="25%"
 					as="a"
 					p="10"
-					href="/"
+					href="/services-aqion-tech/product"
 					fontSize="x-large"
 					fontWeight="500"
 				>
@@ -56,7 +56,7 @@ export default function Partner() {
 					minW="25%"
 					p="10"
 					as="a"
-					href="/"
+					href="/services-aqion-tech/mobile"
 					fontSize="x-large"
 					fontWeight="500"
 				>
@@ -76,7 +76,7 @@ export default function Partner() {
 					minW="25%"
 					p="10"
 					as="a"
-					href="/"
+					href="/services-aqion-tech/web"
 					fontSize="x-large"
 					fontWeight="500"
 				>
@@ -96,7 +96,7 @@ export default function Partner() {
 					minW="25%"
 					p="10"
 					as="a"
-					href="/"
+					href="/services-aqion-tech/#agile"
 					fontSize="x-large"
 					fontWeight="500"
 				>
@@ -116,6 +116,7 @@ export default function Partner() {
 					minW="25%"
 					p="10"
 					as="a"
+					pointerEvents={"none"}
 					href="/"
 					fontSize="x-large"
 					fontWeight="500"
@@ -140,29 +141,11 @@ export default function Partner() {
 					href="/"
 					fontSize="x-large"
 					fontWeight="500"
+					pointerEvents={"none"}
 				>
 					Ui <br /> Ux
 				</Text>
-				<Text
-					data-aos="fade-left"
-					data-aos-delay="300"
-					textDecoration="underline"
-					textUnderlineOffset="6px"
-					textDecorationColor="transparent"
-					_hover={{
-						textDecoration: "underline",
-						textDecorationColor: "#fff",
-						transition: "all .3s ease-in",
-					}}
-					minW="25%"
-					p="10"
-					as="a"
-					href="/"
-					fontSize="x-large"
-					fontWeight="500"
-				>
-					Autocad <br /> Designs
-				</Text>
+
 				<Text
 					data-aos="fade-left"
 					data-aos-delay="350"
@@ -180,10 +163,32 @@ export default function Partner() {
 					href="/"
 					fontSize="x-large"
 					fontWeight="500"
+					pointerEvents={"none"}
 				>
 					3D Model
 					<br /> Designs
 				</Text>
+				{/* <Text
+					data-aos="fade-left"
+					data-aos-delay="300"
+					textDecoration="underline"
+					textUnderlineOffset="6px"
+					textDecorationColor="transparent"
+					_hover={{
+						textDecoration: "underline",
+						textDecorationColor: "#fff",
+						transition: "all .3s ease-in",
+					}}
+					minW="25%"
+					p="10"
+					as="a"
+					opacity={0}
+					href="/"
+					fontSize="x-large"
+					fontWeight="500"
+				>
+					Autocad <br /> Designs
+				</Text> */}
 			</Flex>
 
 			<Button

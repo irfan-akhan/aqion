@@ -532,6 +532,7 @@ export default function Services() {
 						direction="column"
 						width={{ base: "90%", md: "50%" }}
 						gap="5"
+						id="agile"
 						mt={{ base: 12, md: "initial" }}
 					>
 						<Image
@@ -593,6 +594,11 @@ export default function Services() {
 				<Flex gap="5">
 					<CustomButton
 						rounded="20px"
+						link={true}
+						linkProps={{
+							name: "Book free consultation",
+							path: "/contact-aqion-tech",
+						}}
 						text="Book free consultation"
 					/>
 				</Flex>

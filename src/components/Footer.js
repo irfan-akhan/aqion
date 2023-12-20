@@ -66,9 +66,17 @@ export default function Footer() {
 						>
 							Japan HQ
 						</Heading>
-						<Text data-aos="fade-up" fontWeight="300">
-							9813602, Miyagi ken kurokawa district, Ohira
+						<Text mb="5" data-aos="fade-up" fontWeight="300">
+							983-0036 Miyagi, Sendai, <br /> Miyagino Ward,
+							Nigatake, <br /> 3 Chome−1−6 STUDIO 080
 						</Text>
+						<Link
+							href={`tel:+818028319985`}
+							data-aos="fade-up"
+							fontWeight="300"
+						>
+							{`+81-8028319985`}
+						</Link>
 					</Box>
 					<Box maxWidth={{ base: "100%", md: "50%" }}>
 						<Heading
@@ -80,9 +88,16 @@ export default function Footer() {
 						>
 							Srinagar HQ
 						</Heading>
-						<Text data-aos="fade-up" fontWeight="300">
-							190011, Mandiball Hawal
+						<Text mb="5" data-aos="fade-up" fontWeight="300">
+							190011, Hawal Srinagar{" "}
 						</Text>
+						<Link
+							href={`tel:+917006078236`}
+							data-aos="fade-up"
+							fontWeight="300"
+						>
+							{`+91-7006078236`}
+						</Link>
 					</Box>
 				</Flex>
 			</Flex>

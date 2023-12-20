@@ -5,7 +5,7 @@ const managementData = [
 	{
 		name: "Aqib Abbas",
 		title: "co-Founder",
-		picture: "/team/aqib.png",
+		picture: "/team/aqib-2.jpg",
 		desc: `An energetic and passionate leader with a strong
         international background. With 10 years of executive
         experience, Filip can seal any deal. His attention to
