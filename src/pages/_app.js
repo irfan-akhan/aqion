@@ -1,6 +1,7 @@
 import { extendTheme, ChakraProvider } from "@chakra-ui/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "../styles/globals.css";
 import { useEffect } from "react";
 const customeTheme = extendTheme({
 	fonts: {
