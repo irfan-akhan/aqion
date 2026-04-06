@@ -56,7 +56,7 @@ export default function Footer() {
 					my={{ base: 8, md: "initial" }}
 					opacity=".8"
 				>
-					<Box maxWidth={{ base: "100%", md: "50%" }}>
+					<Box maxWidth={{ base: "100%", md: "80%" }}>
 						<Heading
 							data-aos="fade-up"
 							as="h2"
@@ -67,36 +67,24 @@ export default function Footer() {
 							Japan HQ
 						</Heading>
 						<Text mb="5" data-aos="fade-up" fontWeight="300">
-							981-3602 Miyagi, Ken Kurokawa, <br /> gin Ohira,
-							mura Ohira, <br /> 3 aza hanuki 126-6
+							9813602 Miyagi, Ken Kurokawa, gin Ohira
+							mura Ohira, <br/>aza hanuki 126-6
 						</Text>
 						<Link
-							href={`tel:+810223414419`}
+							href={`tel:+818028319985`}
 							data-aos="fade-up"
 							fontWeight="300"
 						>
 							{`+81-8028319985`}
 						</Link>
-					</Box>
-					<Box maxWidth={{ base: "100%", md: "50%" }}>
-						<Heading
-							as="h2"
-							mb="4"
-							data-aos="fade-up"
-							fontWeight="300"
-							fontSize={{ base: "large", md: "x-large" }}
-						>
-							Srinagar HQ
-						</Heading>
-						<Text mb="5" data-aos="fade-up" fontWeight="300">
-							190011, Hawal Srinagar{" "}
-						</Text>
+						<br />
 						<Link
-							href={`tel:+917006078236`}
+							href={`tel:0223414419`}
 							data-aos="fade-up"
 							fontWeight="300"
+							style={{"display": "block", "marginTop":"10px"}}
 						>
-							{`+91-7006078236`}
+							{`0223414419`}
 						</Link>
 					</Box>
 				</Flex>

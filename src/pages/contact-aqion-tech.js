@@ -362,21 +362,8 @@ export default function ContactUs() {
 								Japan HQ
 							</Heading>
 							<Text data-aos="fade-up" fontWeight="300">
-								9813602, Miyagi ken kurokawa district, Ohira
-							</Text>
-						</Box>
-						<Box maxWidth="50%">
-							<Heading
-								as="h2"
-								mb="4"
-								data-aos="fade-up"
-								fontWeight="400"
-								fontSize={{ base: "large", md: "x-large" }}
-							>
-								Srinagar HQ
-							</Heading>
-							<Text data-aos="fade-up" fontWeight="300">
-								190011, Mandiball Hawal
+								9813602 Miyagi, Ken Kurokawa, gin Ohira,
+							mura Ohira, aza hanuki 126-6
 							</Text>
 						</Box>
 					</Flex>
