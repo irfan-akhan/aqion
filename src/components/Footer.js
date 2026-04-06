@@ -67,11 +67,11 @@ export default function Footer() {
 							Japan HQ
 						</Heading>
 						<Text mb="5" data-aos="fade-up" fontWeight="300">
-							983-0036 Miyagi, Sendai, <br /> Miyagino Ward,
-							Nigatake, <br /> 3 Chome−1−6 STUDIO 080
+							981-3602 Miyagi, Ken Kurokawa, <br /> gin Ohira,
+							mura Ohira, <br /> 3 aza hanuki 126-6
 						</Text>
 						<Link
-							href={`tel:+818028319985`}
+							href={`tel:+810223414419`}
 							data-aos="fade-up"
 							fontWeight="300"
 						>
