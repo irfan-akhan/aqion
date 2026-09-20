@@ -44,9 +44,9 @@ export default function Footer() {
 						fontSize={{ base: "large" }}
 						width="fit-content"
 					>
-						contact
+						info
 						<span style={{ fontSize: "12px" }}>
-							@aqionholdings.com
+							@aqion.jp
 						</span>
 					</Box>
 				</Flex>
