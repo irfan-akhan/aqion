@@ -32,7 +32,7 @@ export default function Footer() {
 						p="2"
 						as="a"
 						textUnderlineOffset="10px"
-						href={`mailto:contact@aqion.com`}
+						href={`mailto:info@aqion.jp`}
 						fontWeight="300"
 						_hover={{
 							textDecorationColor: "#4169e1",
@@ -44,7 +44,7 @@ export default function Footer() {
 						fontSize={{ base: "large" }}
 						width="fit-content"
 					>
-						info
+						INFO
 						<span style={{ fontSize: "12px" }}>
 							@aqion.jp
 						</span>
